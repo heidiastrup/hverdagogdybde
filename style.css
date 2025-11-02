@@ -48,21 +48,11 @@ h2 {
     color: #22223B;
 }
 
-.intro {
+.intro, .kontakt-form {
     background-color: #f0efeb;
     padding: 30px;
     border-radius: 8px;
     text-align: center;
-}
-
-.intro p {
-    font-size: 1.1em;
-}
-
-.kontakt-form {
-    background-color: #f0efeb;
-    padding: 30px;
-    border-radius: 8px;
 }
 
 input, textarea {
@@ -95,3 +85,4 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
