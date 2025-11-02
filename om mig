@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om mig – hverdag og dybde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>hverdag og dybde</h1>
+        <nav>
+            <a href="index.html">Forside</a>
+            <a href="om.html">Om mig</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Om mig</h2>
+            <p>Som psykoterapeut arbejder jeg balanceret med hele dig som menneske, og jeg har erfaring med unge, voksne og par. Jeg arbejder dybdegående ud fra forskellige psykoterapeutiske tilgange, som skaber en integreret måde at arbejde på. I behandlingen anvender jeg terapeutiske redskaber som familieopstilling, terapeutisk sandplay, spædbarnsterapi og meditativ guiding for at hjælpe mennesker med livets udfordringer og skabe vedvarende forandring.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 hverdag og dybde – Psykoterapi ved psykoterapeut MPF Heidi Astrup Petersen. Alle rettigheder forbeholdes.</p>
+    </footer>
+</body>
+</html>
