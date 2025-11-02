@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #faf9f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4A4E69;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #f8f8f8;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    color: #22223B;
+}
+
+.intro {
+    background-color: #f0efeb;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.1em;
+}
+
+.kontakt-form {
+    background-color: #f0efeb;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #4A4E69;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #22223B;
+}
+
+footer {
+    background-color: #4A4E69;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
