@@ -1,3 +1,4 @@
+/* --- Grundlæggende styling --- */
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -6,8 +7,9 @@ body {
     line-height: 1.6;
 }
 
+/* --- Header --- */
 header {
-    background-color: #4A4E69;
+    background-color: #4a4e69;
     color: white;
     text-align: center;
     padding: 30px 10px;
@@ -17,8 +19,10 @@ header h1 {
     margin: 0;
     font-size: 2em;
     letter-spacing: 1px;
+    text-transform: lowercase; /* altid små bogstaver */
 }
 
+/* --- Navigation --- */
 nav {
     margin-top: 15px;
 }
@@ -34,6 +38,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* --- Main indhold --- */
 main {
     max-width: 900px;
     margin: 40px auto;
@@ -45,14 +50,25 @@ section {
 }
 
 h2 {
-    color: #22223B;
+    color: #22223b;
 }
 
-.intro, .kontakt-form {
+.intro {
     background-color: #f0efeb;
     padding: 30px;
     border-radius: 8px;
     text-align: center;
+}
+
+.intro p {
+    font-size: 1.1em;
+}
+
+/* --- Kontaktformular --- */
+.kontakt-form {
+    background-color: #f0efeb;
+    padding: 30px;
+    border-radius: 8px;
 }
 
 input, textarea {
@@ -66,7 +82,7 @@ input, textarea {
 }
 
 button {
-    background-color: #4A4E69;
+    background-color: #4a4e69;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -76,11 +92,12 @@ button {
 }
 
 button:hover {
-    background-color: #22223B;
+    background-color: #22223b;
 }
 
+/* --- Footer --- */
 footer {
-    background-color: #4A4E69;
+    background-color: #4a4e69;
     color: white;
     text-align: center;
     padding: 20px;
