@@ -3,46 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hverdag og dybde</title>
+    <title>Hverdag og Dybde – Psykoterapi v. [Dit Navn]</title>
     <style>
-        /* Grundlæggende styling */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #faf9f8;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #333;
+            background-color: #4A4E69;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 30px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            letter-spacing: 1px;
         }
 
         nav {
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #f8f8f8;
+            margin: 0 12px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         main {
-            padding: 40px 20px;
-            min-height: 400px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            color: #22223B;
+        }
+
+        .intro {
+            background-color: #f0efeb;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+        }
+
+        .kontakt-form {
+            background-color: #f0efeb;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        button {
+            background-color: #4A4E69;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #22223B;
         }
 
         footer {
-            background-color: #333;
+            background-color: #4A4E69;
             color: white;
             text-align: center;
-            padding: 15px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
         }
     </style>
 </head>
@@ -50,23 +108,50 @@
 
     <!-- Header -->
     <header>
-        <h1>hverdag og dybde</h1>
+        <h1>Hverdag og Dybde</h1>
         <nav>
-            <a href="#">Forside</a>
-            <a href="#">Om Os</a>
-            <a href="#">Kontakt</a>
+            <a href="#forside">Forside</a>
+            <a href="#om">Om mig</a>
+            <a href="#kontakt">Kontakt</a>
         </nav>
     </header>
 
-    <!-- Hovedindhold -->
+    <!-- Forside -->
     <main>
-        <h2>Her kommer dit indhold</h2>
-        <p>Indsæt alt det, du har lyst til her – tekst, billeder, formularer, videoer osv.</p>
+        <section id="forside" class="intro">
+            <h2>Velkommen</h2>
+            <p>Jeg tilbyder psykoterapi med fokus på at skabe forbindelse mellem hverdagsliv og dybere lag af mening. Her finder du et trygt rum til refleksion, nærvær og udvikling.</p>
+        </section>
+
+        <!-- Om mig -->
+        <section id="om">
+            <h2>Om mig</h2>
+            <p>Jeg er psykoterapeut MPF og arbejder med samtaleterapi for både individuelle klienter og par. Min tilgang bygger på tillid, empati og et ønske om at støtte dig i at forstå og rumme dig selv på et dybere plan.</p>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <div class="kontakt-form">
+                <form>
+                    <label for="navn">Navn</label>
+                    <input type="text" id="navn" name="navn" placeholder="Dit navn" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Din e-mail" required>
+
+                    <label for="besked">Besked</label>
+                    <textarea id="besked" name="besked" rows="5" placeholder="Skriv din besked her..." required></textarea>
+
+                    <button type="submit">Send besked</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Min Hjemmeside. Alle rettigheder forbeholdes.</p>
+        <p>&copy; 2025 Hverdag og Dybde – Psykoterapi v. [Dit Navn]. Alle rettigheder forbeholdes.</p>
     </footer>
 
 </body>
