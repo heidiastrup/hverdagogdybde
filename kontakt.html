@@ -1,46 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hverdag og dybde – Kontakt</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>kontakt – hverdag og dybde</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<div class="container">
 
-    <!-- Header -->
-    <header>
-        <h1>hverdag og dybde</h1>
-        <nav>
-            <a href="index.html">Forside</a>
-            <a href="om.html">Om mig</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-    </header>
+<header>
+  <a class="logo-text" href="index.html">hverdag og dybde</a>
 
-    <!-- Kontakt -->
-    <main>
-        <section class="kontakt-form">
-            <h2>Kontakt</h2>
-            <form>
-                <label for="navn">Navn</label>
-                <input type="text" id="navn" name="navn" placeholder="Dit navn" required>
+  <nav class="desktop-nav">
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Din e-mail" required>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-                <label for="besked">Besked</label>
-                <textarea id="besked" name="besked" rows="5" placeholder="Skriv din besked her..." required></textarea>
+  <nav class="mobile-nav">
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+</header>
 
-                <button type="submit">Send besked</button>
-            </form>
-        </section>
-    </main>
+<div class="card">
+  <h2>kontakt</h2>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 hverdag og dybde – Psykoterapi ved psykoterapeut MPF Heidi Astrup Petersen. Alle rettigheder forbeholdes.</p>
-    </footer>
+  <form action="https://formspree.io/f/yourID" method="POST">
+    <label>navn</label>
+    <input type="text" name="name" required>
+
+    <label>email</label>
+    <input type="email" name="email" required>
+
+    <label>besked</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit">send besked</button>
+  </form>
+</div>
+
+<footer>
+  <nav>
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+  © hverdag og dybde
+</footer>
+
+</div>
+
+<script>
+  function toggleMenu(){
+    const nav = document.querySelector(".mobile-nav");
+    nav.style.display = (nav.style.display === "flex") ? "none" : "flex";
+  }
+</script>
 
 </body>
 </html>
