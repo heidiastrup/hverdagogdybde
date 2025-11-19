@@ -1,104 +1,168 @@
-/* --- Grundlæggende styling --- */
-body {
-    margin: 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #faf9f8;
-    color: #333;
-    line-height: 1.6;
+:root{
+  --honey: #D8A15A;
+  --sand:  #F2E8DC;
+  --pearl: #FBF7F3;
+  --muted-green: #7E8A78;
+  --wood:  #8A5C40;
+  --accent-dark: #5A3F2C;
+  --text:  #2B2B2B;
+  --soft:  rgba(138,92,64,0.08);
+  --max-width: 1100px;
 }
 
-/* --- Header --- */
-header {
-    background-color: #4a4e69;
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: Inter, sans-serif;
+  background: var(--sand);
+  color: var(--text);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    letter-spacing: 1px;
-    text-transform: lowercase; /* altid små bogstaver */
+/* Layout */
+.container{
+  max-width: var(--max-width);
+  margin:auto;
+  padding: 24px;
 }
 
-/* --- Navigation --- */
-nav {
-    margin-top: 15px;
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 0;
 }
 
-nav a {
-    color: #f8f8f8;
-    margin: 0 12px;
-    text-decoration: none;
-    font-weight: 500;
+.logo-mark{
+  width:58px;height:58px;
+  border-radius:18px;
+  background:linear-gradient(135deg,var(--honey),var(--wood));
+  display:flex;align-items:center;justify-content:center;
+  color:white;font-weight:700;
+  font-family:Merriweather, serif;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* Navigation desktop */
+nav{
+  display:flex;
+  gap:22px;
 }
 
-/* --- Main indhold --- */
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+nav a{
+  text-decoration:none;
+  color:var(--accent-dark);
+  font-weight:600;
+  transition:0.2s ease;
 }
 
-section {
-    margin-bottom: 60px;
+nav a:hover{
+  color:var(--wood);
 }
 
-h2 {
-    color: #22223b;
+/* Mobile menu button */
+.menu-btn{
+  display:none;
+  font-size:28px;
+  background:none;
+  border:0;
+  cursor:pointer;
+  color:var(--accent-dark);
 }
 
-.intro {
-    background-color: #f0efeb;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
+/* Mobile nav hidden */
+.mobile-nav{
+  display:none;
+  flex-direction:column;
+  gap:14px;
+  background:var(--pearl);
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  margin-top:10px;
 }
 
-.intro p {
-    font-size: 1.1em;
+/* Hero layout */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 440px;
+  gap:32px;
+  margin:40px 0;
 }
 
-/* --- Kontaktformular --- */
-.kontakt-form {
-    background-color: #f0efeb;
-    padding: 30px;
-    border-radius: 8px;
+/* Cards & organic look */
+.card, .hero-card{
+  background:var(--pearl);
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.09);
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
+.hero-photo{
+  height:380px;
+  border-radius:20px;
+  background-size:cover;
+  background-position:center;
+  background-color:var(--soft);
 }
 
-button {
-    background-color: #4a4e69;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
+/* Buttons */
+.cta, button{
+  display:inline-block;
+  padding:14px 22px;
+  background:var(--honey);
+  color:white;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  border:0;
+  transition:0.2s ease;
 }
 
-button:hover {
-    background-color: #22223b;
+.cta:hover, button:hover{
+  background:var(--wood);
 }
 
-/* --- Footer --- */
-footer {
-    background-color: #4a4e69;
-    color: white;
-    text-align: center;
-    padding: 20px;
+/* Forms */
+form input, form textarea{
+  width:100%;
+  padding:14px;
+  border-radius:10px;
+  border:1px solid rgba(0,0,0,0.12);
+  margin-bottom:18px;
+}
+
+/* FOOTER */
+footer{
+  margin-top:60px;
+  padding:40px 0;
+  background:var(--pearl);
+  text-align:center;
+  border-radius:20px;
+  box-shadow:0 -5px 20px rgba(0,0,0,0.06);
+}
+
+footer nav{
+  margin-bottom:12px;
+}
+
+footer nav a{
+  margin:0 12px;
+  color:var(--accent-dark);
+  text-decoration:none;
+}
+
+/* --- MOBILE --- */
+@media(max-width: 800px){
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .menu-btn{
+    display:block;
+  }
 }
