@@ -3,21 +3,19 @@
 /* ---------------------------------- */
 :root{
   --baby-pink: #FDE6EE;
-  --baby-pink-light: #FFF2F7;
+  --baby-pink-light: #FFF5FA;
   --deep-red: #C12A3A;
+  --deep-red-strong: #B01929;
   --gold: #D8A850;
   --soft-gold: #F6E4C8;
-  --wood: #8A5C40;
-  --rose-beige: #F7EFEA;
+  --rose-beige: #F8F1EC;
+  --rose-beige-light: #FBF6F3;
   --text: #2B2B2B;
-
-  --max-width: 1100px;
+  --max-width: 1080px;
 }
 
-/* Remove all unwanted sand/beige interference */
-* {
-  box-sizing: border-box;
-}
+/* Reset */
+* { box-sizing: border-box; }
 
 /* ---------------------------------- */
 /* BODY */
@@ -25,8 +23,9 @@
 body{
   margin:0;
   font-family: Inter, sans-serif;
-  background: var(--rose-beige);
+  background: linear-gradient(180deg, var(--rose-beige) 0%, var(--rose-beige-light) 100%);
   color: var(--text);
+  line-height: 1.6;
 }
 
 /* ---------------------------------- */
@@ -35,7 +34,7 @@ body{
 .container{
   max-width: var(--max-width);
   margin:auto;
-  padding: 24px;
+  padding: 28px;
 }
 
 /* ---------------------------------- */
@@ -45,21 +44,22 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:10px 0 20px;
+  padding:20px 0 30px;
 }
 
 .logo-text{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--deep-red);
   text-decoration: none;
   font-family: Merriweather, serif;
+  letter-spacing: .5px;
 }
 
 /* Desktop nav */
 .desktop-nav{
   display:flex;
-  gap:24px;
+  gap:28px;
 }
 
 .desktop-nav a{
@@ -72,28 +72,30 @@ header{
 
 .desktop-nav a:hover{
   color:var(--gold);
+  transform: translateY(-2px);
 }
 
-/* Mobile Menu Button */
+/* ---------------------------------- */
+/* MOBILE MENU */
+/* ---------------------------------- */
 .menu-btn{
   display:none;
-  font-size:28px;
+  font-size:32px;
   background:none;
   border:0;
   cursor:pointer;
   color:var(--deep-red);
 }
 
-/* Mobile menu */
 .mobile-nav{
   display:none;
   flex-direction:column;
-  gap:14px;
+  gap:16px;
   background:var(--baby-pink-light);
-  padding:20px;
-  border-radius:14px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  margin-top:10px;
+  padding:22px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  margin-top:12px;
 }
 
 .mobile-nav a{
@@ -108,34 +110,38 @@ header{
 .hero{
   display:grid;
   grid-template-columns:1fr 420px;
-  gap:32px;
-  margin:50px 0;
+  gap:40px;
+  margin:60px 0;
 }
 
 .hero-card{
   background:white;
-  padding:40px;
-  border-radius:22px;
-  box-shadow:0 14px 40px rgba(0,0,0,0.1);
+  padding:46px;
+  border-radius:26px;
+  box-shadow:0 16px 45px rgba(0,0,0,0.12);
+  background-image: radial-gradient(circle at top right, var(--baby-pink-light), transparent 60%);
 }
 
 .hero-card h1{
-  font-size:2.6rem;
+  font-size:2.7rem;
   margin-top:0;
   color:var(--deep-red);
+  font-family: Merriweather, serif;
 }
 
 .hero-card p{
-  font-size:1.1rem;
-  margin-bottom:20px;
+  font-size:1.15rem;
+  margin-bottom:24px;
+  max-width: 600px;
 }
 
 .hero-photo{
   height:420px;
-  border-radius:22px;
+  border-radius:26px;
   background-size:cover;
   background-position:center;
   background-color:var(--baby-pink-light);
+  box-shadow:0 16px 40px rgba(0,0,0,0.12);
 }
 
 /* ---------------------------------- */
@@ -143,10 +149,18 @@ header{
 /* ---------------------------------- */
 .card{
   background:white;
-  padding:32px;
-  border-radius:22px;
-  box-shadow:0 14px 36px rgba(0,0,0,0.09);
-  margin-bottom:30px;
+  padding:38px;
+  border-radius:26px;
+  box-shadow:0 14px 40px rgba(0,0,0,0.1);
+  margin-bottom:36px;
+  background-image: radial-gradient(circle at top right, var(--baby-pink), transparent 70%);
+}
+
+.card h2{
+  font-family: Merriweather, serif;
+  color:var(--deep-red);
+  margin-top:0;
+  margin-bottom:12px;
 }
 
 /* ---------------------------------- */
@@ -154,24 +168,25 @@ header{
 /* ---------------------------------- */
 button, .cta{
   display:inline-block;
-  padding: 15px 28px;
-  background: var(--deep-red) !important;
+  padding: 16px 32px;
+  background: var(--deep-red-strong) !important;
   color:white !important;
-  border-radius:14px;
+  border-radius:16px;
   text-decoration:none;
   font-weight:600;
-  border: 2px solid var(--deep-red) !important;
+  border: 2px solid var(--deep-red-strong) !important;
   transition: all 0.25s ease;
-  font-size: 1rem;
+  font-size: 1.05rem;
   cursor:pointer;
+  letter-spacing: .5px;
 }
 
-/* HOVER — BABYPINK BACKGROUND + RED TEXT */
 button:hover, 
 .cta:hover{
   background: var(--baby-pink) !important;
-  color: var(--deep-red) !important;
-  border-color: var(--deep-red) !important;
+  color: var(--deep-red-strong) !important;
+  border-color: var(--deep-red-strong) !important;
+  transform: translateY(-2px);
 }
 
 /* ---------------------------------- */
@@ -179,34 +194,43 @@ button:hover,
 /* ---------------------------------- */
 form input, form textarea{
   width:100%;
-  padding:14px;
-  border-radius:10px;
-  border:1px solid rgba(0,0,0,0.12);
-  margin-bottom:18px;
+  padding:16px;
+  border-radius:14px;
+  border:1px solid rgba(0,0,0,0.15);
+  margin-bottom:20px;
   font-size:1rem;
+  background:white;
+}
+
+form label{
+  font-weight:600;
+  margin-bottom:6px;
+  display:block;
+  color:var(--deep-red);
 }
 
 /* ---------------------------------- */
 /* FOOTER */
 /* ---------------------------------- */
 footer{
-  margin-top:60px;
-  padding:40px 0;
+  margin-top:70px;
+  padding:50px 0;
   background:white;
   text-align:center;
-  border-radius:20px;
-  box-shadow:0 -5px 20px rgba(0,0,0,0.06);
-}
-
-footer nav{
-  margin-bottom:12px;
+  border-radius:22px;
+  box-shadow:0 -5px 25px rgba(0,0,0,0.08);
 }
 
 footer nav a{
-  margin:0 12px;
+  margin:0 14px;
   color:var(--deep-red);
   text-decoration:none;
   font-weight:600;
+  transition:0.2s;
+}
+
+footer nav a:hover{
+  color:var(--gold);
 }
 
 /* ---------------------------------- */
