@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <title>priser – hverdag og dybde</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <a class="logo-text" href="index.html">hverdag og dybde</a>
+
+  <nav class="desktop-nav">
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav class="mobile-nav">
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+</header>
+
+<div class="card">
+  <h2>priser</h2>
+  <p><strong>Individuel terapi (50 min):</strong> 700 kr.</p>
+  <p><strong>Online terapi (50 min):</strong> 600 kr.</p>
+  <p><strong>Parterapi (75 min):</strong> 900 kr.</p>
+</div>
+
+<footer>
+  <nav>
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+  © hverdag og dybde
+</footer>
+
+</div>
+
+<script>
+  function toggleMenu(){
+    const nav = document.querySelector(".mobile-nav");
+    nav.style.display = (nav.style.display === "flex") ? "none" : "flex";
+  }
+</script>
+
+</body>
+</html>
