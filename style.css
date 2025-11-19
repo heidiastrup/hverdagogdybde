@@ -1,28 +1,27 @@
-/* ------------------------------
-   FONTE + ROOT FARVER
------------------------------- */
+/* ------------------------------------
+   FONTS + ROOT COLORS
+------------------------------------ */
 
 :root {
   --white: #FFFFFF;
 
   /* Base */
-  --cream: #F7F3ED; 
-  --sand: #EDE4D8;
+  --cream: #F7F3ED;
 
-  /* Pinks */
+  /* Soft pastels */
   --baby-pink: #FAE9EF; 
   --rose-blush: #F5D3DB;
 
   /* Reds */
-  --deep-red: #B8454C; 
+  --deep-red: #B8454C;
   --deep-red-hover: #992E34;
   --red-invert-bg: #FFECEF;
 
-  /* Gold */
+  /* Gold tones */
   --gold: #C9A86A;
   --gold-soft: #EAD8B2;
 
-  /* Greens + Woods */
+  /* Greens / Wood */
   --sage: #8C9B8A;
   --wood: #805A41;
   --accent-dark: #4A3323;
@@ -33,11 +32,15 @@
   --max-width: 1180px;
 }
 
+/* ------------------------------------
+   BASE
+------------------------------------ */
+
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  color: var(--text);
   background: var(--white);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -45,9 +48,14 @@ body {
   margin: 0 auto;
 }
 
-/* ------------------------------
+img {
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+/* ------------------------------------
    HEADER
------------------------------- */
+------------------------------------ */
 
 header {
   display: flex;
@@ -68,6 +76,11 @@ header {
   text-decoration: none;
   font-weight: 500;
   color: var(--accent-dark);
+  transition: 0.2s ease;
+}
+
+.desktop-nav a:hover {
+  color: var(--deep-red);
 }
 
 .menu-btn {
@@ -75,6 +88,8 @@ header {
   background: none;
   border: none;
   font-size: 2rem;
+  color: var(--accent-dark);
+  cursor: pointer;
 }
 
 /* Mobile nav */
@@ -91,9 +106,9 @@ header {
   color: var(--accent-dark);
 }
 
-/* ------------------------------
-   HERO SECTION
------------------------------- */
+/* ------------------------------------
+   HERO
+------------------------------------ */
 
 .hero {
   display: grid;
@@ -110,6 +125,12 @@ header {
   color: var(--accent-dark);
 }
 
+.hero-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
 .hero-photo {
   width: 100%;
   height: 480px;
@@ -119,9 +140,9 @@ header {
   box-shadow: 0 14px 36px var(--shadow);
 }
 
-/* ------------------------------
+/* ------------------------------------
    SECTIONS
------------------------------- */
+------------------------------------ */
 
 .section {
   padding: 80px 0;
@@ -139,41 +160,52 @@ header {
   color: var(--accent-dark);
 }
 
-/* Cards */
 .card {
   background: var(--white);
   padding: 36px;
   border-radius: 22px;
   box-shadow: 0 14px 36px var(--shadow);
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
-/* ------------------------------
+/* ------------------------------------
    BUTTONS
------------------------------- */
+------------------------------------ */
 
 button, .cta {
   display: inline-block;
   background: var(--deep-red);
-  color: white;
+  color: #fff;
   padding: 16px 28px;
   border-radius: 14px;
   text-decoration: none;
   font-weight: 600;
   border: 2px solid var(--deep-red);
-  transition: 0.25s ease;
+  transition: all 0.25s ease;
   font-size: 1rem;
 }
 
 button:hover,
 .cta:hover {
-  background: var(--red-invert-bg);
+  background: var(--baby-pink);
   color: var(--deep-red);
   border-color: var(--deep-red);
 }
 
-/* ------------------------------
+/* Form styling */
+form input, form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.12);
+  margin: 12px 0 20px;
+  font-size: 1rem;
+}
+
+/* ------------------------------------
    FOOTER
------------------------------- */
+------------------------------------ */
 
 footer {
   text-align: center;
@@ -181,11 +213,12 @@ footer {
   background: var(--white);
   color: var(--accent-dark);
   margin-top: 40px;
+  font-size: 0.95rem;
 }
 
-/* ------------------------------
+/* ------------------------------------
    RESPONSIVE
------------------------------- */
+------------------------------------ */
 
 @media (max-width: 850px) {
   .desktop-nav { display: none; }
