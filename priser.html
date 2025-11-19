@@ -2,7 +2,7 @@
 <html lang="da">
 <head>
   <meta charset="utf-8">
-  <title>priser – hverdag og dybde</title>
+  <title>kontakt – hverdag og dybde</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,13 +30,22 @@
 </header>
 
 <div class="card">
-  <h2>priser</h2>
+  <h2>kontakt</h2>
 
-  <p><strong>Individuel terapi (50 min):</strong> 700 kr.</p>
-  <p><strong>Online terapi (50 min):</strong> 600 kr.</p>
-  <p><strong>Parterapi (75 min):</strong> 900 kr.</p>
+  <img src="img/klinik-detalje.jpg" style="width:100%; border-radius:20px; margin-bottom:20px;">
 
-  <img src="img/klinik-stemning.jpg" style="width:100%; border-radius:20px; margin-top:20px;">
+  <form action="https://formspree.io/f/yourID" method="POST">
+    <label>navn</label>
+    <input type="text" name="name" required>
+
+    <label>email</label>
+    <input type="email" name="email" required>
+
+    <label>besked</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit">send besked</button>
+  </form>
 </div>
 
 <footer>
@@ -52,4 +61,3 @@ function toggleMenu(){
 
 </body>
 </html>
-
