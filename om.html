@@ -1,35 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hverdag og dybde – Om mig</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>om mig – hverdag og dybde</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<div class="container">
 
-    <!-- Header -->
-    <header>
-        <h1>hverdag og dybde</h1>
-        <nav>
-            <a href="index.html">Forside</a>
-            <a href="om.html">Om mig</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-    </header>
+<header>
+  <a class="logo-text" href="index.html">hverdag og dybde</a>
 
-    <!-- Om mig -->
-    <main>
-        <section>
-            <h2>Om mig</h2>
-            <p>Som psykoterapeut arbejder jeg balanceret med hele dig som menneske, og jeg har erfaring med unge, voksne og par. Jeg arbejder dybdegående ud fra forskellige psykoterapeutiske tilgange, som skaber en integreret måde at arbejde på. I behandlingen anvender jeg terapeutiske redskaber som familieopstilling, terapeutisk sandplay, spædbarnsterapi og meditativ guiding for at hjælpe mennesker med livets udfordringer og skabe vedvarende forandring.</p>
-        </section>
-    </main>
+  <nav class="desktop-nav">
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 hverdag og dybde – Psykoterapi ved psykoterapeut MPF Heidi Astrup Petersen. Alle rettigheder forbeholdes.</p>
-    </footer>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav class="mobile-nav">
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+</header>
+
+<div class="card">
+  <h2>om mig</h2>
+  <p>Jeg hedder [dit navn] og er uddannet psykoterapeut...</p>
+</div>
+
+<footer>
+  <nav>
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+  © hverdag og dybde
+</footer>
+
+</div>
+
+<script>
+  function toggleMenu(){
+    const nav = document.querySelector(".mobile-nav");
+    nav.style.display = (nav.style.display === "flex") ? "none" : "flex";
+  }
+</script>
 
 </body>
 </html>
