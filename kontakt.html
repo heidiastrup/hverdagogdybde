@@ -4,21 +4,24 @@
   <meta charset="utf-8">
   <title>kontakt – hverdag og dybde</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="container">
+
 <header>
   <a class="logo-text" href="index.html">hverdag og dybde</a>
+
   <nav class="desktop-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
     <a href="priser.html">priser</a>
     <a href="kontakt.html">kontakt</a>
   </nav>
+
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
   <nav class="mobile-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
@@ -26,45 +29,46 @@
     <a href="kontakt.html">kontakt</a>
   </nav>
 </header>
+
+<div class="hero-photo" style="height:330px; background-image:url('billeder/IMG_2439.jpg'); margin-bottom:30px;"></div>
+
+<div class="card">
+  <h2>kontakt</h2>
+
+  <p>Skriv gerne til mig med spørgsmål eller booking af tid.</p>
+
+  <form action="https://formspree.io/f/your-id" method="POST">
+    <label>navn</label>
+    <input type="text" name="name" required>
+
+    <label>email</label>
+    <input type="email" name="email" required>
+
+    <label>besked</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit">send besked</button>
+  </form>
 </div>
 
-<section class="section section-white">
-  <div class="container">
-    <h2>kontakt</h2>
-    <div class="card">
-
-      <p>HER INDSÆTTER DU TEKST.</p>
-
-      <form action="https://formspree.io/f/yourID" method="POST">
-        <label>navn</label>
-        <input type="text" name="name" required>
-
-        <label>email</label>
-        <input type="email" name="email" required>
-
-        <label>besked</label>
-        <textarea name="message" rows="5" required></textarea>
-
-        <button type="submit">send besked</button>
-      </form>
-
-    </div>
-  </div>
-</section>
-
 <footer>
-  <div class="container">
-    © hverdag og dybde
-  </div>
+  <nav>
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+  © hverdag og dybde
 </footer>
+
+</div>
 
 <script>
 function toggleMenu(){
-  const nav = document.querySelector(".mobile-nav");
-  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  const nav = document.querySelector('.mobile-nav');
+  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
 }
 </script>
 
 </body>
 </html>
-
