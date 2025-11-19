@@ -2,25 +2,23 @@
 <html lang="da">
 <head>
   <meta charset="utf-8">
-  <title>kontakt – hverdag og dybde</title>
+  <title>priser – hverdag og dybde</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div class="container">
 
+<div class="container">
 <header>
   <a class="logo-text" href="index.html">hverdag og dybde</a>
-
   <nav class="desktop-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
     <a href="priser.html">priser</a>
     <a href="kontakt.html">kontakt</a>
   </nav>
-
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
   <nav class="mobile-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
@@ -28,34 +26,29 @@
     <a href="kontakt.html">kontakt</a>
   </nav>
 </header>
-
-<div class="card">
-  <h2>kontakt</h2>
-
-  <img src="img/klinik-detalje.jpg" style="width:100%; border-radius:20px; margin-bottom:20px;">
-
-  <form action="https://formspree.io/f/yourID" method="POST">
-    <label>navn</label>
-    <input type="text" name="name" required>
-
-    <label>email</label>
-    <input type="email" name="email" required>
-
-    <label>besked</label>
-    <textarea name="message" rows="5" required></textarea>
-
-    <button type="submit">send besked</button>
-  </form>
 </div>
 
+<section class="section section-cream">
+  <div class="container">
+    <h2>priser</h2>
+    <div class="card">
+      <p><strong>Individuel terapi (50 min):</strong> HER INDSÆTTER DU PRIS</p>
+      <p><strong>Online terapi (50 min):</strong> HER INDSÆTTER DU PRIS</p>
+      <p><strong>Parterapi (75 min):</strong> HER INDSÆTTER DU PRIS</p>
+    </div>
+  </div>
+</section>
+
 <footer>
-  © hverdag og dybde
+  <div class="container">
+    © hverdag og dybde
+  </div>
 </footer>
 
 <script>
 function toggleMenu(){
-  const nav = document.querySelector('.mobile-nav');
-  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+  const nav = document.querySelector(".mobile-nav");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
 }
 </script>
 
