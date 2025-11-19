@@ -4,21 +4,27 @@
   <meta charset="utf-8">
   <title>hverdag og dybde – psykoterapi</title>
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="container">
+
 <header>
   <a class="logo-text" href="index.html">hverdag og dybde</a>
+
   <nav class="desktop-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
     <a href="priser.html">priser</a>
     <a href="kontakt.html">kontakt</a>
   </nav>
+
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
   <nav class="mobile-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
@@ -26,81 +32,56 @@
     <a href="kontakt.html">kontakt</a>
   </nav>
 </header>
-</div>
+
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container hero">
-    <div class="hero-card">
-      <h1>hverdag og dybde</h1>
-      <p>HER INDSÆTTER DU DIN INTRO TEKST.</p>
-      <a class="cta" href="kontakt.html">book tid</a>
-    </div>
-    <div class="hero-photo" style="background-image:url('img/klinik1.jpg')"></div>
+  <div class="hero-card">
+    <h1>hverdag og dybde</h1>
+    <p>En varm, nænsom og rolig psykoterapeutisk praksis med plads til at være menneske.</p>
+    <a class="cta" href="kontakt.html">book tid</a>
   </div>
+
+  <div class="hero-photo" style="background-image:url('billeder/IMG_2257.JPG');"></div>
 </section>
 
-<!-- SECTIONS -->
-<section class="section section-pink">
-  <div class="container">
-    <h2>hvem jeg hjælper</h2>
-    <div class="card">
-      <p>HER INDSÆTTER DU TEKST.</p>
-    </div>
-  </div>
-</section>
 
-<section class="section section-rose">
-  <div class="container">
-    <h2>min terapeutiske tilgang</h2>
-    <div class="card">
-      <p>HER INDSÆTTER DU TEKST.</p>
-    </div>
-  </div>
-</section>
+<!-- SEKTION 1 -->
+<div class="card">
+  <h2>terapi med ro, varme og nærvær</h2>
+  <p>
+    Skriv din egen tekst her. Du kan fortælle om din tilgang, hvem du hjælper,
+    og hvad du tilbyder. Teksten kan være 3–6 linjer.
+  </p>
+</div>
 
-<section class="section section-cream">
-  <div class="container">
-    <h2>om mig</h2>
-    <div class="card">
-      <img src="img/klinik2.jpg" style="width:100%; border-radius:16px; margin-bottom:20px;">
-      <p>HER INDSÆTTER DU TEKST.</p>
-      <a class="cta" href="om.html">læs mere</a>
-    </div>
-  </div>
-</section>
 
-<section class="section section-white">
-  <div class="container">
-    <h2>priser</h2>
-    <div class="card">
-      <p>HER INDSÆTTER DU TEKST.</p>
-      <a class="cta" href="priser.html">se priser</a>
-    </div>
-  </div>
-</section>
+<!-- SEKTION 2 -->
+<div class="card">
+  <h2>plads til hele dig</h2>
+  <p>
+    Beskriv hvad dine klienter ofte søger hjælp til – fx stress, lavt selvværd,
+    bekymringer, relationer, sorg, traumer eller nye livsfaser.
+  </p>
+</div>
 
-<section class="section section-pink">
-  <div class="container">
-    <h2>kontakt</h2>
-    <div class="card">
-      <img src="img/klinik-detalje.jpg" style="width:100%; border-radius:16px; margin-bottom:20px;">
-      <p>HER INDSÆTTER DU TEKST.</p>
-      <a class="cta" href="kontakt.html">kontakt mig</a>
-    </div>
-  </div>
-</section>
 
 <footer>
-  <div class="container">
-    © hverdag og dybde
-  </div>
+  <nav>
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+  © hverdag og dybde
 </footer>
+
+</div>
 
 <script>
 function toggleMenu(){
-  const nav = document.querySelector(".mobile-nav");
-  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  const nav = document.querySelector('.mobile-nav');
+  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
 }
 </script>
 
