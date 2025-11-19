@@ -1,234 +1,227 @@
-/* ------------------------------------
-   FONTS + ROOT COLORS
------------------------------------- */
-
-:root {
-  --white: #FFFFFF;
-
-  /* Base */
-  --cream: #F7F3ED;
-
-  /* Soft pastels */
-  --baby-pink: #FAE9EF; 
-  --rose-blush: #F5D3DB;
-
-  /* Reds */
-  --deep-red: #B8454C;
-  --deep-red-hover: #992E34;
-  --red-invert-bg: #FFECEF;
-
-  /* Gold tones */
-  --gold: #C9A86A;
-  --gold-soft: #EAD8B2;
-
-  /* Greens / Wood */
-  --sage: #8C9B8A;
-  --wood: #805A41;
-  --accent-dark: #4A3323;
-
-  /* Misc */
-  --shadow: rgba(0,0,0,0.08);
+/* ---------------------------------- */
+/* GLOBAL VARIABLES */
+/* ---------------------------------- */
+:root{
+  --baby-pink: #FDE6EE;
+  --baby-pink-light: #FFF2F7;
+  --deep-red: #C12A3A;
+  --gold: #D8A850;
+  --soft-gold: #F6E4C8;
+  --wood: #8A5C40;
+  --rose-beige: #F7EFEA;
   --text: #2B2B2B;
-  --max-width: 1180px;
+
+  --max-width: 1100px;
 }
 
-/* ------------------------------------
-   BASE
------------------------------------- */
+/* Remove all unwanted sand/beige interference */
+* {
+  box-sizing: border-box;
+}
 
-body {
-  margin: 0;
-  background: var(--white);
+/* ---------------------------------- */
+/* BODY */
+/* ---------------------------------- */
+body{
+  margin:0;
+  font-family: Inter, sans-serif;
+  background: var(--rose-beige);
   color: var(--text);
-  font-family: "Inter", sans-serif;
 }
 
-.container {
-  width: min(90%, var(--max-width));
-  margin: 0 auto;
+/* ---------------------------------- */
+/* LAYOUT */
+/* ---------------------------------- */
+.container{
+  max-width: var(--max-width);
+  margin:auto;
+  padding: 24px;
 }
 
-img {
-  max-width: 100%;
-  border-radius: 16px;
+/* ---------------------------------- */
+/* HEADER */
+/* ---------------------------------- */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 0 20px;
 }
 
-/* ------------------------------------
-   HEADER
------------------------------------- */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 0;
-}
-
-.logo-text {
-  font-family: Merriweather, serif;
-  font-size: 1.6rem;
-  color: var(--accent-dark);
-  text-decoration: none;
-}
-
-.desktop-nav a {
-  margin-left: 24px;
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--accent-dark);
-  transition: 0.2s ease;
-}
-
-.desktop-nav a:hover {
+.logo-text{
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--deep-red);
-}
-
-.menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: var(--accent-dark);
-  cursor: pointer;
-}
-
-/* Mobile nav */
-.mobile-nav {
-  display: none;
-  flex-direction: column;
-  text-align: right;
-  margin-top: 14px;
-}
-
-.mobile-nav a {
-  padding: 10px 0;
   text-decoration: none;
-  color: var(--accent-dark);
-}
-
-/* ------------------------------------
-   HERO
------------------------------------- */
-
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-  padding: 80px 0;
-}
-
-.hero-card h1 {
   font-family: Merriweather, serif;
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-  color: var(--accent-dark);
 }
 
-.hero-card p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 26px;
+/* Desktop nav */
+.desktop-nav{
+  display:flex;
+  gap:24px;
 }
 
-.hero-photo {
-  width: 100%;
-  height: 480px;
-  border-radius: 24px;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 14px 36px var(--shadow);
+.desktop-nav a{
+  text-decoration:none;
+  color:var(--deep-red);
+  font-weight:600;
+  font-size:1rem;
+  transition:0.2s ease;
 }
 
-/* ------------------------------------
-   SECTIONS
------------------------------------- */
-
-.section {
-  padding: 80px 0;
+.desktop-nav a:hover{
+  color:var(--gold);
 }
 
-.section-pink { background: var(--baby-pink); }
-.section-rose { background: var(--rose-blush); }
-.section-cream { background: var(--cream); }
-.section-white { background: var(--white); }
-
-.section h2 {
-  font-family: Merriweather, serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: var(--accent-dark);
+/* Mobile Menu Button */
+.menu-btn{
+  display:none;
+  font-size:28px;
+  background:none;
+  border:0;
+  cursor:pointer;
+  color:var(--deep-red);
 }
 
-.card {
-  background: var(--white);
-  padding: 36px;
-  border-radius: 22px;
-  box-shadow: 0 14px 36px var(--shadow);
-  font-size: 1.1rem;
-  line-height: 1.7;
+/* Mobile menu */
+.mobile-nav{
+  display:none;
+  flex-direction:column;
+  gap:14px;
+  background:var(--baby-pink-light);
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  margin-top:10px;
 }
 
-/* ------------------------------------
-   BUTTONS
------------------------------------- */
+.mobile-nav a{
+  text-decoration:none;
+  color:var(--deep-red);
+  font-weight:600;
+}
 
-button, .cta {
-  display: inline-block;
-  background: var(--deep-red);
-  color: #fff;
-  padding: 16px 28px;
-  border-radius: 14px;
-  text-decoration: none;
-  font-weight: 600;
-  border: 2px solid var(--deep-red);
+/* ---------------------------------- */
+/* HERO SECTION */
+/* ---------------------------------- */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 420px;
+  gap:32px;
+  margin:50px 0;
+}
+
+.hero-card{
+  background:white;
+  padding:40px;
+  border-radius:22px;
+  box-shadow:0 14px 40px rgba(0,0,0,0.1);
+}
+
+.hero-card h1{
+  font-size:2.6rem;
+  margin-top:0;
+  color:var(--deep-red);
+}
+
+.hero-card p{
+  font-size:1.1rem;
+  margin-bottom:20px;
+}
+
+.hero-photo{
+  height:420px;
+  border-radius:22px;
+  background-size:cover;
+  background-position:center;
+  background-color:var(--baby-pink-light);
+}
+
+/* ---------------------------------- */
+/* CARDS */
+/* ---------------------------------- */
+.card{
+  background:white;
+  padding:32px;
+  border-radius:22px;
+  box-shadow:0 14px 36px rgba(0,0,0,0.09);
+  margin-bottom:30px;
+}
+
+/* ---------------------------------- */
+/* BUTTONS */
+/* ---------------------------------- */
+button, .cta{
+  display:inline-block;
+  padding: 15px 28px;
+  background: var(--deep-red) !important;
+  color:white !important;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:600;
+  border: 2px solid var(--deep-red) !important;
   transition: all 0.25s ease;
   font-size: 1rem;
+  cursor:pointer;
 }
 
-button:hover,
-.cta:hover {
-  background: var(--baby-pink);
-  color: var(--deep-red);
-  border-color: var(--deep-red);
+/* HOVER — BABYPINK BACKGROUND + RED TEXT */
+button:hover, 
+.cta:hover{
+  background: var(--baby-pink) !important;
+  color: var(--deep-red) !important;
+  border-color: var(--deep-red) !important;
 }
 
-/* Form styling */
-form input, form textarea {
-  width: 100%;
-  padding: 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.12);
-  margin: 12px 0 20px;
-  font-size: 1rem;
+/* ---------------------------------- */
+/* FORMS */
+/* ---------------------------------- */
+form input, form textarea{
+  width:100%;
+  padding:14px;
+  border-radius:10px;
+  border:1px solid rgba(0,0,0,0.12);
+  margin-bottom:18px;
+  font-size:1rem;
 }
 
-/* ------------------------------------
-   FOOTER
------------------------------------- */
-
-footer {
-  text-align: center;
-  padding: 40px 0;
-  background: var(--white);
-  color: var(--accent-dark);
-  margin-top: 40px;
-  font-size: 0.95rem;
+/* ---------------------------------- */
+/* FOOTER */
+/* ---------------------------------- */
+footer{
+  margin-top:60px;
+  padding:40px 0;
+  background:white;
+  text-align:center;
+  border-radius:20px;
+  box-shadow:0 -5px 20px rgba(0,0,0,0.06);
 }
 
-/* ------------------------------------
-   RESPONSIVE
------------------------------------- */
+footer nav{
+  margin-bottom:12px;
+}
 
-@media (max-width: 850px) {
-  .desktop-nav { display: none; }
-  .menu-btn { display: block; }
+footer nav a{
+  margin:0 12px;
+  color:var(--deep-red);
+  text-decoration:none;
+  font-weight:600;
+}
 
-  .hero {
-    grid-template-columns: 1fr;
+/* ---------------------------------- */
+/* MOBILE */
+/* ---------------------------------- */
+@media(max-width: 800px){
+  .hero{
+    grid-template-columns:1fr;
   }
 
-  .hero-photo {
-    height: 380px;
+  .desktop-nav{
+    display:none;
+  }
+
+  .menu-btn{
+    display:block;
   }
 }
