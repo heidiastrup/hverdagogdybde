@@ -4,23 +4,21 @@
   <meta charset="utf-8">
   <title>om mig – hverdag og dybde</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div class="container">
 
+<div class="container">
 <header>
   <a class="logo-text" href="index.html">hverdag og dybde</a>
-
   <nav class="desktop-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
     <a href="priser.html">priser</a>
     <a href="kontakt.html">kontakt</a>
   </nav>
-
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
   <nav class="mobile-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
@@ -28,36 +26,31 @@
     <a href="kontakt.html">kontakt</a>
   </nav>
 </header>
-
-<div class="card">
-  <h2>om mig</h2>
-
-  <img src="img/klinik2.jpg" style="width:100%; border-radius:20px; margin-bottom:20px;">
-
-  <p>
-    Her indsætter du din egen tekst om dig selv — din baggrund,
-    uddannelse, metode, hvad der er vigtigt for dig i terapi osv.
-  </p>
 </div>
+
+<section class="section section-rose">
+  <div class="container">
+    <h2>om mig</h2>
+    <div class="card">
+      <img src="img/klinik1.jpg" style="width:100%; border-radius:16px; margin-bottom:20px;">
+      <p>HER INDSÆTTER DU DIN TEKST.</p>
+    </div>
+  </div>
+</section>
 
 <footer>
-  <nav>
-    <a href="index.html">forside</a>
-    <a href="om.html">om mig</a>
-    <a href="priser.html">priser</a>
-    <a href="kontakt.html">kontakt</a>
-  </nav>
-  © hverdag og dybde
+  <div class="container">
+    © hverdag og dybde
+  </div>
 </footer>
-
-</div>
 
 <script>
 function toggleMenu(){
-  const nav = document.querySelector('.mobile-nav');
-  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+  const nav = document.querySelector(".mobile-nav");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
 }
 </script>
 
 </body>
 </html>
+
