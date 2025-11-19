@@ -4,21 +4,24 @@
   <meta charset="utf-8">
   <title>priser – hverdag og dybde</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="container">
+
 <header>
   <a class="logo-text" href="index.html">hverdag og dybde</a>
+
   <nav class="desktop-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
     <a href="priser.html">priser</a>
     <a href="kontakt.html">kontakt</a>
   </nav>
+
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
   <nav class="mobile-nav">
     <a href="index.html">forside</a>
     <a href="om.html">om mig</a>
@@ -26,29 +29,37 @@
     <a href="kontakt.html">kontakt</a>
   </nav>
 </header>
+
+<div class="hero-photo" style="height:340px; background-image:url('billeder/IMG_2437.jpg'); margin-bottom:30px;"></div>
+
+<div class="card">
+  <h2>priser</h2>
+
+  <p><strong>Individuel terapi – 50 min:</strong> 700 kr.</p>
+  <p><strong>Online terapi – 50 min:</strong> 600 kr.</p>
+  <p><strong>Parterapi – 75 min:</strong> 900 kr.</p>
+
+  <br>
+
+  <p>Du kan tilføje info om afbudspolitik eller betalingsmuligheder her.</p>
 </div>
 
-<section class="section section-cream">
-  <div class="container">
-    <h2>priser</h2>
-    <div class="card">
-      <p><strong>Individuel terapi (50 min):</strong> HER INDSÆTTER DU PRIS</p>
-      <p><strong>Online terapi (50 min):</strong> HER INDSÆTTER DU PRIS</p>
-      <p><strong>Parterapi (75 min):</strong> HER INDSÆTTER DU PRIS</p>
-    </div>
-  </div>
-</section>
-
 <footer>
-  <div class="container">
-    © hverdag og dybde
-  </div>
+  <nav>
+    <a href="index.html">forside</a>
+    <a href="om.html">om mig</a>
+    <a href="priser.html">priser</a>
+    <a href="kontakt.html">kontakt</a>
+  </nav>
+  © hverdag og dybde
 </footer>
+
+</div>
 
 <script>
 function toggleMenu(){
-  const nav = document.querySelector(".mobile-nav");
-  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  const nav = document.querySelector('.mobile-nav');
+  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
 }
 </script>
 
