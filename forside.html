@@ -1,73 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hverdag & Dybde</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hverdag og Dybde</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="brand">Hverdag & Dybde</div>
-    <nav>
-      <a class="active" href="forside.html">Forside</a>
-      <a href="om.html">Om</a>
-      <a href="priser.html">Priser</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-  </header>
+<header>
+    <div class="brand">Hverdag og Dybde</div>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="main-menu">
+        <a href="forside.html" class="active">Forside</a>
+        <a href="om.html">Om mig</a>
+        <a href="priser.html">Priser</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<section class="hero">
     <div class="hero-text">
-      <div class="eyebrow">Velkommen</div>
-      <h1>Ro, refleksion og fordybelse i hverdagen</h1>
-      <p>
-        Et sted hvor du kan lande, mærke dig selv og finde nærvær midt i alt det,
-        livet kalder på. Her inviteres du til at lytte indad – og skabe dybde i din hverdag.
-      </p>
-      <a href="kontakt.html" class="cta">Kontakt mig</a>
+        <div class="eyebrow">Psykoterapi & Samtaler</div>
+        <h1>Lad os skabe ro, klarhed og retning</h1>
+        <p>
+            Jeg hjælper dig med at forstå dine følelser, bryde mønstre og finde styrke i dit eget tempo.  
+            Terapi hos mig er et trygt rum med plads til præcis det, der fylder hos dig.
+        </p>
+        <a class="cta" href="kontakt.html">Book en samtale</a>
     </div>
 
     <div class="hero-image">
-      <img src="images/hero.jpg" alt="Hverdag og dybde" />
+        <img src="images/hero.webp" alt="Terapi-stemningsbillede">
     </div>
-  </section>
+</section>
 
-  <!-- CONTENT SECTION -->
-  <section class="content">
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px;">Til dig der søger mere nærvær</h2>
-
+<section class="content">
     <div class="grid">
-      <div class="card">
-        <h3>Samtaler</h3>
-        <p>Nærværende forløb for dig der ønsker mere klarhed og ro.</p>
-      </div>
-      <div class="card">
-        <h3>Workshops</h3>
-        <p>Fordybende fællesskaber hvor du kan mærke dig selv og andre.</p>
-      </div>
-      <div class="card">
-        <h3>Tekster & Refleksion</h3>
-        <p>Ord der inviterer til pauser, refleksion og langsomhed.</p>
-      </div>
+        <div class="card">
+            <h3>Samtaler</h3>
+            <p>Et trygt rum til at tale om alt der fylder i din hverdag.</p>
+        </div>
+
+        <div class="card">
+            <h3>Stress & Overbelastning</h3>
+            <p>Få ro, overblik og bedre kontakt til dig selv.</p>
+        </div>
+
+        <div class="card">
+            <h3>Selvværd</h3>
+            <p>Styrk troen på dig selv gennem forståelse og indsigt.</p>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    © <span id="year"></span> Hverdag & Dybde
-  </footer>
+<footer>
+    © 2025 Hverdag og Dybde · Alle rettigheder forbeholdes
+</footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('main-menu');
+    menu.classList.toggle('mobile-open');
+}
+</script>
+
 </body>
 </html>
