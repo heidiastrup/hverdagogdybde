@@ -1,140 +1,115 @@
 <!doctype html>
 <html lang="da">
 <head>
-  <meta charset="utf-8">
-  <title>hverdag og dybde – Psykoterapi i Tilst</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forside — Hverdag og Dybde (skabelon)</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#1b1b1b;
+      --muted:#6b6b6b;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial; margin:0; color:var(--accent); line-height:1.5}
+    a{color:inherit; text-decoration:none}
+    header{padding:28px 20px; display:flex; align-items:center; justify-content:space-between; max-width:var(--max-width); margin:0 auto}
+    .brand{font-family:'Playfair Display', serif; font-size:26px; letter-spacing:0.6px}
+    nav{display:flex; gap:18px; align-items:center}
+    nav a{font-weight:600; font-size:14px; color:var(--muted)}
+
+    /* Hero */
+    .hero{display:grid; grid-template-columns:1fr; align-items:center; gap:28px; padding:60px 20px; max-width:var(--max-width); margin:0 auto}
+    .hero-inner{display:flex; gap:40px; align-items:center; justify-content:space-between}
+    .hero-text{flex:1}
+    .eyebrow{font-size:14px; color:var(--muted); margin-bottom:8px}
+    h1{font-family:'Playfair Display',serif; font-size:44px; margin:0 0 18px}
+    p.lead{font-size:18px; color:#333; margin:0 0 24px}
+    .cta{display:inline-block; padding:12px 20px; border-radius:8px; background:#000; color:#fff; font-weight:600}
+
+    /* Image card */
+    .hero-image{width:360px; max-width:40%; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.12)}
+    .hero-image img{width:100%; height:100%; object-fit:cover; display:block}
+
+    /* Sections */
+    section.content{max-width:var(--max-width); margin:40px auto; padding:0 20px}
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+    .card{padding:18px; border-radius:10px; background:#fafafa}
+    .card h3{margin:0 0 8px; font-family:'Playfair Display',serif}
+    .card p{margin:0; color:var(--muted)}
+
+    footer{padding:30px 20px; color:var(--muted); text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      h1{font-size:36px}
+      .hero-inner{flex-direction:column-reverse; align-items:flex-start}
+      .hero-image{max-width:100%; width:100%}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      header{padding:18px}
+      h1{font-size:28px}
+      .grid{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="brand">Hverdag & Dybde</div>
+    <nav>
+      <a href="#">Forside</a>
+      <a href="#">Om</a>
+      <a href="#">Kurser</a>
+      <a href="#">Kontakt</a>
+    </nav>
+  </header>
 
-<header class="header">
-  <a class="logo-text" href="forside.html">hverdag og dybde</a>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="eyebrow">Velkommen</div>
+          <h1>Tekst, refleksion og rum til det vigtige — et sted for langsomhed</h1>
+          <p class="lead">Her er et eksempel på hvordan din forside kan se ud. Skift billede, overskrifter og farver i koden nedenfor så det passer til dit indhold.</p>
+          <a class="cta" href="#">Læs mere</a>
+        </div>
 
-  <nav class="desktop-nav">
-    <a href="forside.html">Forside</a>
-    <a href="om.html">Om mig</a>
-    <a href="priser.html">Priser</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-  <nav class="mobile-nav">
-    <a href="forside.html">Forside</a>
-    <a href="om.html">Om mig</a>
-    <a href="priser.html">Priser</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-</header>
-
-<!-- HERO SECTION -->
-<section class="hero fullwidth">
-  <div class="inner">
-    <div class="hero-card">
-      <h1>Et trygt rum til følelser og relationer</h1>
-      <p>Skab forandring i dit liv – både mentalt og følelsesmæssigt – så du kan stå stærkere i hverdagens udfordringer.</p>
-      <a class="cta" href="kontakt.html">Book tid</a>
-    </div>
-  </div>
-</section>
-
-<!-- FULLWIDTH IMAGE–TEXT–IMAGE SECTION -->
-<section class="fullwidth three-col">
-  <img class="side-image" src="billeder/IMG_2437.jpg" alt="Billede venstre">
-
-  <div class="center-text">
-    <h2>Plads til hele dig</h2>
-    <p>Terapi hvor du oplever dig mødt, forstået og støttet i at være menneske – med alt hvad du indeholder.</p>
-  </div>
-
-  <img class="side-image" src="billeder/IMG_2439.jpg" alt="Billede højre">
-</section>
-
-<!-- WHAT I CAN SUPPORT WITH -->
-<section class="fullwidth support-section">
-  <div class="inner">
-    <h2>Hvad jeg kan støtte dig i</h2>
-    <div class="support-grid">
-      <div>
-        <h3>Stress & Overbelastning</h3>
-        <p>Find ro og balance når tankerne og kroppen er overfyldte.</p>
+        <div class="hero-image">
+          <!-- Udskift URL'en nedenfor med dit eget forsidebillede -->
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Forsidebillede">
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h3>Selvværd & Personlig styrke</h3>
-        <p>Opbyg et stærkere fundament og lær at stå trygt i dig selv.</p>
+    <section class="content">
+      <div class="grid">
+        <article class="card">
+          <h3>Artikel eller refleksion</h3>
+          <p>En kort beskrivelse af et emne du skriver om — et par linjer der vækker nysgerrighed.</p>
+        </article>
+        <article class="card">
+          <h3>Kurser & workshops</h3>
+          <p>Oplysninger om kommende tilbud, datoer og tilmelding.</p>
+        </article>
+        <article class="card">
+          <h3>Kontakt</h3>
+          <p>Hvordan læsere kan komme i kontakt med dig — mail, sociale medier eller formular.</p>
+        </article>
       </div>
+    </section>
+  </main>
 
-      <div>
-        <h3>Relationer</h3>
-        <p>Forstå og styrk relationerne i dit liv – både de nære og de udfordrende.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  <footer>
+    © <span id="year"></span> Hverdag & Dybde — Design skabelon
+  </footer>
 
-<!-- CLIENT TESTIMONIALS -->
-<section class="fullwidth testimonials">
-  <div class="inner">
-    <h2>Klientudtalelser</h2>
-
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <p>“Jeg føler mig altid mødt og forstået hos Heidi. Det er et af de eneste rum, hvor jeg virkelig kan være mig selv.”</p>
-      </div>
-
-      <div class="testimonial">
-        <p>“Terapi hos Heidi har hjulpet mig til at finde ro og mærke mine behov – noget jeg aldrig har kunnet før.”</p>
-      </div>
-
-      <div class="testimonial">
-        <p>“Hun formår at skabe et trygt rum, hvor alt er velkomment. Det har gjort en enorm forskel i mit liv.”</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT ME SECTION (IMAGE RIGHT) -->
-<section class="fullwidth about-section">
-  <div class="inner about-grid">
-    <div class="about-text">
-      <h2>Om mig</h2>
-      <p>Her kan du skrive om din baggrund, din tilgang og hvad der gør dit terapirum særligt.</p>
-      <a class="cta" href="om.html">Læs mere</a>
-    </div>
-
-    <img class="about-image" src="billeder/IMG_2382.PNG" alt="Heidi billede">
-  </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section class="fullwidth contact-section">
-  <div class="inner">
-    <h2>Kontakt</h2>
-    <p>Er du klar til at tage næste skridt? Kontakt mig og lad os starte rejsen sammen.</p>
-    <a href="kontakt.html" class="cta">Skriv til mig</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <nav>
-    <a href="forside.html">Forside</a>
-    <a href="om.html">Om mig</a>
-    <a href="priser.html">Priser</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-  © hverdag og dybde
-</footer>
-
-<script>
-function toggleMenu(){
-  const nav = document.querySelector('.mobile-nav');
-  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
-}
-</script>
-
+  <script>
+    // 2025
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
