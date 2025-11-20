@@ -4,82 +4,129 @@
   <meta charset="utf-8">
   <title>hverdag og dybde – Psykoterapi i Tilst</title>
   <link rel="stylesheet" href="style.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- HEADER (INDE I CONTAINER) -->
-<div class="container">
-  <header>
-    <a class="logo-text" href="forside.html">hverdag og dybde</a>
+<header class="header">
+  <a class="logo-text" href="forside.html">hverdag og dybde</a>
 
-    <nav class="desktop-nav">
-      <a href="forside.html">Forside</a>
-      <a href="om.html">Om mig</a>
-      <a href="priser.html">Priser</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
+  <nav class="desktop-nav">
+    <a href="forside.html">Forside</a>
+    <a href="om.html">Om mig</a>
+    <a href="priser.html">Priser</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-    <nav class="mobile-nav">
-      <a href="forside.html">Forside</a>
-      <a href="om.html">Om mig</a>
-      <a href="priser.html">Priser</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-  </header>
-</div>
+  <nav class="mobile-nav">
+    <a href="forside.html">Forside</a>
+    <a href="om.html">Om mig</a>
+    <a href="priser.html">Priser</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
 
-<!-- HERO – FULD BREDDE -->
+<!-- HERO SECTION -->
 <section class="hero fullwidth">
   <div class="inner">
     <div class="hero-card">
-      <h1>hverdag og dybde</h1>
-      <p>Psykoterapi med et helhedsorienteret syn på dig som menneske</p>
+      <h1>Et trygt rum til følelser og relationer</h1>
+      <p>Skab forandring i dit liv – både mentalt og følelsesmæssigt – så du kan stå stærkere i hverdagens udfordringer.</p>
       <a class="cta" href="kontakt.html">Book tid</a>
     </div>
   </div>
 </section>
 
-<!-- SEKTION 1 – FULD BREDDE -->
-<section class="fullwidth bg-pink">
+<!-- FULLWIDTH IMAGE–TEXT–IMAGE SECTION -->
+<section class="fullwidth three-col">
+  <img class="side-image" src="billeder/IMG_2437.jpg" alt="Billede venstre">
+
+  <div class="center-text">
+    <h2>Plads til hele dig</h2>
+    <p>Terapi hvor du oplever dig mødt, forstået og støttet i at være menneske – med alt hvad du indeholder.</p>
+  </div>
+
+  <img class="side-image" src="billeder/IMG_2439.jpg" alt="Billede højre">
+</section>
+
+<!-- WHAT I CAN SUPPORT WITH -->
+<section class="fullwidth support-section">
   <div class="inner">
-    <div class="card">
-      <p>
-        Mit terapeutiske fundament bygger på et helhedsorienteret syn på mennesket, hvor både det kognitive, følelsesmæssige, kropslige, relationelle og systemiske bidrager til forståelsen af det enkelte menneske. Hos mig kan du udvikle dine evner til at være med dig selv og livet. Jeg skaber et rum, hvor mennesker oplever sig set, anerkendt og styrket i deres ret til at være med alt det, de indebærer.
-      </p>
+    <h2>Hvad jeg kan støtte dig i</h2>
+    <div class="support-grid">
+      <div>
+        <h3>Stress & Overbelastning</h3>
+        <p>Find ro og balance når tankerne og kroppen er overfyldte.</p>
+      </div>
+
+      <div>
+        <h3>Selvværd & Personlig styrke</h3>
+        <p>Opbyg et stærkere fundament og lær at stå trygt i dig selv.</p>
+      </div>
+
+      <div>
+        <h3>Relationer</h3>
+        <p>Forstå og styrk relationerne i dit liv – både de nære og de udfordrende.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SEKTION 2 – FULD BREDDE -->
-<section class="fullwidth">
+<!-- CLIENT TESTIMONIALS -->
+<section class="fullwidth testimonials">
   <div class="inner">
-    <div class="card">
-      <h2>Plads til hele dig</h2>
-      <p>
-        Her kan du beskrive, hvad dine klienter ofte søger hjælp til – fx stress, lavt selvværd,
-        bekymringer, relationer, sorg, traumer eller nye livsfaser.
-      </p>
+    <h2>Klientudtalelser</h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>“Jeg føler mig altid mødt og forstået hos Heidi. Det er et af de eneste rum, hvor jeg virkelig kan være mig selv.”</p>
+      </div>
+
+      <div class="testimonial">
+        <p>“Terapi hos Heidi har hjulpet mig til at finde ro og mærke mine behov – noget jeg aldrig har kunnet før.”</p>
+      </div>
+
+      <div class="testimonial">
+        <p>“Hun formår at skabe et trygt rum, hvor alt er velkomment. Det har gjort en enorm forskel i mit liv.”</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER – FULD BREDDE -->
-<footer class="fullwidth">
-  <div class="inner">
-    <nav>
-      <a href="forside.html">Forside</a>
-      <a href="om.html">Om mig</a>
-      <a href="priser.html">Priser</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
-    © hverdag og dybde
+<!-- ABOUT ME SECTION (IMAGE RIGHT) -->
+<section class="fullwidth about-section">
+  <div class="inner about-grid">
+    <div class="about-text">
+      <h2>Om mig</h2>
+      <p>Her kan du skrive om din baggrund, din tilgang og hvad der gør dit terapirum særligt.</p>
+      <a class="cta" href="om.html">Læs mere</a>
+    </div>
+
+    <img class="about-image" src="billeder/IMG_2382.PNG" alt="Heidi billede">
   </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="fullwidth contact-section">
+  <div class="inner">
+    <h2>Kontakt</h2>
+    <p>Er du klar til at tage næste skridt? Kontakt mig og lad os starte rejsen sammen.</p>
+    <a href="kontakt.html" class="cta">Skriv til mig</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <nav>
+    <a href="forside.html">Forside</a>
+    <a href="om.html">Om mig</a>
+    <a href="priser.html">Priser</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  © hverdag og dybde
 </footer>
 
 <script>
