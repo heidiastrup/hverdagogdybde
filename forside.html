@@ -2,7 +2,6 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hverdag og dybde</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,58 +9,36 @@
 <body>
 
 <header>
-  <div class="logo">hverdag og dybde</div>
-
-  <nav>
-    <div class="burger" onclick="toggleMenu()">☰</div>
-    <ul id="menu">
-      <li><a href="forside.html">forside</a></li>
-      <li><a href="om.html">om</a></li>
-      <li><a href="priser.html">priser</a></li>
-      <li><a href="kontakt.html">kontakt</a></li>
-    </ul>
-  </nav>
+  <div class="navbar">
+    <div class="logo">hverdag og dybde</div>
+    <nav>
+      <ul>
+        <li><a href="forside.html">Forside</a></li>
+        <li><a href="om.html">Om mig</a></li>
+        <li><a href="priser.html">Priser</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <h1>terapi med plads til hele dig</h1>
-  <p>
-    Jeg møder dig der hvor du er — med varme, nærvær og et trygt rum, hvor alt må være til stede.
-  </p>
-  <a href="kontakt.html" class="hero-btn">book en samtale</a>
-</section>
-
-<!-- 3 kolonner -->
-<section class="triple">
-  <div>
-    <img src="img1.jpg" alt="">
-    <h3>tryghed</h3>
-    <p>Et roligt rum hvor du kan lande og mærke dig selv.</p>
+  <img src="IMG_1.jpg" alt="">
+  
+  <div class="hero-center">
+    <h1>Et trygt rum<br>til følelser og<br>relationer</h1>
+    <p>
+      Skab forandring i dit liv – både mentalt og følelsesmæssigt,
+      så du kan stå stærkere i hverdagens udfordringer.
+    </p>
   </div>
 
-  <div>
-    <img src="img2.jpg" alt="">
-    <h3>fordybelse</h3>
-    <p>Vi arbejder nænsomt i dybden og i dit tempo.</p>
-  </div>
-
-  <div>
-    <img src="img3.jpg" alt="">
-    <h3>udvikling</h3>
-    <p>Sammen skaber vi bevægelse mod et liv i bedre balance.</p>
-  </div>
+  <img src="IMG_2.jpg" alt="">
 </section>
 
 <footer>
-  hverdag og dybde · psykoterapi · © 2025
+  © 2025 hverdag og dybde – alle rettigheder forbeholdes
 </footer>
-
-<script>
-function toggleMenu() {
-  document.getElementById("menu").classList.toggle("open");
-}
-</script>
 
 </body>
 </html>
