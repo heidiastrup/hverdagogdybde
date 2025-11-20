@@ -1,71 +1,65 @@
 <!doctype html>
 <html lang="da">
 <head>
-  <meta charset="utf-8">
-  <title>om mig – hverdag og dybde</title>
- <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Om — Hverdag & Dybde</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-<div class="container">
+  <!-- HEADER -->
+  <header>
+    <div class="brand">Hverdag & Dybde</div>
+    <nav>
+      <a href="forside.html">Forside</a>
+      <a class="active" href="om.html">Om</a>
+      <a href="priser.html">Priser</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
 
-<header>
-  <a class="logo-text" href="forside.html">hverdag og dybde</a>
+  <!-- PAGE CONTENT -->
+  <section class="content">
+    <h1 style="font-family: 'Playfair Display', serif; font-size: 42px; margin-bottom: 20px;">Om mig</h1>
 
-  <nav class="desktop-nav">
-    <a href="forside.html">Forside</a>
-    <a href="om.html">Om mig</a>
-    <a href="priser.html">Priser</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
+    <p style="max-width: 750px; font-size: 18px;">
+      Her kan du skrive en præsentation om dig selv, din baggrund og din mission. Skriv om hvorfor du har skabt
+      Hverdag & Dybde, hvad du brænder for, og hvad du ønsker at give videre til dine læsere eller deltagere.
+    </p>
 
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <p style="max-width: 750px; font-size: 18px; margin-top: 20px;">
+      Teksten kan være personlig, nærværende og invitere læseren med ind i det univers, du skaber. Gør gerne plads
+      til ro, refleksion og inspiration — præcis som på forsiden.
+    </p>
 
-  <nav class="mobile-nav">
-    <a href="forside.html">Forside</a>
-    <a href="om.html">Om mig</a>
-    <a href="priser.html">Priser</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-</header>
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; margin-top: 50px;">Min tilgang</h2>
 
-<div class="hero-photo" style="height:360px; background-image:url('billeder/IMG_2382.PNG'); margin-bottom:30px;"></div>
+    <p style="max-width: 750px; font-size: 18px;">
+      Her kan du beskrive din tilgang til dit arbejde. Det kan være din metode, dine værdier eller den måde du
+      møder mennesker på i dine forløb, tekster eller undervisning.
+    </p>
 
-<div class="card">
-  <h2>Om mig</h2>
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; margin-top: 50px;">Baggrund</h2>
 
-  <p>
-    Her kan du skrive om dig selv, din baggrund, din uddannelse og din måde at arbejde terapeutisk på.
-  </p>
+    <p style="max-width: 750px; font-size: 18px;">
+      Her kan du kort fortælle om din uddannelse, erfaringer og hvorfor du har valgt at arbejde med netop det, du gør.
+      Hold stilen enkel og varm.
+    </p>
+  </section>
 
-  <p>
-    Du kan også beskrive, hvad der betyder noget for dig i terapi – fx nærvær, tryghed, tydelighed eller fordybelse.
-  </p>
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> Hverdag & Dybde
+  </footer>
 
-  <p>
-    Fortæl eventuelt om dine værdier og om, hvad der motiverer dig i arbejdet med mennesker.
-  </p>
-</div>
-
-<footer>
-  <nav>
-    <a href="forside.html">Forside</a>
-    <a href="om.html">Om mig</a>
-    <a href="priser.html">Priser</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-  © hverdag og dybde
-</footer>
-
-</div>
-
-<script>
-function toggleMenu(){
-  const nav = document.querySelector('.mobile-nav');
-  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
-}
-</script>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
