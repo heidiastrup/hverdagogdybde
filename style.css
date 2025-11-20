@@ -8,101 +8,77 @@
   --deep-red: #C21830;
   --deep-red-hover: #A01126;
   --gold: #D8A850;
-  --soft-gold: #F3E3C9;
 
   --text: #2B2B2B;
   --white: #ffffff;
 
-  --max-width: 1100px;
+  --max-width: 1200px;
 }
 
 /* RESET */
 *{
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
 body{
-  margin:0;
   font-family: Inter, sans-serif;
   background: var(--baby-pink-lighter);
   color: var(--text);
   line-height: 1.6;
 }
 
-/* ---------------------------------- */
-/* CONTAINER */
-/* ---------------------------------- */
-.container{
-  max-width: var(--max-width);
-  margin:auto;
-  padding: 24px;
-}
-
-/* ---------------------------------- */
-/* FULLWIDTH SECTIONS */
-/* ---------------------------------- */
-
-.fullwidth{
-  width: 100%;
-  margin: 0;
-  padding: 80px 0;
-  background: var(--white);
-
-  /* 🔥 Garanterer fuld bredde UANSET */
-  max-width: 100% !important;
-}
-
-.fullwidth .inner{
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 0 24px;
-}
-
-.bg-pink{
-  background: var(--baby-pink-light);
-}
+img{ width:100%; display:block; border-radius:12px; }
 
 /* ---------------------------------- */
 /* HEADER */
 /* ---------------------------------- */
 header{
+  width:100%;
+  padding:20px 40px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 0;
+  position: sticky;
+  top:0;
+  background: var(--white);
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .logo-text{
-  font-size:1.8rem;
+  font-size:1.9rem;
+  font-family: Merriweather, serif;
   font-weight:700;
   color:var(--deep-red);
   text-decoration:none;
-  font-family: Merriweather, serif;
 }
 
-.desktop-nav{
+nav.desktop-nav{
   display:flex;
-  gap:24px;
+  gap:30px;
 }
 
-.desktop-nav a{
-  color:var(--deep-red);
+nav.desktop-nav a{
   text-decoration:none;
   font-weight:600;
+  color:var(--deep-red);
   transition:0.2s;
 }
 
-.desktop-nav a:hover{
+nav.desktop-nav a:hover{
   color:var(--gold);
 }
 
+/* MOBILE MENU */
 .menu-btn{
   display:none;
-  font-size:32px;
+  font-size:34px;
   background:none;
   border:0;
-  color:var(--deep-red);
   cursor:pointer;
+  color:var(--deep-red);
 }
 
 .mobile-nav{
@@ -110,112 +86,114 @@ header{
   flex-direction:column;
   background: var(--baby-pink-light);
   padding:20px;
-  border-radius:14px;
-  margin-top:14px;
+  position:absolute;
+  top:80px;
+  right:20px;
+  width:200px;
+  border-radius:12px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
 
 .mobile-nav a{
+  padding:10px 0;
+  text-decoration:none;
   color:var(--deep-red);
   font-weight:600;
-  text-decoration:none;
 }
 
 /* ---------------------------------- */
-/* HERO */
+/* FULLWIDTH SECTIONS */
 /* ---------------------------------- */
-
-.hero{
+section.fullwidth{
   width:100%;
-  padding:100px 0;
-  background: 
-    linear-gradient(rgba(255,240,246,0.7), rgba(255,240,246,1)),
-    url('billeder/IMG_2257.JPG');
-  background-size:cover;
-  background-position:center;
-
-  /* Fuld bredde */
-  max-width: 100% !important;
+  padding:80px 0;
 }
 
-.hero .inner{
+section .inner{
   max-width: var(--max-width);
   margin:auto;
-  padding: 0 24px;
+  padding:0 24px;
 }
 
-.hero-card{
-  background:white;
-  padding:40px;
+.bg-white{ background:var(--white); }
+.bg-pink{ background:var(--baby-pink-light); }
 
-  /* 🔥 FJERN RUNDE HJØRNER */
-  border-radius:0;
-
-  max-width:520px;
-  box-shadow:0 14px 40px rgba(0,0,0,0.08);
+/* FLEX LAYOUT: IMAGE + TEXT */
+.flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:50px;
 }
 
-.hero-card h1{
-  margin:0 0 20px;
-  font-size:2.6rem;
-  color:var(--deep-red);
+.flex.reverse{
+  flex-direction: row-reverse;
+}
+
+.flex .text{
+  flex:1;
+}
+
+.flex .image{
+  flex:1;
+}
+
+h1, h2, h3{
   font-family: Merriweather, serif;
+  color:var(--deep-red);
+  margin-bottom:20px;
 }
 
-/* ---------------------------------- */
-/* CARD STYLE */
-/* ---------------------------------- */
-.card{
-  background:white;
-  padding:40px;
+p{ font-size:1.1rem; }
 
-  /* 🔥 FIRKANTEDE SEKTIONER – INGEN RUNDE HJØRNER */
-  border-radius:0;
-
-  box-shadow:0 18px 40px rgba(0,0,0,0.08);
-  margin-bottom:40px;
-}
-
-/* ---------------------------------- */
-/* BUTTONS */
-/* ---------------------------------- */
-
-button, .cta{
+/* CTA BUTTON */
+.cta, button{
   display:inline-block;
   padding:16px 32px;
-  font-size:1.1rem;
-  background: var(--deep-red);
+  background:var(--deep-red);
   border:2px solid var(--deep-red);
   color:white;
   border-radius:12px;
-  font-weight:600;
   text-decoration:none;
-  cursor:pointer;
-  transition:0.25s ease;
+  font-weight:600;
+  transition:0.2s ease;
+  margin-top:20px;
+  font-size:1.1rem;
 }
 
-button:hover, .cta:hover{
-  background: var(--baby-pink-light);
-  color: var(--deep-red);
-  border-color: var(--deep-red);
+.cta:hover, button:hover{
+  background:var(--baby-pink);
+  color:var(--deep-red);
 }
 
-/* ---------------------------------- */
-/* FOOTER */
-/* ---------------------------------- */
+/* CLIENT QUOTES */
+.quotes{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:30px;
+}
 
-footer{
-  text-align:center;
-  padding:50px 0;
+.quote{
   background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 12px 25px rgba(0,0,0,0.08);
+  font-style:italic;
+  font-size:1.05rem;
+}
 
-  /* Fuld bredde */
-  max-width: 100% !important;
+/* FOOTER */
+footer{
+  background:white;
+  padding:60px 0;
+  text-align:center;
+  margin-top:80px;
 }
 
 footer nav a{
-  margin:0 10px;
-  font-weight:600;
+  margin:0 12px;
   color:var(--deep-red);
+  font-weight:600;
   text-decoration:none;
 }
 
@@ -226,7 +204,15 @@ footer nav a:hover{
 /* ---------------------------------- */
 /* MOBILE */
 /* ---------------------------------- */
-@media(max-width:800px){
-  .desktop-nav{ display:none; }
+@media(max-width:900px){
+  .flex{
+    flex-direction:column;
+  }
+
+  .quotes{
+    grid-template-columns:1fr;
+  }
+
+  nav.desktop-nav{ display:none; }
   .menu-btn{ display:block; }
 }
