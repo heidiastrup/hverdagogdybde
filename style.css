@@ -1,209 +1,126 @@
-/* =========================================
-   FARVEPLETTE
-========================================= */
-
+/* ------------------------------
+   FARVER
+--------------------------------*/
 :root {
-  --background: #F8F6F2;
-  --text: #3A2F29;
-  --text-light: #4A3E37;
+  /* Varm guld */
+  --gold-1: #D9A441;
+  --gold-2: #C18E3C;
+  --gold-3: #F2C879;
 
-  --gold-light: #F2C879;
-  --gold: #D9A441;
-  --gold-dark: #C18E3C;
+  /* Natur / træ */
+  --wood-1: #A67C52;
+  --wood-2: #D3B48C;
+  --wood-3: #F5E8D3; /* lys creme */
 
-  --wood-light: #D3B48C;
-  --wood: #A67C52;
-  --creme: #F5E8D3;
+  /* Kleenex rød-orange */
+  --kleenex-red: #D43A3A;
+  --kleenex-ro: #E65A32;
+  --kleenex-orange: #F28F3B;
+  --kleenex-gold: #F7C356;
 
-  --red: #D43A3A;
-  --red-orange: #E65A32;
-  --orange: #F28F3B;
-  --orange-gold: #F7C356;
-
-  --warm-gradient: linear-gradient(135deg, #D43A3A, #E65A32, #F28F3B, #F7C356);
+  /* Tekst & basis */
+  --text-dark: #3f3f3f;
+  --text-muted: #5a5a5a;
+  --white: #ffffff;
+  --bg-light: #F5E8D3;
+  --font-serif: 'Georgia', serif;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* =========================================
-   GLOBALT
-========================================= */
-
-body {
+/* ------------------------------
+   BASIC RESET
+--------------------------------*/
+* {
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: var(--background);
-  color: var(--text);
-  line-height: 1.7;
+  box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
 }
 
-h1, h2, h3 {
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  color: var(--text);
-}
-
-a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-/* =========================================
+/* ------------------------------
    HEADER & MENU
-========================================= */
-
+--------------------------------*/
 header {
   width: 100%;
-  background: var(--background);
+  background: var(--wood-3);
   padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .logo {
   font-size: 22px;
   font-weight: 600;
-  text-transform: lowercase; /* altid småt */
-  color: var(--text);
+  text-transform: lowercase;
+  font-family: var(--font-serif);
+  color: var(--wood-1);
+  letter-spacing: 1px;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  gap: 32px;
+  gap: 30px;
 }
 
 nav ul li a {
-  font-weight: 600; /* fed på desktop */
   text-transform: lowercase;
-  padding-bottom: 4px;
-  transition: color 0.2s ease;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 0;
+  transition: 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: var(--red-orange);
-  text-decoration: none; /* ingen underline */
+  color: var(--kleenex-orange);
+  text-decoration: none;
 }
 
-/* Burger menu (mobil) */
-
-.burger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-/* =========================================
-   HERO SEKTION (den første)
-========================================= */
-
+/* ------------------------------
+   HERO SEKTION MED 3 KOLONNER
+--------------------------------*/
 .hero {
-  padding: 120px 40px;
-  text-align: center;
-  max-width: 900px;
-  margin: auto;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 20px;
-  max-width: 650px;
-  margin: 20px auto;
-}
-
-.hero-btn {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 14px 28px;
-  font-size: 18px;
-  border-radius: 8px;
-  background: var(--warm-gradient);
-  color: white;
-  font-weight: 600;
-  transition: opacity 0.2s ease;
-}
-
-.hero-btn:hover {
-  opacity: 0.85;
-}
-
-/* =========================================
-   3-KOLONNE SEKTIONSBILLEDER
-========================================= */
-
-.triple {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 120px;
+  width: 100%;
+  min-height: 90vh;
+  background: var(--white);
 }
 
-.triple div {
-  background-color: var(--creme);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-center {
+  padding: 80px 40px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-  text-align: center;
-  padding: 60px 20px;
-  font-size: 16px;
-  color: var(--text-light);
-  margin-top: 60px;
-}
-
-/* =========================================
-   MOBIL STYLING
-========================================= */
-
-@media (max-width: 850px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    background: var(--background);
-    padding: 40px;
-    position: absolute;
-    right: 20px;
-    top: 90px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.09);
-  }
-
-  nav ul.open {
-    display: flex;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .triple {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-}
+.hero-center h1 {
+  font-family: var(--font-serif);
+  font
