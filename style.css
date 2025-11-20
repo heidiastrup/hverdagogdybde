@@ -1,5 +1,5 @@
 /* ------------------------------
-   FARVER
+   FARVER 
 --------------------------------*/
 :root {
   /* Varm guld */
@@ -123,4 +123,66 @@ nav ul li a:hover {
 
 .hero-center h1 {
   font-family: var(--font-serif);
-  font
+  font-size: 54px;
+  line-height: 1.2;
+  color: var(--wood-1);
+  margin-bottom: 30px;
+}
+
+.hero-center p {
+  font-size: 20px;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ------------------------------
+   ANDRE SEKTIONER
+--------------------------------*/
+.section {
+  padding: 120px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-family: var(--font-serif);
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--wood-1);
+}
+
+.section p {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+  background: var(--wood-2);
+  padding: 40px;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+/* ------------------------------
+   MOBIL
+--------------------------------*/
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-center {
+    padding: 40px 20px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+}
