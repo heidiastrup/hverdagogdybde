@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <title>hverdag og dybde – Psykoterapi i Tilst</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <a class="logo-text" href="forside.html">hverdag og dybde</a>
+
+  <nav class="desktop-nav">
+    <a href="forside.html">Forside</a>
+    <a href="om.html">Om mig</a>
+    <a href="priser.html">Priser</a>
+    <a href="kontakt.html">Kontakt mig</a>
+  </nav>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav class="mobile-nav">
+    <a href="forside.html">Forside</a>
+    <a href="om.html">Om mig</a>
+    <a href="priser.html">Priser</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-card">
+    <h1>hverdag og dybde</h1>
+    <p>Psykoterapi med et helhedsorienteret syn på dig som menneske</p>
+    <a class="cta" href="kontakt.html">Book tid</a>
+  </div>
+
+  <div class="hero-photo" style="background-image:url('billeder/IMG_2257.JPG');"></div>
+</section>
+
+<!-- SEKTION 1 -->
+<div class="card">
+  <p>
+    Mit terapeutiske fundament bygger på et helhedsorienteret syn på mennesket, hvor både det kognitive, følelsesmæssige, kropslige, relationelle og systemiske bidrager til forståelsen af det enkelte menneske. Hos mig kan du udvikle dine evner til at være med dig selv og livet. Jeg skaber et rum, hvor mennesker oplever sig set, anerkendt og styrket i deres ret til at være med alt det, de indebærer.
+  </p>
+</div>
+
+<!-- SEKTION 2 -->
+<div class="card">
+  <h2>Plads til hele dig</h2>
+  <p>
+    Her kan du beskrive, hvad dine klienter ofte søger hjælp til – fx stress, lavt selvværd,
+    bekymringer, relationer, sorg, traumer eller nye livsfaser.
+  </p>
+</div>
+
+<footer>
+  <nav>
+    <a href="forside.html">Forside</a>
+    <a href="om.html">Om mig</a>
+    <a href="priser.html">Priser</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  © hverdag og dybde
+</footer>
+
+</div>
+
+<script>
+function toggleMenu(){
+  const nav = document.querySelector('.mobile-nav');
+  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+}
+</script>
+
+</body>
+</html>
