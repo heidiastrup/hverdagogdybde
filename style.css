@@ -26,8 +26,7 @@ body{
   font-family: Inter, sans-serif;
   background: var(--baby-pink-lighter);
   color: var(--text);
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
 }
 
 /* ---------------------------------- */
@@ -40,27 +39,50 @@ body{
 }
 
 /* ---------------------------------- */
+/* FULLWIDTH SECTIONS */
+/* ---------------------------------- */
+
+.fullwidth{
+  width: 100%;
+  margin: 0;
+  padding: 80px 0;
+  background: var(--white);
+
+  /* 🔥 Garanterer fuld bredde UANSET */
+  max-width: 100% !important;
+}
+
+.fullwidth .inner{
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 24px;
+}
+
+.bg-pink{
+  background: var(--baby-pink-light);
+}
+
+/* ---------------------------------- */
 /* HEADER */
 /* ---------------------------------- */
 header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:22px 0;
+  padding:20px 0;
 }
 
 .logo-text{
-  font-size:1.9rem;
+  font-size:1.8rem;
   font-weight:700;
   color:var(--deep-red);
   text-decoration:none;
   font-family: Merriweather, serif;
-  letter-spacing: -0.5px;
 }
 
 .desktop-nav{
   display:flex;
-  gap:26px;
+  gap:24px;
 }
 
 .desktop-nav a{
@@ -68,7 +90,6 @@ header{
   text-decoration:none;
   font-weight:600;
   transition:0.2s;
-  font-size:1.05rem;
 }
 
 .desktop-nav a:hover{
@@ -91,49 +112,12 @@ header{
   padding:20px;
   border-radius:14px;
   margin-top:14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .mobile-nav a{
   color:var(--deep-red);
   font-weight:600;
   text-decoration:none;
-  padding:6px 0;
-}
-
-/* ---------------------------------- */
-/* FULLWIDTH SECTIONS */
-/* ---------------------------------- */
-
-.fullwidth{
-  width:100%;
-  padding:80px 0;
-  background:var(--white);
-}
-
-.fullwidth .inner{
-  max-width:var(--max-width);
-  margin:auto;
-  padding: 0 24px;
-}
-
-.bg-pink{
-  background: var(--baby-pink-light);
-}
-
-.bg-gradient{
-  background: linear-gradient(
-    to bottom,
-    var(--baby-pink-light),
-    var(--white)
-  );
-}
-
-/* Elegant fullwidth photo background */
-.bg-photo{
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
 }
 
 /* ---------------------------------- */
@@ -142,36 +126,39 @@ header{
 
 .hero{
   width:100%;
-  padding:110px 0;
-  background: linear-gradient(
-    rgba(255,240,246,0.75),
-    rgba(255,240,246,1)
-  ),
-  url('billeder/IMG_2257.JPG');
+  padding:100px 0;
+  background: 
+    linear-gradient(rgba(255,240,246,0.7), rgba(255,240,246,1)),
+    url('billeder/IMG_2257.JPG');
   background-size:cover;
   background-position:center;
+
+  /* Fuld bredde */
+  max-width: 100% !important;
 }
 
 .hero .inner{
-  max-width:var(--max-width);
+  max-width: var(--max-width);
   margin:auto;
   padding: 0 24px;
 }
 
 .hero-card{
   background:white;
-  padding:42px;
-  border-radius:24px;
-  max-width:540px;
-  box-shadow:0 18px 45px rgba(0,0,0,0.08);
+  padding:40px;
+
+  /* 🔥 FJERN RUNDE HJØRNER */
+  border-radius:0;
+
+  max-width:520px;
+  box-shadow:0 14px 40px rgba(0,0,0,0.08);
 }
 
 .hero-card h1{
-  margin:0 0 22px;
-  font-size:2.7rem;
+  margin:0 0 20px;
+  font-size:2.6rem;
   color:var(--deep-red);
   font-family: Merriweather, serif;
-  letter-spacing: -0.4px;
 }
 
 /* ---------------------------------- */
@@ -179,11 +166,13 @@ header{
 /* ---------------------------------- */
 .card{
   background:white;
-  padding:42px;
-  border-radius:22px;
+  padding:40px;
+
+  /* 🔥 FIRKANTEDE SEKTIONER – INGEN RUNDE HJØRNER */
+  border-radius:0;
+
   box-shadow:0 18px 40px rgba(0,0,0,0.08);
-  margin-bottom:50px;
-  line-height:1.7;
+  margin-bottom:40px;
 }
 
 /* ---------------------------------- */
@@ -192,7 +181,7 @@ header{
 
 button, .cta{
   display:inline-block;
-  padding:16px 34px;
+  padding:16px 32px;
   font-size:1.1rem;
   background: var(--deep-red);
   border:2px solid var(--deep-red);
@@ -205,45 +194,26 @@ button, .cta{
 }
 
 button:hover, .cta:hover{
-  background: var(--baby-pink);
+  background: var(--baby-pink-light);
   color: var(--deep-red);
   border-color: var(--deep-red);
 }
 
 /* ---------------------------------- */
-/* FORMS */
-/* ---------------------------------- */
-
-form input, form textarea{
-  width:100%;
-  padding:14px;
-  border-radius:12px;
-  border:1px solid rgba(0,0,0,0.12);
-  margin-bottom:18px;
-  font-size:1rem;
-  background: var(--baby-pink-lighter);
-}
-
-form label{
-  font-weight:600;
-  margin-bottom:4px;
-  display:block;
-  color:var(--deep-red);
-}
-
-/* ---------------------------------- */
 /* FOOTER */
 /* ---------------------------------- */
+
 footer{
   text-align:center;
-  padding:60px 0;
+  padding:50px 0;
   background:white;
-  margin-top:70px;
-  border-top: 1px solid rgba(0,0,0,0.06);
+
+  /* Fuld bredde */
+  max-width: 100% !important;
 }
 
 footer nav a{
-  margin:0 12px;
+  margin:0 10px;
   font-weight:600;
   color:var(--deep-red);
   text-decoration:none;
@@ -259,16 +229,4 @@ footer nav a:hover{
 @media(max-width:800px){
   .desktop-nav{ display:none; }
   .menu-btn{ display:block; }
-
-  .hero-card{
-    padding:30px;
-  }
-
-  .hero-card h1{
-    font-size:2.2rem;
-  }
-
-  .card{
-    padding:32px;
-  }
 }
