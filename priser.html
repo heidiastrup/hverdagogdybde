@@ -1,71 +1,90 @@
 <!doctype html>
 <html lang="da">
 <head>
-  <meta charset="utf-8">
-  <title>priser – hverdag og dybde</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Priser — Hverdag & Dybde</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-<div class="container">
+  <!-- HEADER -->
+  <header>
+    <div class="brand">Hverdag & Dybde</div>
+    <nav>
+      <a href="forside.html">Forside</a>
+      <a href="om.html">Om</a>
+      <a class="active" href="priser.html">Priser</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
 
-<header>
-  <a class="logo-text" href="forside.html">hverdag og dybde</a>
+  <!-- PAGE CONTENT -->
+  <section class="content">
+    <h1 style="font-family: 'Playfair Display', serif; font-size: 42px; margin-bottom: 30px;">Priser</h1>
+    
+    <p style="max-width: 750px; font-size: 18px; margin-bottom: 40px;">
+      Her kan du præsentere dine tilbud og deres priser. Du kan organisere det i sektioner med beskrivelser,
+      så dine besøgende nemt kan se, hvad hver ydelse indeholder.
+    </p>
 
-  <nav class="desktop-nav">
-    <a href="forside.html">Forside</a>
-    <a href="om.html">Om mig</a>
-    <a href="priser.html">Priser</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
+    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 40px;">
 
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <div class="card">
+        <h3>Enkelt session</h3>
+        <p style="margin-top: 10px; font-size: 18px; color: var(--text-color);">
+          60 minutter — <strong>XXX kr.</strong>
+        </p>
+        <p style="margin-top: 10px;">
+          Kort beskrivelse af, hvad en enkelt session indeholder, og hvem den passer til.
+        </p>
+      </div>
 
-  <nav class="mobile-nav">
-    <a href="forside.html">Forside</a>
-    <a href="om.html">Om mig</a>
-    <a href="priser.html">Priser</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-</header>
+      <div class="card">
+        <h3>Forløb</h3>
+        <p style="margin-top: 10px; font-size: 18px; color: var(--text-color);">
+          4 sessioner — <strong>XXX kr.</strong>
+        </p>
+        <p style="margin-top: 10px;">
+          Introduktion til dit længere forløb, og hvad deltageren kan forvente at få ud af det.
+        </p>
+      </div>
 
-<div class="hero-photo" style="height:340px; background-image:url('billeder/IMG_2437.jpg'); margin-bottom:30px;"></div>
+      <div class="card">
+        <h3>Workshops</h3>
+        <p style="margin-top: 10px; font-size: 18px; color: var(--text-color);">
+          Pris — <strong>XXX kr.</strong>
+        </p>
+        <p style="margin-top: 10px;">
+          Beskriv workshoppen, målgruppe og indhold — du kan tilføje datoer og varighed.
+        </p>
+      </div>
 
-<div class="card">
-  <h2>Priser</h2>
+      <div class="card">
+        <h3>Andre ydelser</h3>
+        <p style="margin-top: 10px; font-size: 18px; color: var(--text-color);">
+          Pris — <strong>XXX kr.</strong>
+        </p>
+        <p style="margin-top: 10px;">
+          Her kan du liste andre ydelser som konsultation, oplæg, skrivning mm.
+        </p>
+      </div>
 
-  <p><strong>Individuel terapi 60–75 min:</strong> 700 kr.</p>
-  <p><strong>Studerende individuel terapi 60–75 min:</strong> 600 kr.</p>
-  <p><strong>Parterapi 90 min:</strong> 1.100 kr.</p>
+    </div>
+  </section>
 
-  <p>Sessioner kan også foregå online efter aftale.</p>
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> Hverdag & Dybde
+  </footer>
 
-  <br>
-
-  <p>
-    Da tiden er reserveret særligt til dig, opkræves den fulde pris, hvis afbud sker mindre end 24 timer før den aftalte tid.
-  </p>
-</div>
-
-<footer>
-  <nav>
-    <a href="forside.html">Forside</a>
-    <a href="om.html">Om mig</a>
-    <a href="priser.html">Priser</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-  © hverdag og dybde
-</footer>
-
-</div>
-
-<script>
-function toggleMenu(){
-  const nav = document.querySelector('.mobile-nav');
-  nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
-}
-</script>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
