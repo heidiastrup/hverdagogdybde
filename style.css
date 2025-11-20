@@ -12,73 +12,74 @@
   --text: #2B2B2B;
   --white: #ffffff;
 
-  --max-width: 1200px;
+  --max-width: 1100px;
 }
 
 /* RESET */
 *{
   box-sizing: border-box;
-  margin:0;
-  padding:0;
 }
 
 body{
+  margin:0;
   font-family: Inter, sans-serif;
   background: var(--baby-pink-lighter);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden; /* For at undgå vandret scroll ved fullwidth */
 }
 
-img{ width:100%; display:block; border-radius:12px; }
+/* ---------------------------------- */
+/* CONTAINER */
+/* ---------------------------------- */
+.container{
+  max-width: var(--max-width);
+  margin:auto;
+  padding: 0 24px;
+}
 
 /* ---------------------------------- */
 /* HEADER */
 /* ---------------------------------- */
 header{
-  width:100%;
-  padding:20px 40px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  position: sticky;
-  top:0;
-  background: var(--white);
-  z-index:1000;
-  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  padding:22px 0;
 }
 
 .logo-text{
-  font-size:1.9rem;
-  font-family: Merriweather, serif;
+  font-size:1.8rem;
   font-weight:700;
   color:var(--deep-red);
   text-decoration:none;
+  font-family: Merriweather, serif;
 }
 
-nav.desktop-nav{
+.desktop-nav{
   display:flex;
-  gap:30px;
+  gap:24px;
 }
 
-nav.desktop-nav a{
+.desktop-nav a{
+  color:var(--deep-red);
   text-decoration:none;
   font-weight:600;
-  color:var(--deep-red);
   transition:0.2s;
 }
 
-nav.desktop-nav a:hover{
+.desktop-nav a:hover{
   color:var(--gold);
 }
 
-/* MOBILE MENU */
+/* MOBILE BURGER */
 .menu-btn{
   display:none;
-  font-size:34px;
+  font-size:32px;
   background:none;
   border:0;
-  cursor:pointer;
   color:var(--deep-red);
+  cursor:pointer;
 }
 
 .mobile-nav{
@@ -86,114 +87,164 @@ nav.desktop-nav a:hover{
   flex-direction:column;
   background: var(--baby-pink-light);
   padding:20px;
-  position:absolute;
-  top:80px;
-  right:20px;
-  width:200px;
-  border-radius:12px;
-  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+  border-radius:0;
+  margin-top:14px;
 }
 
 .mobile-nav a{
-  padding:10px 0;
-  text-decoration:none;
   color:var(--deep-red);
   font-weight:600;
+  text-decoration:none;
+  padding:10px 0;
 }
 
 /* ---------------------------------- */
 /* FULLWIDTH SECTIONS */
 /* ---------------------------------- */
-section.fullwidth{
-  width:100%;
+
+.fullwidth{
+  position:relative;
+  width:100vw;
+  left:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
   padding:80px 0;
+  box-sizing:border-box;
+  background:var(--white);
+  border-radius:0 !important; /* ingen runde hjørner */
 }
 
-section .inner{
-  max-width: var(--max-width);
+.fullwidth .inner{
+  max-width:var(--max-width);
   margin:auto;
-  padding:0 24px;
+  padding: 0 24px;
 }
 
-.bg-white{ background:var(--white); }
-.bg-pink{ background:var(--baby-pink-light); }
+.bg-pink{ background: var(--baby-pink-light); }
+.bg-gradient{
+  background: linear-gradient(
+    to bottom,
+    var(--baby-pink-light),
+    var(--white)
+  );
+}
 
-/* FLEX LAYOUT: IMAGE + TEXT */
-.flex{
+/* ---------------------------------- */
+/* HERO SECTION */
+/* ---------------------------------- */
+
+.hero{
+  position:relative;
+  width:100vw;
+  left:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+  padding:120px 0;
+  background: linear-gradient(
+    rgba(255,240,246,0.7),
+    rgba(255,240,246,1)
+  ),
+  url('billeder/IMG_2257.JPG');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero .inner{
+  max-width:var(--max-width);
+  margin:auto;
+  padding: 0 24px;
+}
+
+.hero-card{
+  background:white;
+  padding:40px;
+  border-radius:0;
+  max-width:520px;
+  box-shadow:0 14px 40px rgba(0,0,0,0.08);
+}
+
+.hero-card h1{
+  margin:0 0 20px;
+  font-size:2.6rem;
+  color:var(--deep-red);
+  font-family: Merriweather, serif;
+}
+
+/* ---------------------------------- */
+/* SIDE-BY-SIDE SECTIONS */
+/* ---------------------------------- */
+
+.split{
   display:flex;
-  justify-content:space-between;
   align-items:center;
-  gap:50px;
+  gap:40px;
+  flex-wrap:wrap;
 }
 
-.flex.reverse{
-  flex-direction: row-reverse;
+.split img{
+  width:100%;
+  max-width:460px;
+  object-fit:cover;
 }
 
-.flex .text{
+.split .text{
   flex:1;
+  min-width:260px;
 }
 
-.flex .image{
-  flex:1;
-}
+/* ---------------------------------- */
+/* TITLES */
+/* ---------------------------------- */
 
-h1, h2, h3{
+h2{
   font-family: Merriweather, serif;
   color:var(--deep-red);
-  margin-bottom:20px;
+  font-size:2rem;
+  margin-top:0;
 }
 
-p{ font-size:1.1rem; }
-
-/* CTA BUTTON */
-.cta, button{
+/* ---------------------------------- */
+/* BUTTON */
+/* ---------------------------------- */
+button, .cta{
   display:inline-block;
   padding:16px 32px;
-  background:var(--deep-red);
+  font-size:1.1rem;
+  background: var(--deep-red);
   border:2px solid var(--deep-red);
   color:white;
-  border-radius:12px;
-  text-decoration:none;
+  border-radius:0;
   font-weight:600;
-  transition:0.2s ease;
-  margin-top:20px;
-  font-size:1.1rem;
+  text-decoration:none;
+  cursor:pointer;
+  transition:0.25s ease;
 }
 
-.cta:hover, button:hover{
-  background:var(--baby-pink);
-  color:var(--deep-red);
+button:hover, .cta:hover{
+  background: var(--baby-pink);
+  color: var(--deep-red);
+  border-color: var(--deep-red);
 }
 
-/* CLIENT QUOTES */
-.quotes{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  gap:30px;
-}
-
-.quote{
-  background:white;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 12px 25px rgba(0,0,0,0.08);
-  font-style:italic;
-  font-size:1.05rem;
-}
-
+/* ---------------------------------- */
 /* FOOTER */
+/* ---------------------------------- */
 footer{
-  background:white;
-  padding:60px 0;
   text-align:center;
+  padding:50px 0;
+  background:white;
+  width:100vw;
+  left:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+  position:relative;
   margin-top:80px;
 }
 
 footer nav a{
-  margin:0 12px;
-  color:var(--deep-red);
+  margin:0 10px;
   font-weight:600;
+  color:var(--deep-red);
   text-decoration:none;
 }
 
@@ -202,17 +253,19 @@ footer nav a:hover{
 }
 
 /* ---------------------------------- */
-/* MOBILE */
+/* MOBIL */
 /* ---------------------------------- */
-@media(max-width:900px){
-  .flex{
+@media(max-width:800px){
+
+  .desktop-nav{ display:none; }
+  .menu-btn{ display:block; }
+
+  .split{
     flex-direction:column;
   }
 
-  .quotes{
-    grid-template-columns:1fr;
+  .hero-card{
+    max-width:100%;
   }
-
-  nav.desktop-nav{ display:none; }
-  .menu-btn{ display:block; }
 }
+
