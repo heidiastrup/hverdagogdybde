@@ -1,81 +1,65 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hverdag og Dybde</title>
-
-    <link rel="stylesheet" href="style.css?v=4">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hverdag og dybde</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <div class="brand">Hverdag og Dybde</div>
+  <div class="logo">hverdag og dybde</div>
 
-    <!-- Hamburger -->
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <nav id="main-menu">
-        <a href="forside.html" class="active">Forside</a>
-        <a href="om.html">Om mig</a>
-        <a href="priser.html">Priser</a>
-        <a href="kontakt.html">Kontakt</a>
-    </nav>
+  <nav>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <ul id="menu">
+      <li><a href="forside.html">forside</a></li>
+      <li><a href="om.html">om</a></li>
+      <li><a href="priser.html">priser</a></li>
+      <li><a href="kontakt.html">kontakt</a></li>
+    </ul>
+  </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-    <div class="hero-text">
-        <div class="eyebrow">Psykoterapi & Samtaler</div>
-        <h1>Lad os skabe ro, klarhed og retning</h1>
-        <p>
-            Jeg hjælper dig med at forstå dine følelser, bryde mønstre og finde styrke i dit eget tempo.  
-            Terapi hos mig er et trygt rum med plads til præcis det, der fylder hos dig.
-        </p>
-        <a class="cta" href="kontakt.html">Book en samtale</a>
-    </div>
-
-    <div class="hero-image">
-        <img src="images/hero.webp" alt="Terapi-stemningsbillede">
-    </div>
+  <h1>terapi med plads til hele dig</h1>
+  <p>
+    Jeg møder dig der hvor du er — med varme, nærvær og et trygt rum, hvor alt må være til stede.
+  </p>
+  <a href="kontakt.html" class="hero-btn">book en samtale</a>
 </section>
 
-<section class="content">
-    <div class="grid">
-        <div class="card">
-            <h3>Samtaler</h3>
-            <p>Et trygt rum til at tale om alt der fylder i din hverdag.</p>
-        </div>
+<!-- 3 kolonner -->
+<section class="triple">
+  <div>
+    <img src="img1.jpg" alt="">
+    <h3>tryghed</h3>
+    <p>Et roligt rum hvor du kan lande og mærke dig selv.</p>
+  </div>
 
-        <div class="card">
-            <h3>Stress & Overbelastning</h3>
-            <p>Få ro, overblik og bedre kontakt til dig selv.</p>
-        </div>
+  <div>
+    <img src="img2.jpg" alt="">
+    <h3>fordybelse</h3>
+    <p>Vi arbejder nænsomt i dybden og i dit tempo.</p>
+  </div>
 
-        <div class="card">
-            <h3>Selvværd</h3>
-            <p>Styrk troen på dig selv gennem forståelse og indsigt.</p>
-        </div>
-    </div>
+  <div>
+    <img src="img3.jpg" alt="">
+    <h3>udvikling</h3>
+    <p>Sammen skaber vi bevægelse mod et liv i bedre balance.</p>
+  </div>
 </section>
 
 <footer>
-    © 2025 Hverdag og Dybde · Alle rettigheder forbeholdes
+  hverdag og dybde · psykoterapi · © 2025
 </footer>
 
 <script>
 function toggleMenu() {
-    const menu = document.getElementById('main-menu');
-    menu.classList.toggle('mobile-open');
+  document.getElementById("menu").classList.toggle("open");
 }
 </script>
 
