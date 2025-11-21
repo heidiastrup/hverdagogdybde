@@ -243,5 +243,5 @@ footer {
     font-size: 18px;
     font-weight: 700;
     color: var(--wood-1);
-    margin-bottom: 5
-
+    margin-bottom: 5px;
+}
