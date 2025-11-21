@@ -74,6 +74,12 @@ header {
   letter-spacing: 1px;
 }
 
+/* GØR LOGOET KLIKKBART UDEN BLÅT LINK */
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav ul {
   list-style: none;
   display: flex;
