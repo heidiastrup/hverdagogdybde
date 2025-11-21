@@ -192,3 +192,56 @@ footer {
     gap: 15px;
   }
 }
+
+/* ------------------------------
+   KLIENTUDTALELSER
+--------------------------------*/
+.testimonials {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.testimonials-title {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: var(--font-serif);
+    color: var(--wood-1);
+    margin-bottom: 5px;
+}
+
+.testimonials-subtitle {
+    font-size: 20px;
+    color: var(--text-dark);
+    margin-bottom: 60px;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.testimonial-box {
+    text-align: left;
+    padding: 0 20px;
+    color: var(--text-dark);
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-family: var(--font-sans);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--wood-1);
+    margin-bottom: 5
+
