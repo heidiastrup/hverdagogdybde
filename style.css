@@ -2,23 +2,19 @@
    FARVER   
 --------------------------------*/
 :root {
-  /* Varm guld */
   --gold-1: #D9A441;
   --gold-2: #C18E3C;
   --gold-3: #F2C879;
 
-  /* Natur / træ */
   --wood-1: #A67C52;
   --wood-2: #D3B48C;
-  --wood-3: #F5E8D3; /* lys creme */
+  --wood-3: #F5E8D3;
 
-  /* Kleenex rød-orange */
   --kleenex-red: #D43A3A;
   --kleenex-ro: #E65A32;
   --kleenex-orange: #F28F3B;
   --kleenex-gold: #F7C356;
 
-  /* Tekst & basis */
   --text-dark: #3f3f3f;
   --text-muted: #5a5a5a;
   --white: #ffffff;
@@ -27,9 +23,7 @@
   --font-sans: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* ------------------------------
-   BASIC RESET
---------------------------------*/
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -43,9 +37,7 @@ body {
   line-height: 1.6;
 }
 
-/* ------------------------------
-   HEADER & MENU
---------------------------------*/
+/* HEADER */
 header {
   width: 100%;
   background: var(--wood-3);
@@ -74,7 +66,6 @@ header {
   letter-spacing: 1px;
 }
 
-/* GØR LOGOET KLIKKBART UDEN BLÅT LINK */
 .logo a {
   text-decoration: none;
   color: inherit;
@@ -98,12 +89,9 @@ nav ul li a {
 
 nav ul li a:hover {
   color: var(--kleenex-orange);
-  text-decoration: none;
 }
 
-/* ------------------------------
-   HERO SEKTION MED 3 KOLONNER
---------------------------------*/
+/* HERO */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -142,63 +130,10 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-/* ------------------------------
-   ANDRE SEKTIONER
---------------------------------*/
-.section {
-  padding: 120px 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.section h2 {
-  font-family: var(--font-serif);
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: var(--wood-1);
-}
-
-.section p {
-  font-size: 20px;
-  color: var(--text-dark);
-  margin-bottom: 15px;
-}
-
-/* ------------------------------
-   FOOTER
---------------------------------*/
-footer {
-  background: var(--wood-2);
-  padding: 40px;
-  text-align: center;
-  margin-top: 80px;
-  font-size: 14px;
-  color: var(--text-dark);
-}
-
-/* ------------------------------
-   MOBIL
---------------------------------*/
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-center {
-    padding: 40px 20px;
-  }
-
-  nav ul {
-    gap: 15px;
-  }
-}
-
-/* ------------------------------
-   KLIENTUDTALELSER
---------------------------------*/
+/* TESTIMONIALS */
 .testimonials {
     width: 90%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
     padding: 80px 0;
@@ -209,38 +144,40 @@ footer {
     font-weight: 700;
     font-family: var(--font-serif);
     color: var(--wood-1);
-    margin-bottom: 5px;
-}
-
-.testimonials-subtitle {
-    font-size: 20px;
-    color: var(--text-dark);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .testimonials-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: 1fr;   /* ⭐ KUN ÉN KOLONNE */
+    gap: 60px;
 }
 
 .testimonial-box {
     text-align: left;
-    padding: 0 20px;
-    color: var(--text-dark);
+    padding: 20px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .quote {
     font-size: 18px;
     line-height: 1.7;
-    color: var(--text-dark);
-    margin-bottom: 40px;
-    font-weight: 300;
-    font-family: var(--font-sans);
+    margin-bottom: 20px;
 }
 
 .name {
     font-size: 18px;
     font-weight: 700;
     color: var(--wood-1);
-    margin-bottom: 5px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--wood-2);
+  padding: 40px;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 14px;
+}
