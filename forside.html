@@ -1,95 +1,127 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <title>hverdag og dybde/forside</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<!-- HEADER -->
 <header>
-  <div class="navbar">
-    <div class="logo">
-      <a href="forside.html">hverdag og dybde</a>
+    <div class="navbar">
+        <div class="logo"><a href="forside.html">astrup terapi</a></div>
+        <nav>
+            <ul>
+                <li><a href="forside.html">forside</a></li>
+                <li><a href="om.html">om</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+                <li><a href="terapi.html">terapi</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="forside.html">Forside</a></li>
-        <li><a href="om.html">Om mig</a></li>
-        <li><a href="priser.html">Priser</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <img src="IMG_1.jpg" alt="">
-  
-  <div class="hero-center">
-    <h1>Et sted<br>hvor du kan føle dig<br>set, tryg og styrket</h1>
-    <p>
-      Som psykoterapeut arbejder jeg balanceret med hele mennesket. 
-    </p>
-  </div>
+    <img src="img/left.jpg" alt="billede">
+    <div class="hero-center">
+        <h1>Velkommen hos Astrup Terapi</h1>
+        <p>Et trygt rum til samtale, forståelse og udvikling.</p>
+    </div>
+    <img src="img/right.jpg" alt="billede">
+</section>
 
-  <img src="IMG_2.jpg" alt="">
+<!-- HVERDAG / DYBDE -->
+<section class="toggle-buttons">
+    <button id="hverdagBtn" class="active">hverdag</button>
+    <button id="dybdeBtn">dybde</button>
+</section>
+
+<section id="hverdag" class="toggle-section show">
+    <p>
+        Hverdagen kan være fyldt med mange små og store udfordringer.  
+        Måske føler du dig presset, overvældet eller som om du mister overblikket.  
+        Hos Astrup Terapi møder du et nærværende rum, hvor vi sammen folder din hverdag ud,  
+        så du igen kan finde ro, klarhed og retning.
+    </p>
+</section>
+
+<section id="dybde" class="toggle-section">
+    <p>
+        Nogle gange kalder livet på et dybere arbejde — et sted hvor gamle mønstre,  
+        relationer eller oplevelser har sat spor.  
+        Her arbejder vi i dybden med forståelse, regulering og forankring,  
+        så du kan skabe varige forandringer og stå stærkere i dig selv.
+    </p>
 </section>
 
 <!-- KLIENTUDTALELSER -->
 <section class="testimonials">
-    <h2 class="testimonials-title">Udtalelser fra klienter</h2>
+    <h2 class="testimonials-title">klientudtalelser</h2>
 
     <div class="testimonials-container">
 
-        <!-- Udtalelse 1 -->
         <div class="testimonial-box">
             <p class="quote">
-              “Jeg startede i terapi hos Heidi for et år siden, hvilket har hjulpet mig på måder der er svære at sætte ord på. 
-              Hendes nærvær og omsorg kombineret med de terapeutiske metoder har gjort, at jeg er kommet igennem en svær sorg proces, og hjulpet med de udfordringer, der har været i mit liv. 
-              Hun har formået at skabe et rum, hvor jeg er tryg i at dele alt og føler mig set, hørt og forstået. 
-              Jeg har lært at arbejde med mig selv på nye måder og har fundet mere ro i min hverdag. 
-              Jeg er taknemlig for Heidi, både som person og terapeut, specielt hendes evne til at gribe et andet menneske på. 
-              Jeg kan varmt anbefale hende til dem, som har brug for støtte til at dele og bearbejde de svære ting i livet.”
+                “Jeg føler mig altid mødt med ro og varme. Heidi har hjulpet mig til at forstå mig selv på måder, jeg aldrig har kunnet før.”
             </p>
-            <h3 class="name">Kvinde 34 år i individuel terapiforløb</h3>
+            <p class="name">– M.</p>
         </div>
 
-        <!-- Udtalelse 2 -->
         <div class="testimonial-box">
             <p class="quote">
-              “Vores datter var igennem 2 år blevet holdt udenfor i sin klasse, dette var begyndt at sætte sit præg på hendes psyke på sådan måde, at hun ikke alene blev indadvendt, men faktisk helt indelukket. 
-              Så da hun startede på efterskole, var det svært for hende at tage imod og stole på mennesker. 
-              Hun vidste, som hun selv sagde det, ikke hvordan man var sammen med nogen, der godt gad at tale med hende. 
-              Vi besluttede derfor at hun skulle prøve at have et par timer sammen med Heidi. 
-              Allerede efter et par gange var virkningen synlig. Vores datter siger, at det var dejligt at have en at tale med. 
-              Hun følte sig set og hørt og synes det var dejligt ikke at blive behandlet som et barn, men samtidig blev der talt et sprog, hun forstod. 
-              Hun følte sig øjeblikkeligt tryg, og hun havde lyst til at fortælle om sig selv og hendes hverdag. 
-              I dag går vores datter på 2. år på efterskolen og ikke alene trives hun, men hun er også begyndt at bygge et ungdomsliv op omkring sig selv, da hun efter at have været hos Heidi var klar til at tage imod
-              og hendes tillid til andre mennesker var begyndt at blive genoprettet og herefter har hun gjort sig mange positive erfaringer på netop dette.”
+                “For første gang i mange år føler jeg mig ikke forkert. Samtalerne har givet mig et nyt perspektiv og en ny styrke.”
             </p>
-            <h3 class="name">Forældre til pige på 15 år i terapiforløb</h3>
+            <p class="name">– A.</p>
         </div>
 
-        <!-- Udtalelse 3 -->
         <div class="testimonial-box">
             <p class="quote">
-              “I’ve had an amazing experience working with Heidi. She creates a warm and relaxed atmosphere and a safe space to open up, while still keeping everything very professional. 
-              She’s extremely friendly, understanding, and easy to talk to. 
-              After every session, I left feeling lighter and more self-aware, often with new tools and perspectives that truly helped me grow and make positive changes in my life. 
-              I’m really grateful to have found her and would highly recommend her to anyone looking for genuine, and effective support.”
+                “Det har været forløsende at få sat ord på det, der har fyldt. Jeg går altid derfra med mere ro end da jeg kom.”
             </p>
-            <h3 class="name">Kvinde på 25 år i individuel terapiforløb</h3>
+            <p class="name">– L.</p>
+        </div>
+
+        <div class="testimonial-box">
+            <p class="quote">
+                “Jeg har fået konkrete værktøjer, der faktisk virker i hverdagen. Det har gjort en kæmpe forskel.”
+            </p>
+            <p class="name">– S.</p>
         </div>
 
     </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  © 2025 hverdag og dybde
+    &copy; 2025 Astrup Terapi — alle rettigheder forbeholdes
 </footer>
+
+
+<!-- SCRIPT TIL KNAPPERNE -->
+<script>
+    const hverdagBtn = document.getElementById("hverdagBtn");
+    const dybdeBtn = document.getElementById("dybdeBtn");
+    const hverdag = document.getElementById("hverdag");
+    const dybde = document.getElementById("dybde");
+
+    hverdagBtn.addEventListener("click", () => {
+        hverdag.classList.add("show");
+        dybde.classList.remove("show");
+        hverdagBtn.classList.add("active");
+        dybdeBtn.classList.remove("active");
+    });
+
+    dybdeBtn.addEventListener("click", () => {
+        dybde.classList.add("show");
+        hverdag.classList.remove("show");
+        dybdeBtn.classList.add("active");
+        hverdagBtn.classList.remove("active");
+    });
+</script>
 
 </body>
 </html>
