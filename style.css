@@ -135,39 +135,6 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-
-/* --------------------------------
-   HVERDAG / DYBDE KNAPPER
-----------------------------------*/
-.toggle-buttons {
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-
-.toggle-buttons button {
-  background: var(--white);
-  border: 2px solid var(--wood-1);
-  color: var(--wood-1);
-  padding: 12px 30px;
-  margin: 0 10px;
-  font-size: 16px;
-  text-transform: lowercase;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.toggle-buttons button:hover {
-  background: var(--wood-1);
-  color: var(--white);
-}
-
-.toggle-buttons .active {
-  background: var(--wood-1);
-  color: var(--white);
-}
-
 /* SEKTIONS-TEKST (SKJUL / VIS) */
 .toggle-section {
   display: none;
