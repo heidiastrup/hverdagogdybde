@@ -177,14 +177,6 @@ nav ul li a:hover {
     gap: 60px;
 }
 
-.testimonial-box {
-    text-align: left;
-    padding: 20px;
-    background: var(--white);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
 .quote {
     font-size: 18px;
     line-height: 1.7;
