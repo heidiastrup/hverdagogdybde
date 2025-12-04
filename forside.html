@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside - hverdag og dybde</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
 <!-- HEADER -->
@@ -32,6 +27,21 @@
   </div>
 </header>
 
+
+<!-- NY SEKTION: BILLEDE VENSTRE + TEKST HØJRE -->
+<section class="intro-section">
+    <img src="img/intro-left.jpg" alt="billede" class="intro-img">
+
+    <div class="intro-text">
+        <h2>Et trygt rum til følelser og relationer</h2>
+        <p>
+            Skab forandring i dit liv — både mentalt og følelsesmæssigt,  
+            så du kan stå stærkere i hverdagens udfordringer.
+        </p>
+    </div>
+</section>
+
+
 <!-- HERO -->
 <section class="hero">
     <img src="img/left.jpg" alt="billede">
@@ -42,6 +52,7 @@
     <img src="img/right.jpg" alt="billede">
 </section>
 
+
 <!-- KLIENTUDTALELSER -->
 <section class="testimonials">
     <h2 class="testimonials-title">Klientudtalelser</h2>
@@ -50,14 +61,14 @@
 
         <div class="testimonial-box">
             <p class="quote">
-                “Jeg startede i terapi hos Heidi for et år siden, hvilket har hjulpet mig på måder der er svære at sætte ord på. Hendes nærvær og omsorg kombineret med de terapeutiske metoder har gjort, at jeg er kommet igennem en svær sorg proces, og hjulpet med de udfordringer, der har været i mit liv. Hun har formået at skabe et rum, hvor jeg er tryg i at dele alt og føler mig set, hørt og forstået. Jeg har lært at arbejde med mig selv på nye måder og har fundet mere ro i min hverdag. Jeg er taknemlig for Heidi, både som person og terapeut, specielt hendes evne til at gribe et andet menneske på. Jeg kan varmt anbefale hende til dem, som har brug for støtte til at dele og bearbejde de svære ting i livet.”   
+                “Jeg startede i terapi hos Heidi for et år siden, hvilket har hjulpet mig på måder der er svære at sætte ord på. Hendes nærvær og omsorg kombineret med de terapeutiske metoder har gjort, at jeg er kommet igennem en svær sorg proces, og hjulpet med de udfordringer, der har været i mit liv. Hun har formået at skabe et rum, hvor jeg er tryg i at dele alt og føler mig set, hørt og forstået. Jeg har lært at arbejde med mig selv på nye måder og har fundet mere ro i min hverdag. Jeg er taknemlig for Heidi, både som person og terapeut, specielt hendes evne til at gribe et andet menneske på. Jeg kan varmt anbefale hende til dem, som har brug for støtte til at dele og bearbejde de svære ting i livet.”
             </p>
             <p class="name">Udtalelse fra kvinde på 34 år i terapiforløb</p>
         </div>
 
         <div class="testimonial-box">
             <p class="quote">
-                “Vores datter var igennem 2 år blevet holdt udenfor i sin klasse, dette var begyndt at sætte sit præg på hendes psyke på sådan måde, at hun ikke alene blev indadvendt, men faktisk helt indelukket. Så da hun startede på efterskole, var det svært for hende at tage imod og stole på mennesker. Hun vidste, som hun selv sagde det, ikke hvordan man var sammen med nogen, der godt gad at tale med hende. Vi besluttede derfor at hun skulle prøve at have et par timer sammen med Heidi. Allerede efter et par gange var virkningen synlig. Vores datter siger, at det var dejligt at have en at tale med. Hun følte sig set og hørt og synes det var dejligt ikke at blive behandlet som et barn, men samtidig blev der talt et sprog, hun forstod. Hun følte sig øjeblikkeligt tryg, og hun havde lyst til at fortælle om sig selv og hendes hverdag. I dag går vores datter på 2. år på efterskolen og ikke alene trives hun, men hun er også begyndt at bygge et ungdomsliv op omkring sig selv, da hun efter at have været hos Heidi var klar til at tage imod og hendes tillid til andre mennesker var begyndt at blive genoprettet og herefter har hun gjort sig mange positive erfaringer på netop dette.”
+                “Vores datter var igennem 2 år blevet holdt udenfor i sin klasse, dette var begyndt at sætte sit præg på hendes psyke på sådan måde, at hun ikke alene blev indadvendt, men faktisk helt indelukket. Så da hun startede på efterskole, var det svært for hende at tage imod og stole på mennesker. Hun vidste, som hun selv sagde det, ikke hvordan man var sammen med nogen, der godt gad at tale med hende. Vi besluttede derfor at hun skulle prøve at have et par timer sammen med Heidi. Allerede efter et par gange var virkningen synlig. Vores datter siger, at det var dejligt at have en at tale med. Hun følte sig set og hørt og synes det var dejligt ikke at blive behandlet som et barn, men samtidig blev der talt et sprog, hun forstod. Hun følte sig øjeblikkeligt tryg, og hun havde lyst til at fortælle om sig selv og hendes hverdag. I dag går vores datter på 2. år på efterskolen og ikke alene trives hun, men hun er også begyndt at bygge et ungdomsliv op omkring sig selv, da hun efter at have været hos Heidi var klar til at tage imod og hendes tillid til andre mennesker var begyndt at blive genoprettet og herefter har hun gjort sig mange positive erfaringer på netop dette.”
             </p>
             <p class="name">Udtalelse fra forældre til pige på 15 år i terapiforløb</p>
         </div>
@@ -72,33 +83,11 @@
     </div>
 </section>
 
+
 <!-- FOOTER -->
 <footer>
     &copy; 2025 hverdag og dybde — alle rettigheder forbeholdes
 </footer>
-
-
-<!-- SCRIPT TIL KNAPPERNE -->
-<script>
-    const hverdagBtn = document.getElementById("hverdagBtn");
-    const dybdeBtn = document.getElementById("dybdeBtn");
-    const hverdag = document.getElementById("hverdag");
-    const dybde = document.getElementById("dybde");
-
-    hverdagBtn.addEventListener("click", () => {
-        hverdag.classList.add("show");
-        dybde.classList.remove("show");
-        hverdagBtn.classList.add("active");
-        dybdeBtn.classList.remove("active");
-    });
-
-    dybdeBtn.addEventListener("click", () => {
-        dybde.classList.add("show");
-        hverdag.classList.remove("show");
-        dybdeBtn.classList.add("active");
-        hverdagBtn.classList.remove("active");
-    });
-</script>
 
 </body>
 </html>
