@@ -67,11 +67,11 @@ header {
   font-family: var(--font-serif);
   color: var(--wood-1);
   letter-spacing: 1px;
+  text-decoration: none;   /* 👈 tilføjet */
 }
 
-.logo a {
-  text-decoration: none;
-  color: inherit;
+.logo:hover {
+  text-decoration: none;   /* 👈 fjerner underline ved hover */
 }
 
 nav ul {
