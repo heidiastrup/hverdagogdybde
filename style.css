@@ -70,8 +70,8 @@ header {
   text-decoration: none;   /* 👈 tilføjet */
 }
 
-.logo:hover {
-  text-decoration: none;   /* 👈 fjerner underline ved hover */
+a.logo:hover {
+    text-decoration: none !important;
 }
 
 nav ul {
