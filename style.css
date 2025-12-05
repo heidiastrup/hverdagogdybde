@@ -164,13 +164,7 @@ main, .intro-section, .hero, .testimonials{
   grid-template-columns:1fr;
   gap:60px;
 }
-.testimonial-box{
-  text-align:left;
-  padding:20px;
-  background:var(--white);
-  border-radius:10px;
-  box-shadow:0 2px 5px rgba(0,0,0,0.05);
-}
+
 .quote{ font-size:18px; line-height:1.7; margin-bottom:20px; color:var(--text-dark); }
 .name{ font-size:18px; font-weight:700; color:var(--wood-1); }
 
