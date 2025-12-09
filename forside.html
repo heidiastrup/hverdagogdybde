@@ -17,7 +17,9 @@
 <header>
   <div class="navbar">
     <a href="forside.html" class="logo">hverdag og dybde</a>
-    <nav>
+
+    <!-- DESKTOP MENU -->
+    <nav class="desktop-nav">
       <ul>
         <li><a href="forside.html">Forside</a></li>
         <li><a href="om.html">Min praksis</a></li>
@@ -25,8 +27,32 @@
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+
+    <!-- BURGER IKON -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </header>
+
+<!-- MOBILMENU DER GLIDER IND -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="forside.html">Forside</a></li>
+    <li><a href="om.html">Min praksis</a></li>
+    <li><a href="priser.html">Priser</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+</div>
+
+<!-- OVERLAY -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+
+
 
 <!-- HERO -->
 <section class="hero" aria-hidden="true">
@@ -46,26 +72,25 @@
 
     <div class="testimonial-box">
       <p class="quote">
-        “Jeg startede i terapi hos Heidi for et år siden, hvilket har hjulpet mig på måder der er svære at sætte ord på. Hendes nærvær og omsorg kombineret med de terapeutiske metoder har gjort, at jeg er kommet igennem en svær sorg proces, og hjulpet med de udfordringer, der har været i mit liv. Hun har formået at skabe et rum, hvor jeg er tryg i at dele alt og føler mig set, hørt og forstået. Jeg har lært at arbejde med mig selv på nye måder og har fundet mere ro i min hverdag. Jeg er taknemlig for Heidi, både som person og terapeut, specielt hendes evne til at gribe et andet menneske på. Jeg kan varmt anbefale hende til dem, som har brug for støtte til at dele og bearbejde de svære ting i livet.”
+        “Jeg startede i terapi hos Heidi for et år siden … ”
       </p>
       <p class="name">Udtalelse fra kvinde på 34 år i terapiforløb</p>
     </div>
 
     <div class="testimonial-box">
-      <p class="quote">
-        “Vores datter var igennem 2 år blevet holdt udenfor i sin klasse, dette var begyndt at sætte sit præg på hendes psyke på sådan måde, at hun ikke alene blev indadvendt, men faktisk helt indelukket. Så da hun startede på efterskole, var det svært for hende at tage imod og stole på mennesker. Hun vidste, som hun selv sagde det, ikke hvordan man var sammen med nogen, der godt gad at tale med hende. Vi besluttede derfor at hun skulle prøve at have et par timer sammen med Heidi. Allerede efter et par gange var virkningen synlig. Vores datter siger, at det var dejligt at have en at tale med. Hun følte sig set og hørt og synes det var dejligt ikke at blive behandlet som et barn, men samtidig blev der talt et sprog, hun forstod. Hun følte sig øjeblikkeligt tryg, og hun havde lyst til at fortælle om sig selv og hendes hverdag. I dag går vores datter på 2. år på efterskolen og ikke alene trives hun, men hun er også begyndt at bygge et ungdomsliv op omkring sig selv, da hun efter at have været hos Heidi var klar til at tage imod og hendes tillid til andre mennesker var begyndt at blive genoprettet og herefter har hun gjort sig mange positive erfaringer på netop dette.”
-      </p>
+      <p class="quote">“Vores datter var igennem 2 år blevet holdt udenfor …”</p>
       <p class="name">Udtalelse fra forældre til pige på 15 år i terapiforløb</p>
     </div>
 
     <div class="testimonial-box">
-      <p class="quote">
-        “I’ve had an amazing experience working with Heidi. She creates a warm and relaxed atmosphere and a safe space to open up, while still keeping everything very professional. She’s extremely friendly, understanding, and easy to talk to. After every session, I left feeling lighter and more self-aware, often with new tools and perspectives that truly helped me grow and make positive changes in my life. I’m really grateful to have found her and would highly recommend her to anyone looking for genuine, and effective support.”
-      </p>
+      <p class="quote">“I’ve had an amazing experience working with Heidi …”</p>
       <p class="name">Udtalelse fra kvinde på 25 år i terapiforløb</p>
     </div>
 
-    <!-- NY SEKTION: BILLEDE VENSTRE + TEKST HØJRE -->
+  </div>
+</section>
+
+<!-- INTRO SECTION -->
 <section class="intro-section" aria-label="Introduktion">
   <div class="intro-img-wrap">
     <img src="img/intro-left.jpg" alt="Terapi rum" class="intro-img">
@@ -74,17 +99,35 @@
   <div class="intro-text">
     <h2>Psykoterapeutisk praksis i Tilst</h2>
     <p>
-      Som psykoterapeut arbejder jeg balanceret med det hele menneske, og jeg har erfaring med unge, voksne og par. Jeg arbejder dybdegående ud fra forskellige psykoterapeutiske tilgange, der skaber vedvarende forandring. 
+      Som psykoterapeut arbejder jeg balanceret med det hele menneske …
     </p>
   </div>
 </section>
-  </div>
-</section>
+
 
 <!-- FOOTER -->
 <footer>
   &copy; 2025 hverdag og dybde — alle rettigheder forbeholdes
 </footer>
+
+<!-- SCRIPT: BURGER MENU -->
+<script>
+  const burger = document.getElementById("burger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const overlay = document.getElementById("menuOverlay");
+
+  burger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+    overlay.classList.toggle("show");
+    burger.classList.toggle("open");
+  });
+
+  overlay.addEventListener("click", () => {
+    mobileMenu.classList.remove("open");
+    overlay.classList.remove("show");
+    burger.classList.remove("open");
+  });
+</script>
 
 </body>
 </html>
