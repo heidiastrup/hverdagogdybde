@@ -1,19 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt - hverdag og dybde</title>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="navbar">
     <a href="forside.html" class="logo">hverdag og dybde</a>
@@ -25,19 +20,46 @@
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
   </div>
 </header>
 
-<!-- PAGE CONTENT -->
-<!-- (din tekst her) -->
+<nav class="nav-mobile" id="mobileMenu">
+  <ul>
+    <li><a href="forside.html">Forside</a></li>
+    <li><a href="om.html">Min praksis</a></li>
+    <li><a href="priser.html">Priser</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
 
-<!-- FOOTER -->
-<footer>
-  © <span id="year"></span> hverdag og dybde
-</footer>
+<main style="padding:120px 40px; max-width:900px; margin:0 auto;">
+  <h1>Kontakt</h1>
+  <p>
+    Heidi Astrup Petersen<br>
+    Psykoterapeut MPF<br>
+    Tilst, Aarhus
+  </p>
+  <p>
+    Telefon: +45 1234 5678<br>
+    Email: <a href="mailto:info@hverdagogdybde.dk">info@hverdagogdybde.dk</a>
+  </p>
+  <p>
+    Du er altid velkommen til at skrive eller ringe for at høre mere om terapiforløb og priser, eller booke en tid.
+  </p>
+</main>
+
+<footer>&copy; <span id="year"></span> hverdag og dybde — alle rettigheder forbeholdes</footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
+const burger = document.getElementById("burger");
+const mobileMenu = document.getElementById("mobileMenu");
+burger.addEventListener("click", ()=>{
+  mobileMenu.classList.toggle("active");
+  burger.classList.toggle("open");
+});
 </script>
+
 </body>
 </html>
