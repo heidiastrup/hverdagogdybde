@@ -1,188 +1,49 @@
-/* ------------------------------
-   FARVER   
---------------------------------*/
-:root{
-  --gold-1:#D9A441; --gold-2:#C18E3C; --gold-3:#F2C879;
-  --wood-1:#A67C52; --wood-2:#D3B48C; --wood-3:#F5E8D3;
-  --kleenex-red:#D43A3A; --kleenex-ro:#E65A32; --kleenex-orange:#F28F3B;
-  --text-dark:#3f3f3f; --text-muted:#5a5a5a; --white:#ffffff; --bg-light:#F5E8D3;
-  --font-serif:'Georgia',serif; --font-sans:'Helvetica Neue',Arial,sans-serif;
-}
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forside - hverdag og dybde</title>
 
-/* RESET */
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family:var(--font-sans);
-  background:var(--bg-light);
-  color:var(--text-dark);
-  line-height:1.6;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-/* HEADER */
-header{
-  width:100%;
-  background:var(--wood-3);
-  padding:20px 40px;
-  position:fixed;
-  top:0; left:0;
-  z-index:50;
-  box-shadow:0 2px 6px rgba(0,0,0,0.08);
-}
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  max-width:1400px;
-  margin:0 auto;
-}
-a.logo{
-  font-size:22px;
-  font-weight:600;
-  text-transform:lowercase;
-  font-family:var(--font-serif);
-  color:var(--wood-1);
-  letter-spacing:1px;
-  text-decoration:none;      /* fjerner understreg */
-}
-a.logo:hover{ text-decoration:none !important; color:var(--wood-1); }
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-nav ul{ list-style:none; display:flex; gap:30px;}
-nav ul li a{
-  text-transform:lowercase;
-  color:var(--text-dark);
-  text-decoration:none;
-  font-weight:600;
-  font-size:16px;
-  padding:5px 0;
-  transition:0.25s ease;
-}
-nav ul li a:hover{ color:var(--kleenex-orange); }
+<!-- HEADER -->
+<header>
+  <div class="navbar">
+    <a href="forside.html" class="logo">hverdag og dybde</a>
+    <nav>
+      <ul>
+        <li><a href="forside.html">Forside</a></li>
+        <li><a href="om.html">Min praksis</a></li>
+        <li><a href="priser.html">Priser</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-/* FOR at sikre at indhold ikke ligger under fixed header */
-main, .intro-section, .hero, .testimonials{
-  /* vi bruger margin-top i sektionerne separat, men som fallback: */
-  padding-top: 20px;
-}
+<!-- HERO -->
+<section class="hero" aria-hidden="true">
+  <img src="img/left.jpg" alt="">
+  <div class="hero-center">
+    <h1>Et trygt rum til at dele alt det, livet er.</h1>
+    <p>Forandring sker, når tryghed giver mod til at åbne op for det, der er svært.</p>
+  </div>
+  <img src="img/right.jpg" alt="">
+</section>
 
-/* --------------------------------
-   HERO
-----------------------------------*/
-.hero{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  width:100%;
-  min-height:90vh;
-  background:var(--white);
-  margin-top: 40px;
-}
-.hero img{ width:100%; height:100%; object-fit:cover; }
-.hero-center{
-  padding:80px 40px;
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-.hero-center h1{
-  font-family:var(--font-serif);
-  font-size:54px;
-  line-height:1.2;
-  color:var(--wood-1);
-  margin-bottom:30px;
-}
-.hero-center p{
-  font-size:20px; color:var(--text-muted); max-width:500px; margin:0 auto;
-}
+<!-- KLIENTUDTALELSER -->
+<section class="testimonials" aria-label="Klientudtalelser">
+  <h2 class="testimonials-title">Klientudtalelser</h2>
 
-/* --------------------------------
-   TESTIMONIALS
-----------------------------------*/
-.testimonials{
-  width:90%;
-  max-width:900px;
-  margin:0 auto;
-  text-align:center;
-  padding:80px 0;
-}
-.testimonials-title{
-  font-size:42px;
-  font-weight:700;
-  font-family:var(--font-serif);
-  color:var(--wood-1);
-  margin-bottom:40px;
-}
-.testimonials-container{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:60px;
-}
+  <div class="testimonials-container">
 
-.quote{ font-size:18px; line-height:1.7; margin-bottom:20px; color:var(--text-dark); }
-.name{ font-size:18px; font-weight:700; color:var(--wood-1); }
-
-/* --------------------------------
-   INTRO-SEKTION (billede venstre + tekst højre)
-----------------------------------*/
-.intro-section{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:0;
-  margin-top: 120px; /* plads til header */
-  min-height:60vh;
-  background:var(--white);
-  align-items:stretch;
-}
-
-/* wrap til billedet hvis du vil beskære ved højde */
-.intro-img-wrap{
-  width:100%;
-  height:100%;
-  overflow:hidden;
-}
-
-.intro-img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-/* tekst til højre */
-.intro-text{
-  padding:80px 60px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  text-align:left;
-}
-.intro-text h2{
-  font-family:var(--font-serif);
-  font-size:48px;
-  line-height:1.05;
-  color:var(--wood-1);
-  margin-bottom:20px;
-}
-.intro-text p{
-  font-size:18px;
-  color:var(--text-muted);
-  max-width:520px;
-}
-
-/* FOOTER */
-footer{
-  background:var(--wood-2);
-  padding:40px;
-  text-align:center;
-  margin-top:80px;
-  font-size:14px;
-}
-
-/* RESPONSIVE */
-@media (max-width:1000px){
-  .intro-section{ grid-template-columns: 1fr; margin-top: 120px; }
-  .intro-text{ padding:40px 30px; text-align:center; }
-  .intro-text h2{ font-size:36px; }
-  .hero{ grid-template-columns: 1fr; margin-top: 20px; min-height:60vh; }
-  .hero-center{ padding:40px 20px; }
-  nav ul{ gap:15px; }
-}
+    <div class="testimonial-box">
+      <p class="quote">
+        “Jeg startede i terapi hos Heidi for et år siden, hvilket har hjulpet mig på måder der er svære at sætte ord på. Hendes nærvær og omsorg kombineret med de terapeutiske metoder h
