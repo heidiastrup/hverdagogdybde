@@ -1,19 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Min praksis - hverdag og dybde</title>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="navbar">
     <a href="forside.html" class="logo">hverdag og dybde</a>
@@ -25,20 +20,41 @@
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
   </div>
 </header>
 
-<!-- PAGE CONTENT -->
-<!-- (din tekst her) -->
+<nav class="nav-mobile" id="mobileMenu">
+  <ul>
+    <li><a href="forside.html">Forside</a></li>
+    <li><a href="om.html">Min praksis</a></li>
+    <li><a href="priser.html">Priser</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
 
-<!-- FOOTER -->
-<footer>
-  © <span id="year"></span> hverdag og dybde
-</footer>
+<main style="padding:120px 40px; max-width:900px; margin:0 auto;">
+  <h1>Min praksis</h1>
+  <p>
+    Velkommen til min psykoterapeutiske praksis. Som psykoterapeut arbejder jeg balanceret med det hele menneske, og jeg har erfaring med unge, voksne og par. Jeg arbejder dybdegående ud fra forskellige psykoterapeutiske tilgange, der skaber vedvarende forandring. 
+  </p>
+  <p>
+    Mit fokus er at skabe et trygt rum, hvor du kan dele det, der er svært, og få støtte til at finde nye perspektiver og løsninger. Jeg kombinerer evidensbaserede metoder med empati og nærvær, så du føler dig set, hørt og forstået.
+  </p>
+</main>
+
+<footer>&copy; <span id="year"></span> hverdag og dybde — alle rettigheder forbeholdes</footer>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
+const burger = document.getElementById("burger");
+const mobileMenu = document.getElementById("mobileMenu");
+burger.addEventListener("click", ()=>{
+  mobileMenu.classList.toggle("active");
+  burger.classList.toggle("open");
+});
 </script>
+
 </body>
 </html>
 
