@@ -12,7 +12,7 @@
 }
 
 /* RESET */
-*{margin:0;padding:0;box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box;}
 body{
   font-family:var(--sans);
   background:var(--white);
@@ -42,13 +42,11 @@ header{
   font-weight:700;
   text-decoration:none;
   display:inline-block;
+  color: var(--text-dark);
 }
-.logo-serif{
-  font-family:var(--serif);
-}
-.logo-sans{
-  font-family:var(--sans);
-}
+.logo-serif{ font-family: var(--serif); }
+.logo-sans{ font-family: var(--sans); }
+.logo:hover{ color: var(--rose-dark); }
 
 /* NAVIGATION */
 nav{
