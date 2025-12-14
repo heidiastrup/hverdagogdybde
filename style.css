@@ -38,14 +38,19 @@ header{
   gap:20px;
 }
 .logo{
-  font-family: var(--serif);
   font-size:24px;
   font-weight:700;
-  background: linear-gradient(90deg, var(--serif), var(--sans));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-decoration:none;
+  display:inline-block;
 }
+.logo-serif{
+  font-family:var(--serif);
+}
+.logo-sans{
+  font-family:var(--sans);
+}
+
+/* NAVIGATION */
 nav{
   margin-left:auto;
 }
@@ -75,8 +80,6 @@ nav a:hover{ color:var(--rose-dark); }
   background:var(--text-dark);
   transition: all 0.3s;
 }
-
-/* BURGER ANIMATION */
 .burger.open span:nth-child(1){
   transform: rotate(45deg) translate(5px,5px);
 }
@@ -158,6 +161,11 @@ section{ padding:80px 20px; }
   display:grid;
   grid-template-columns:1fr 1fr;
   background:var(--rose);
+}
+.intro-img-wrap img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
 }
 .intro-text{
   padding:80px;
