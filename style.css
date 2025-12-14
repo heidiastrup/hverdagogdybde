@@ -1,34 +1,56 @@
+/* =========================
+   GOOGLE FONT: Montserrat
+   ========================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+
+/* =========================
+   VARIABLES
+   ========================= */
+
 :root{
   --sand:#F5E8D3;
-  --sand-dark:#D3B48C;
   --rose:#EAD6D9;
   --rose-dark:#D9B7BE;
   --text-dark:#3F3F3F;
   --text-muted:#6A6A6A;
   --white:#FFFFFF;
 
-  --serif:'Playfair Display', serif;
-  --sans:'Inter', sans-serif;
+  --font-sans:'Montserrat', sans-serif;
+  --font-serif:'Montserrat', sans-serif;
 }
 
-/* RESET */
-*{margin:0;padding:0;box-sizing:border-box;}
+/* =========================
+   RESET
+   ========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 body{
-  font-family:var(--sans);
+  font-family:var(--font-sans);
   background:var(--white);
   color:var(--text-dark);
   line-height:1.6;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+   ========================= */
+
 header{
   position:fixed;
-  top:0; left:0;
+  top:0;
+  left:0;
   width:100%;
   background:var(--sand);
   z-index:100;
   box-shadow:0 2px 6px rgba(0,0,0,0.08);
 }
+
 .navbar{
   max-width:1400px;
   margin:0 auto;
@@ -37,34 +59,41 @@ header{
   align-items:center;
   gap:20px;
 }
+
+/* LOGO */
 .logo{
   font-size:24px;
   font-weight:700;
   text-decoration:none;
-  display:inline-block;
-  color: var(--text-dark);
+  color:var(--text-dark);
+  font-family:var(--font-sans);
 }
-.logo-serif{ font-family: var(--serif); }
-.logo-sans{ font-family: var(--sans); }
-.logo:hover{ color: var(--rose-dark); }
 
-/* NAVIGATION */
+/* NAVIGATION DESKTOP */
 nav{
   margin-left:auto;
 }
+
 nav ul{
   list-style:none;
   display:flex;
   gap:30px;
 }
+
 nav a{
   text-decoration:none;
   color:var(--text-dark);
   font-weight:600;
 }
-nav a:hover{ color:var(--rose-dark); }
 
-/* BURGER */
+nav a:hover{
+  color:var(--rose-dark);
+}
+
+/* =========================
+   BURGER MENU
+   ========================= */
+
 .burger{
   display:none;
   flex-direction:column;
@@ -73,25 +102,32 @@ nav a:hover{ color:var(--rose-dark); }
   cursor:pointer;
   z-index:101;
 }
+
 .burger span{
-  width:26px;height:3px;
+  width:26px;
+  height:3px;
   background:var(--text-dark);
-  transition: all 0.3s;
+  transition:0.3s;
 }
+
 .burger.open span:nth-child(1){
-  transform: rotate(45deg) translate(5px,5px);
+  transform:rotate(45deg) translate(5px,5px);
 }
 .burger.open span:nth-child(2){
   opacity:0;
 }
 .burger.open span:nth-child(3){
-  transform: rotate(-45deg) translate(5px,-5px);
+  transform:rotate(-45deg) translate(5px,-5px);
 }
 
-/* MOBILE MENU */
+/* =========================
+   MOBILE MENU
+   ========================= */
+
 .nav-mobile{
   position:fixed;
-  top:0; right:-100%;
+  top:0;
+  right:-100%;
   width:260px;
   height:100vh;
   background:var(--sand);
@@ -99,28 +135,45 @@ nav a:hover{ color:var(--rose-dark); }
   transition:0.3s;
   z-index:100;
 }
-.nav-mobile.active{ right:0; }
-.nav-mobile ul{ list-style:none; padding:0 30px; }
-.nav-mobile li{ margin-bottom:25px; }
+
+.nav-mobile.active{
+  right:0;
+}
+
+.nav-mobile ul{
+  list-style:none;
+  padding:0 30px;
+}
+
+.nav-mobile li{
+  margin-bottom:25px;
+}
+
 .nav-mobile a{
   text-decoration:none;
   color:var(--text-dark);
   font-size:18px;
+  font-weight:600;
 }
 
-/* HERO */
+/* =========================
+   HERO
+   ========================= */
+
 .hero{
   margin-top:100px;
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   min-height:90vh;
 }
+
 .hero img{
   width:100%;
   height:100%;
   object-fit:cover;
   z-index:0;
 }
+
 .hero-center{
   padding:80px 40px;
   text-align:center;
@@ -131,70 +184,80 @@ nav a:hover{ color:var(--rose-dark); }
   position: relative;
   z-index:1;
 }
+
 .hero-center h1{
-  font-family:var(--serif);
   font-size:48px;
+  font-family:var(--font-sans);
   margin-bottom:25px;
 }
-.hero-center p{ font-size:20px; }
 
-/* SECTIONS */
-section{ padding:80px 20px; }
+.hero-center p{
+  font-size:20px;
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+section{
+  padding:80px 20px;
+}
+
 .testimonials{
   max-width:900px;
   margin:0 auto;
   text-align:center;
 }
+
 .testimonials h2{
-  font-family:var(--serif);
   font-size:40px;
   margin-bottom:40px;
+  font-family:var(--font-sans);
 }
-.testimonial-box{ margin-bottom:60px; }
-.quote{ font-size:18px; margin-bottom:15px; }
-.name{ font-weight:600; }
 
-/* INTRO */
+.testimonial-box{
+  margin-bottom:60px;
+}
+
+.quote{
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.name{
+  font-weight:600;
+}
+
+/* =========================
+   INTRO
+   ========================= */
+
 .intro-section{
   display:grid;
   grid-template-columns:1fr 1fr;
   background:var(--rose);
 }
+
 .intro-img-wrap img{
   width:100%;
   height:auto;
   object-fit:cover;
 }
+
 .intro-text{
   padding:80px;
 }
+
 .intro-text h2{
-  font-family:var(--serif);
   font-size:40px;
   margin-bottom:20px;
+  font-family:var(--font-sans);
 }
 
-/* FORM */
-form{
-  max-width:600px;
-  margin:0 auto;
-}
-input, textarea{
-  width:100%;
-  padding:14px;
-  margin-bottom:20px;
-  border:1px solid #ccc;
-  font-family:var(--sans);
-}
-button{
-  background:var(--rose-dark);
-  border:none;
-  padding:14px 30px;
-  cursor:pointer;
-  font-weight:600;
-}
+/* =========================
+   FOOTER
+   ========================= */
 
-/* FOOTER */
 footer{
   background:var(--sand);
   padding:40px;
@@ -202,7 +265,10 @@ footer{
   margin-top:80px;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+   ========================= */
+
 @media(max-width:900px){
   nav{ display:none; }
   .burger{ display:flex; }
