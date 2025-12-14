@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontakt - hverdag og dybde</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt – hverdag og dybde</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -24,41 +24,30 @@
   </div>
 </header>
 
-<nav class="nav-mobile" id="mobileMenu">
-  <ul>
-    <li><a href="forside.html">Forside</a></li>
-    <li><a href="om.html">Min praksis</a></li>
-    <li><a href="priser.html">Priser</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-  </ul>
-</nav>
+<section>
+  <h2 style="text-align:center;font-family:var(--serif);">Kontakt</h2>
 
-<main style="padding:120px 40px; max-width:900px; margin:0 auto;">
-  <h1>Kontakt</h1>
-  <p>
-    Heidi Astrup Petersen<br>
-    Psykoterapeut MPF<br>
-    Tilst, Aarhus
-  </p>
-  <p>
-    Telefon: +45 1234 5678<br>
-    Email: <a href="mailto:info@hverdagogdybde.dk">info@hverdagogdybde.dk</a>
-  </p>
-  <p>
-    Du er altid velkommen til at skrive eller ringe for at høre mere om terapiforløb og priser, eller booke en tid.
-  </p>
-</main>
+  <form action="https://formspree.io/f/XXXXXXXX" method="POST">
+    <input type="text" name="name" placeholder="Dit navn" required>
+    <input type="email" name="email" placeholder="Din e-mail" required>
+    <textarea name="message" rows="6" placeholder="Din besked" required></textarea>
 
-<footer>&copy; <span id="year"></span> hverdag og dybde — alle rettigheder forbeholdes</footer>
+    <p style="font-size:14px;">
+      Ved at sende formularen accepterer du, at dine oplysninger bruges til at kontakte dig.
+    </p>
+
+    <button type="submit">Send besked</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 hverdag og dybde
+</footer>
 
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
-const burger = document.getElementById("burger");
-const mobileMenu = document.getElementById("mobileMenu");
-burger.addEventListener("click", ()=>{
-  mobileMenu.classList.toggle("active");
-  burger.classList.toggle("open");
-});
+const burger=document.getElementById("burger");
+const mobile=document.querySelector(".nav-mobile");
+burger?.addEventListener("click",()=>mobile.classList.toggle("active"));
 </script>
 
 </body>
