@@ -35,12 +35,16 @@ header{
   padding:20px 40px;
   display:flex;
   align-items:center;
+  gap:20px;
 }
 .logo{
-  font-family:var(--serif);
-  font-size:22px;
+  font-family: var(--serif);
+  font-size:24px;
+  font-weight:700;
+  background: linear-gradient(90deg, var(--serif), var(--sans));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration:none;
-  color:var(--text-dark);
 }
 nav{
   margin-left:auto;
@@ -64,117 +68,8 @@ nav a:hover{ color:var(--rose-dark); }
   gap:5px;
   margin-left:auto;
   cursor:pointer;
+  z-index:101;
 }
 .burger span{
   width:26px;height:3px;
-  background:var(--text-dark);
-}
-
-/* MOBILE MENU */
-.nav-mobile{
-  position:fixed;
-  top:0; right:-100%;
-  width:260px;
-  height:100vh;
-  background:var(--sand);
-  padding-top:120px;
-  transition:0.3s;
-}
-.nav-mobile.active{ right:0; }
-.nav-mobile ul{ list-style:none; padding:0 30px; }
-.nav-mobile li{ margin-bottom:25px; }
-.nav-mobile a{
-  text-decoration:none;
-  color:var(--text-dark);
-  font-size:18px;
-}
-
-/* HERO */
-.hero{
-  margin-top:100px;
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  min-height:90vh;
-}
-.hero img{ width:100%; height:100%; object-fit:cover; }
-.hero-center{
-  padding:80px 40px;
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  background:var(--rose);
-}
-.hero-center h1{
-  font-family:var(--serif);
-  font-size:48px;
-  margin-bottom:25px;
-}
-.hero-center p{ font-size:20px; }
-
-/* SECTIONS */
-section{ padding:80px 20px; }
-.testimonials{
-  max-width:900px;
-  margin:0 auto;
-  text-align:center;
-}
-.testimonials h2{
-  font-family:var(--serif);
-  font-size:40px;
-  margin-bottom:40px;
-}
-.testimonial-box{ margin-bottom:60px; }
-.quote{ font-size:18px; margin-bottom:15px; }
-.name{ font-weight:600; }
-
-/* INTRO */
-.intro-section{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  background:var(--rose);
-}
-.intro-text{
-  padding:80px;
-}
-.intro-text h2{
-  font-family:var(--serif);
-  font-size:40px;
-  margin-bottom:20px;
-}
-
-/* FORM */
-form{
-  max-width:600px;
-  margin:0 auto;
-}
-input, textarea{
-  width:100%;
-  padding:14px;
-  margin-bottom:20px;
-  border:1px solid #ccc;
-  font-family:var(--sans);
-}
-button{
-  background:var(--rose-dark);
-  border:none;
-  padding:14px 30px;
-  cursor:pointer;
-  font-weight:600;
-}
-
-/* FOOTER */
-footer{
-  background:var(--sand);
-  padding:40px;
-  text-align:center;
-  margin-top:80px;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  nav{ display:none; }
-  .burger{ display:flex; }
-  .hero{ grid-template-columns:1fr; }
-  .intro-section{ grid-template-columns:1fr; }
-}
+  backgrou
