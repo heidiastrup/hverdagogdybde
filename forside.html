@@ -5,18 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>hverdag og dybde - psykoterapi</title>
 
-<!-- Montserrat Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
   <div class="navbar">
-    <a href="forside.html" class="logo">
-      hverdag og dybde
-    </a>
+    <a href="forside.html" class="logo">hverdag og dybde</a>
 
     <nav>
       <ul>
@@ -52,29 +49,24 @@
 </section>
 
 <section class="testimonials">
-  <h2 class="testimonials-title">Klientudtalelser</h2>
+  <div class="testimonials-inner">
+    <h2>Klientudtalelser</h2>
 
-  <div class="testimonial-box">
-    <p class="quote">
-      “Jeg startede i terapi hos Heidi for et år siden, hvilket har hjulpet mig på måder der er svære at sætte ord på…
-    </p>
-    <p class="name">Udtalelse fra kvinde på 34 år i terapiforløb</p>
+    <div class="testimonial-box">
+      <p class="quote">“Jeg startede i terapi hos Heidi for et år siden …</p>
+      <p class="name">Udtalelse fra kvinde på 34 år i terapiforløb</p>
+    </div>
+
+    <div class="testimonial-box">
+      <p class="quote">“Vores datter var igennem 2 år blevet holdt udenfor …</p>
+      <p class="name">Udtalelse fra forældre til pige på 15 år i terapiforløb</p>
+    </div>
+
+    <div class="testimonial-box">
+      <p class="quote">“I’ve had an amazing experience working with Heidi …</p>
+      <p class="name">Udtalelse fra kvinde på 25 år i terapiforløb</p>
+    </div>
   </div>
-
-  <div class="testimonial-box">
-    <p class="quote">
-      “Vores datter var igennem 2 år blevet holdt udenfor i sin klasse…
-    </p>
-    <p class="name">Udtalelse fra forældre til pige på 15 år i terapiforløb</p>
-  </div>
-
-  <div class="testimonial-box">
-    <p class="quote">
-      “I’ve had an amazing experience working with Heidi. She creates a warm…
-    </p>
-    <p class="name">Udtalelse fra kvinde på 25 år i terapiforløb</p>
-  </div>
-
 </section>
 
 <section class="intro-section">
@@ -83,14 +75,12 @@
   </div>
   <div class="intro-text">
     <h2>Psykoterapeutisk praksis i Tilst</h2>
-    <p>Som psykoterapeut arbejder jeg balanceret med det hele menneske…
-    </p>
+    <p>Som psykoterapeut arbejder jeg balanceret med det hele menneske …</p>
   </div>
 </section>
 
-<footer>&copy; <span id="year"></span> hverdag og dybde — alle rettigheder forbeholdes</footer>
+<footer>&copy; <span id="year"></span> hverdag og dybde</footer>
 
-<!-- Burger + Year Script -->
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 const burger = document.getElementById("burger");
