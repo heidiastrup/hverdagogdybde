@@ -229,23 +229,30 @@ section{
 }
 
 /* =========================
-   INTRO
+   INTRO (OPTIMERET HØJDE)
    ========================= */
 
 .intro-section{
   display:grid;
   grid-template-columns:1fr 1fr;
   background:var(--rose);
+  min-height:60vh;              /* stopper sektionen i at blive for høj */
+  align-items:center;           /* centrér indhold lodret */
+  overflow:hidden;
+}
+
+.intro-img-wrap{
+  height:100%;
 }
 
 .intro-img-wrap img{
   width:100%;
-  height:auto;
+  height:100%;
   object-fit:cover;
 }
 
 .intro-text{
-  padding:80px;
+  padding:clamp(24px, 5vw, 60px); /* mindre luft på store skærme */
 }
 
 .intro-text h2{
@@ -273,8 +280,15 @@ footer{
   nav{ display:none; }
   .burger{ display:flex; }
   .hero{ grid-template-columns:1fr; }
-  .intro-section{ grid-template-columns:1fr; }
-  .intro-img-wrap{ margin-bottom:30px; }
+
+  .intro-section{
+    grid-template-columns:1fr;
+    min-height:auto;
+  }
+
+  .intro-img-wrap{
+    max-height:320px;
+  }
 }
 
 @media(max-width:600px){
