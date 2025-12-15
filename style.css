@@ -1,27 +1,5 @@
 /* =========================
-   GOOGLE FONT: Montserrat
-   ========================= */
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
-
-/* =========================
-   VARIABLES
-   ========================= */
-
-:root{
-  --sand:#F5E8D3;
-  --rose:#EAD6D9;
-  --rose-dark:#D9B7BE;
-  --text-dark:#3F3F3F;
-  --text-muted:#6A6A6A;
-  --white:#FFFFFF;
-
-  --font-sans:'Montserrat', sans-serif;
-  --font-serif:'Montserrat', sans-serif;
-}
-
-/* =========================
-   RESET
+   RESET + BASE
    ========================= */
 
 *{
@@ -31,9 +9,9 @@
 }
 
 body{
-  font-family:var(--font-sans);
-  background:var(--white);
-  color:var(--text-dark);
+  font-family:'Montserrat', sans-serif;
+  background:#fff;
+  color:#3F3F3F;
   line-height:1.6;
 }
 
@@ -44,11 +22,9 @@ body{
 header{
   position:fixed;
   top:0;
-  left:0;
   width:100%;
-  background:var(--sand);
+  background:#F5E8D3;
   z-index:100;
-  box-shadow:0 2px 6px rgba(0,0,0,0.08);
 }
 
 .navbar{
@@ -57,103 +33,29 @@ header{
   padding:20px 40px;
   display:flex;
   align-items:center;
-  gap:20px;
 }
 
-/* LOGO */
 .logo{
-  font-size:24px;
   font-weight:700;
+  font-size:24px;
   text-decoration:none;
-  color:var(--text-dark);
-  font-family:var(--font-sans);
+  color:#3F3F3F;
 }
 
-/* NAVIGATION DESKTOP */
 nav{
   margin-left:auto;
 }
 
 nav ul{
-  list-style:none;
   display:flex;
   gap:30px;
+  list-style:none;
 }
 
 nav a{
   text-decoration:none;
-  color:var(--text-dark);
   font-weight:600;
-}
-
-nav a:hover{
-  color:var(--rose-dark);
-}
-
-/* =========================
-   BURGER MENU
-   ========================= */
-
-.burger{
-  display:none;
-  flex-direction:column;
-  gap:5px;
-  margin-left:auto;
-  cursor:pointer;
-  z-index:101;
-}
-
-.burger span{
-  width:26px;
-  height:3px;
-  background:var(--text-dark);
-  transition:0.3s;
-}
-
-.burger.open span:nth-child(1){
-  transform:rotate(45deg) translate(5px,5px);
-}
-.burger.open span:nth-child(2){
-  opacity:0;
-}
-.burger.open span:nth-child(3){
-  transform:rotate(-45deg) translate(5px,-5px);
-}
-
-/* =========================
-   MOBILE MENU
-   ========================= */
-
-.nav-mobile{
-  position:fixed;
-  top:0;
-  right:-100%;
-  width:260px;
-  height:100vh;
-  background:var(--sand);
-  padding-top:120px;
-  transition:0.3s;
-  z-index:100;
-}
-
-.nav-mobile.active{
-  right:0;
-}
-
-.nav-mobile ul{
-  list-style:none;
-  padding:0 30px;
-}
-
-.nav-mobile li{
-  margin-bottom:25px;
-}
-
-.nav-mobile a{
-  text-decoration:none;
-  color:var(--text-dark);
-  font-size:18px;
-  font-weight:600;
+  color:#3F3F3F;
 }
 
 /* =========================
@@ -171,39 +73,32 @@ nav a:hover{
   width:100%;
   height:100%;
   object-fit:cover;
-  z-index:0;
 }
 
 .hero-center{
+  background:#EAD6D9;
   padding:80px 40px;
-  text-align:center;
   display:flex;
   flex-direction:column;
   justify-content:center;
-  background:var(--rose);
-  position: relative;
-  z-index:1;
+  text-align:center;
 }
 
 .hero-center h1{
   font-size:48px;
-  font-family:var(--font-sans);
-  margin-bottom:25px;
-}
-
-.hero-center p{
-  font-size:20px;
+  margin-bottom:20px;
 }
 
 /* =========================
-   SECTIONS
+   TESTIMONIALS – FULL WIDTH
    ========================= */
 
-section{
+.testimonials{
+  background:#EAD6D9;
   padding:80px 20px;
 }
 
-.testimonials{
+.testimonials-inner{
   max-width:900px;
   margin:0 auto;
   text-align:center;
@@ -212,37 +107,20 @@ section{
 .testimonials h2{
   font-size:40px;
   margin-bottom:40px;
-  font-family:var(--font-sans);
 }
 
 .testimonial-box{
-  margin-bottom:60px;
-}
-
-.quote{
-  font-size:18px;
-  margin-bottom:15px;
-}
-
-.name{
-  font-weight:600;
+  margin-bottom:40px;
 }
 
 /* =========================
-   INTRO (OPTIMERET HØJDE)
+   INTRO – KORTERE SEKTION
    ========================= */
 
 .intro-section{
   display:grid;
   grid-template-columns:1fr 1fr;
-  background:var(--rose);
-  min-height:60vh;              /* stopper sektionen i at blive for høj */
-  align-items:center;           /* centrér indhold lodret */
-  overflow:hidden;
-}
-
-.intro-img-wrap{
-  height:100%;
+  background:#EAD6D9;
 }
 
 .intro-img-wrap img{
@@ -252,13 +130,12 @@ section{
 }
 
 .intro-text{
-  padding:clamp(24px, 5vw, 60px); /* mindre luft på store skærme */
+  padding:40px 50px;
 }
 
 .intro-text h2{
-  font-size:40px;
-  margin-bottom:20px;
-  font-family:var(--font-sans);
+  font-size:36px;
+  margin-bottom:15px;
 }
 
 /* =========================
@@ -266,10 +143,9 @@ section{
    ========================= */
 
 footer{
-  background:var(--sand);
+  background:#F5E8D3;
   padding:40px;
   text-align:center;
-  margin-top:80px;
 }
 
 /* =========================
@@ -278,27 +154,6 @@ footer{
 
 @media(max-width:900px){
   nav{ display:none; }
-  .burger{ display:flex; }
   .hero{ grid-template-columns:1fr; }
-
-  .intro-section{
-    grid-template-columns:1fr;
-    min-height:auto;
-  }
-
-  .intro-img-wrap{
-    max-height:320px;
-  }
-}
-
-@media(max-width:600px){
-  .hero-center{
-    padding:40px 20px;
-  }
-  .hero-center h1{
-    font-size:32px;
-  }
-  .hero-center p{
-    font-size:16px;
-  }
+  .intro-section{ grid-template-columns:1fr; }
 }
