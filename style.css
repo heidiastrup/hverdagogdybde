@@ -10,7 +10,7 @@
 
 body{
   font-family:'Montserrat', sans-serif;
-  background:#fff;
+  background:#ffffff;
   color:#3F3F3F;
   line-height:1.6;
 }
@@ -76,7 +76,7 @@ nav a{
 }
 
 .hero-center{
-  background:#EAD6D9;
+  background:#f9f1f0; /* NY LYSE ROSA */
   padding:80px 40px;
   display:flex;
   flex-direction:column;
@@ -90,11 +90,11 @@ nav a{
 }
 
 /* =========================
-   TESTIMONIALS – FULL WIDTH
+   TESTIMONIALS – HVID BAGGRUND
    ========================= */
 
 .testimonials{
-  background:#EAD6D9;
+  background:#ffffff; /* HVID */
   padding:80px 20px;
 }
 
@@ -114,13 +114,13 @@ nav a{
 }
 
 /* =========================
-   INTRO – KORTERE SEKTION
+   INTRO – NY FARVE
    ========================= */
 
 .intro-section{
   display:grid;
   grid-template-columns:1fr 1fr;
-  background:#EAD6D9;
+  background:#f9f1f0; /* NY LYSE ROSA */
 }
 
 .intro-img-wrap img{
