@@ -92,6 +92,9 @@ nav a{
 /* =========================
    TESTIMONIALS – HVID
    ========================= */
+.name {
+  font-weight: 700;
+}
 
 .testimonials{
   background:#ffffff;
