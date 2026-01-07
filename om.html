@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Min praksis - hverdag og dybde</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Min praksis - hverdag og dybde</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
   <div class="navbar">
-    <a href="forside.html" class="logo">
-      <span class="logo-serif">hverdag</span> <span class="logo-sans">og dybde</span>
-    </a>
+    <a href="forside.html" class="logo">hverdag og dybde</a>
+
     <nav>
       <ul>
         <li><a href="forside.html">Forside</a></li>
@@ -22,7 +23,10 @@
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
-    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+
+    <div class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </div>
   </div>
 </header>
 
@@ -38,66 +42,15 @@
 <main style="padding:120px 40px; max-width:900px; margin:0 auto;">
   <h1>Min praksis</h1>
   <p>
-    Velkommen til min psykoterapeutiske praksis. Som psykoterapeut arbejder jeg balanceret med det hele menneske, og jeg har erfaring med unge, voksne og par. Jeg arbejder dybdegående ud fra forskellige psykoterapeutiske tilgange, der skaber vedvarende forandring. 
-  </p>
-  <p>
-    Mit fokus er at skabe et trygt rum, hvor du kan dele det, der er svært, og få støtte til at finde nye perspektiver og løsninger. Jeg kombinerer evidensbaserede metoder med empati og nærvær, så du føler dig set, hørt og forstået.
+    Velkommen til min psykoterapeutiske praksis.
   </p>
 </main>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-
-    <!-- Kontakt -->
-    <div class="footer-col">
-      <h4>Kontakt</h4>
-      <p>Telefon: 60 65 13 90</p>
-      <p>
-        <a href="mailto:kontakt@hverdagogdybde.dk">
-          kontakt@hverdagogdybde.dk
-        </a>
-      </p>
-
-      <div class="footer-social">
-        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-          <img src="img/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-          <img src="img/facebook.svg" alt="Facebook">
-        </a>
-      </div>
-    </div>
-
-    <!-- Information -->
-    <div class="footer-col">
-      <h4>Information</h4>
-      <p><a href="kontakt.html">Kontakt</a></p>
-      <p><a href="#">Privatlivspolitik</a></p>
-    </div>
-
-    <!-- Adresse -->
-    <div class="footer-col">
-      <h4>Adresse</h4>
-      <p>Pollenvænget 42, 1.4</p>
-      <p>8381 Tilst</p>
-    </div>
-
-    <!-- MPF logo -->
-    <div class="footer-logo">
-      <a href="https://psykoterapeutforeningen.dk" target="_blank" rel="noopener">
-        <img src="img/dpfo-logo.png" alt="Medlem af Dansk Psykoterapeutforening">
-      </a>
-    </div>
-
-  </div>
-</footer>
-
-
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
 const burger = document.getElementById("burger");
 const mobileMenu = document.getElementById("mobileMenu");
-burger.addEventListener("click", ()=>{
+
+burger.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
   burger.classList.toggle("open");
 });
@@ -105,4 +58,3 @@ burger.addEventListener("click", ()=>{
 
 </body>
 </html>
-
