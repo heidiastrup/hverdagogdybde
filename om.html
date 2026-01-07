@@ -46,10 +46,58 @@
   </p>
 </main>
 
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <!-- Kontakt -->
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <p>Telefon: +45 60 65 13 90</p>
+      <p>
+        <a href="mailto:kontakt@hverdagogdybde.dk">
+          kontakt@hverdagogdybde.dk
+        </a>
+      </p>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+          <img src="img/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <img src="img/facebook.svg" alt="Facebook">
+        </a>
+      </div>
+    </div>
+
+    <!-- Information -->
+    <div class="footer-col">
+      <h4>Information</h4>
+      <p><a href="kontakt.html">Kontakt</a></p>
+      <p><a href="#">Privatlivspolitik</a></p>
+    </div>
+
+    <!-- Adresse -->
+    <div class="footer-col">
+      <h4>Adresse</h4>
+      <p>Pollenvænget 42, 1.4</p>
+      <p>8381 Tilst</p>
+    </div>
+
+    <!-- MPF logo -->
+    <div class="footer-logo">
+      <a href="https://psykoterapeutforeningen.dk" target="_blank" rel="noopener">
+        <img src="img/dpfo-logo.png" alt="Medlem af Dansk Psykoterapeutforening">
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+
 <script>
+document.getElementById('year').textContent = new Date().getFullYear();
 const burger = document.getElementById("burger");
 const mobileMenu = document.getElementById("mobileMenu");
-
 burger.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
   burger.classList.toggle("open");
