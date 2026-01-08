@@ -111,27 +111,62 @@ nav a {
     margin-top: 10px; /* mellemrum mellem almindelig tekst og fed tekst */
 }
 
-/* ========================= Outro ========================= */
+/* ========================= Outro – kortere version ========================= */
 .intro-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #f9f1f0;
+    max-height: 500px;  /* maks højde for hele sektionen */
+    overflow: hidden;   /* skjuler alt, der går ud over max-højden */
+    align-items: center; /* centrerer indhold vertikalt */
+    gap: 0;
 }
 
 .intro-img-wrap img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-height: 500px;   /* begrænser billedhøjden */
+    object-fit: cover;   /* beskærer billedet uden at deformere det */
 }
 
 .intro-text {
-    padding: 20px 30px; /* mindre end før */
+    padding: 20px 30px;  /* mindre padding for kortere sektion */
 }
 
 .intro-text h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: 32px;      /* lidt mindre overskrift */
+    margin-bottom: 10px;  /* mindre mellemrum */
 }
+
+.intro-text p {
+    font-size: 15px;      /* lidt mindre tekst for kompakt look */
+    line-height: 1.5;
+}
+
+/* RESPONSIVE: kortere på mobil */
+@media(max-width: 900px) {
+    .intro-section {
+        grid-template-columns: 1fr;
+        max-height: none;  /* sektionen vokser med indhold på mobil */
+    }
+
+    .intro-img-wrap img {
+        max-height: 300px;
+    }
+
+    .intro-text {
+        padding: 15px 20px;
+    }
+
+    .intro-text h2 {
+        font-size: 28px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+    }
+}
+
 
 /* ========================= SITE FOOTER ========================= */
 .site-footer {
