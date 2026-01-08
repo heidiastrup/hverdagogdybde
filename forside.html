@@ -1,151 +1,119 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forside - hverdag og dybde</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside - hverdag og dybde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <div class="navbar">
+            <a href="forside.html" class="logo">hverdag og dybde</a>
+            <nav>
+                <ul>
+                    <li><a href="forside.html">Forside</a></li>
+                    <li><a href="om.html">Min praksis</a></li>
+                    <li><a href="priser.html">Priser</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
 
-<header>
-  <div class="navbar">
-    <a href="forside.html" class="logo">hverdag og dybde</a>
-
-    <nav>
-      <ul>
-        <li><a href="forside.html">Forside</a></li>
-        <li><a href="om.html">Min praksis</a></li>
-        <li><a href="priser.html">Priser</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
+    <nav class="nav-mobile" id="mobileMenu">
+        <ul>
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="om.html">Min praksis</a></li>
+            <li><a href="priser.html">Priser</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
     </nav>
 
-    <div class="burger" id="burger">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-</header>
+    <section class="hero">
+        <img src="img/left.jpg" alt="">
+        <div class="hero-center">
+            <h1>Et trygt rum til at dele alt det, livet er.</h1>
+            <p>Forandring sker, når tryghed giver mod til at åbne op for det, der er svært.</p>
+        </div>
+        <img src="img/right.jpg" alt="">
+    </section>
 
-<nav class="nav-mobile" id="mobileMenu">
-  <ul>
-    <li><a href="forside.html">Forside</a></li>
-    <li><a href="om.html">Min praksis</a></li>
-    <li><a href="priser.html">Priser</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-  </ul>
-</nav>
+    <section class="testimonials">
+        <div class="testimonials-inner">
+            <h2>Klientudtalelser</h2>
 
-<section class="hero">
-  <img src="img/left.jpg" alt="">
-  <div class="hero-center">
-    <h1>Et trygt rum til at dele alt det, livet er.</h1>
-    <p>Forandring sker, når tryghed giver mod til at åbne op for det, der er svært.</p>
-  </div>
-  <img src="img/right.jpg" alt="">
-</section>
+            <div class="testimonial-box">
+                <p class="quote">“Jeg startede i terapi hos Heidi for et år siden, hvilket har hjulpet mig på måder der er svære at sætte ord på. Hendes nærvær og omsorg kombineret med de terapeutiske metoder har gjort, at jeg er kommet igennem en svær sorg proces, og hjulpet med de udfordringer, der har været i mit liv. Hun har formået at skabe et rum, hvor jeg er tryg i at dele alt og føler mig set, hørt og forstået. Jeg har lært at arbejde med mig selv på nye måder og har fundet mere ro i min hverdag. Jeg er taknemlig for Heidi, både som person og terapeut, specielt hendes evne til at gribe et andet menneske på. Jeg kan varmt anbefale hende til dem, som har brug for støtte til at dele og bearbejde de svære ting i livet.”</p>
+                <p class="name">Udtalelse fra kvinde på 34 år i individuel terapiforløb</p>
+            </div>
 
-<script>
-const burger = document.getElementById("burger");
-const mobileMenu = document.getElementById("mobileMenu");
+            <div class="testimonial-box">
+                <p class="quote">“Vores datter var igennem 2 år blevet holdt udenfor i sin klasse, dette var begyndt at sætte sit præg på hendes psyke på sådan måde, at hun ikke alene blev indadvendt, men faktisk helt indelukket. Så da hun startede på efterskole, var det svært for hende at tage imod og stole på mennesker. Hun vidste, som hun selv sagde det, ikke hvordan man var sammen med nogen, der godt gad at tale med hende. Vi besluttede derfor at hun skulle prøve at have et par timer sammen med Heidi. Allerede efter et par gange var virkningen synlig. Vores datter siger, at det var dejligt at have en at tale med. Hun følte sig set og hørt og synes det var dejligt ikke at blive behandlet som et barn, men samtidig blev der talt et sprog, hun forstod. Hun følte sig øjeblikkeligt tryg, og hun havde lyst til at fortælle om sig selv og hendes hverdag. I dag går vores datter på 2. år på efterskolen og ikke alene trives hun, men hun er også begyndt at bygge et ungdomsliv op omkring sig selv, da hun efter at have været hos Heidi var klar til at tage imod og hendes tillid til andre mennesker var begyndt at blive genoprettet og herefter har hun gjort sig mange positive erfaringer på netop dette.”</p>
+                <p class="name">Udtalelse fra forældre til pige på 15 år i individuel terapiforløb</p>
+            </div>
 
-burger.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
-  burger.classList.toggle("open");
-});
-</script>
+            <div class="testimonial-box">
+                <p class="quote">“I’ve had an amazing experience working with Heidi. She creates a warm and relaxed atmosphere and a safe space to open up, while still keeping everything very professional. She’s extremely friendly, understanding, and easy to talk to. After every session, I left feeling lighter and more self-aware, often with new tools and perspectives that truly helped me grow and make positive changes in my life. I’m really grateful to have found her and would highly recommend her to anyone looking for genuine, and effective support.”</p>
+                <p class="name">Udtalelse fra kvinde på 25 år i individuel terapiforløb</p>
+            </div>
+        </div>
+    </section>
 
-<section class="testimonials">
-  <div class="testimonials-inner">
-    <h2>Klientudtalelser</h2>
+    <section class="intro-section">
+        <div class="intro-img-wrap">
+            <img src="img/intro-left.jpg" alt="Terapi rum">
+        </div>
+        <div class="intro-text">
+            <h2>Psykoterapeutisk praksis i Tilst</h2>
+            <p>Som psykoterapeut arbejder jeg balanceret med hele mennesket, og jeg har erfaring med unge, voksne og par.</p>
+        </div>
+    </section>
 
-    <div class="testimonial-box">
-      <p class="quote">““Jeg startede i terapi hos Heidi for et år siden, hvilket har hjulpet mig på måder der er svære at sætte ord på. Hendes nærvær og omsorg kombineret med de terapeutiske metoder har gjort, at jeg er kommet igennem en svær sorg proces, og hjulpet med de udfordringer, der har været i mit liv. Hun har formået at skabe et rum, hvor jeg er tryg i at dele alt og føler mig set, hørt og forstået. Jeg har lært at arbejde med mig selv på nye måder og har fundet mere ro i min hverdag. Jeg er taknemlig for Heidi, både som person og terapeut, specielt hendes evne til at gribe et andet menneske på. Jeg kan varmt anbefale hende til dem, som har brug for støtte til at dele og bearbejde de svære ting i livet.”</p>
-      <p class="name">Udtalelse fra kvinde på 34 år i individuel terapiforløb</p>
-    </div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <p>Telefon: +45 60 65 13 90</p>
+                <p><a href="mailto:kontakt@hverdagogdybde.dk">kontakt@hverdagogdybde.dk</a></p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                        <img src="img/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                        <img src="img/facebook.svg" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <p><a href="kontakt.html">Kontakt</a></p>
+                <p><a href="#">Privatlivspolitik</a></p>
+            </div>
+            <div class="footer-col">
+                <h4>Adresse</h4>
+                <p>Pollenvænget 42, 1.4</p>
+                <p>8381 Tilst</p>
+            </div>
+            <div class="footer-logo">
+                <a href="https://psykoterapeutforeningen.dk" target="_blank" rel="noopener">
+                    <img src="img/dpfo-logo.png" alt="Medlem af Dansk Psykoterapeutforening">
+                </a>
+            </div>
+        </div>
+    </footer>
 
-    <div class="testimonial-box">
-      <p class="quote">“Vores datter var igennem 2 år blevet holdt udenfor i sin klasse, dette var begyndt at sætte sit præg på hendes psyke på sådan måde, at hun ikke alene blev indadvendt, men faktisk helt indelukket. Så da hun startede på efterskole, var det svært for hende at tage imod og stole på mennesker. Hun vidste, som hun selv sagde det, ikke hvordan man var sammen med nogen, der godt gad at tale med hende. Vi besluttede derfor at hun skulle prøve at have et par timer sammen med Heidi. Allerede efter et par gange var virkningen synlig. Vores datter siger, at det var dejligt at have en at tale med. Hun følte sig set og hørt og synes det var dejligt ikke at blive behandlet som et barn, men samtidig blev der talt et sprog, hun forstod. Hun følte sig øjeblikkeligt tryg, og hun havde lyst til at fortælle om sig selv og hendes hverdag. I dag går vores datter på 2. år på efterskolen og ikke alene trives hun, men hun er også begyndt at bygge et ungdomsliv op omkring sig selv, da hun efter at have været hos Heidi var klar til at tage imod og hendes tillid til andre mennesker var begyndt at blive genoprettet og herefter har hun gjort sig mange positive erfaringer på netop dette.”</p>
-      <p class="name">Udtalelse fra forældre til pige på 15 år i individuel terapiforløb</p>
-    </div>
-
-    <div class="testimonial-box">
-      <p class="quote">“I’ve had an amazing experience working with Heidi. She creates a warm and relaxed atmosphere and a safe space to open up, while still keeping everything very professional. She’s extremely friendly, understanding, and easy to talk to. After every session, I left feeling lighter and more self-aware, often with new tools and perspectives that truly helped me grow and make positive changes in my life. I’m really grateful to have found her and would highly recommend her to anyone looking for genuine, and effective support.”</p>
-      <p class="name">Udtalelse fra kvinde på 25 år i individuel terapiforløb</p>
-    </div>
-  </div>
-</section>
-
-<section class="intro-section">
-  <div class="intro-img-wrap">
-    <img src="img/intro-left.jpg" alt="Terapi rum">
-  </div>
-  <div class="intro-text">
-    <h2>Psykoterapeutisk praksis i Tilst</h2>
-    <p>Som psykoterapeut arbejder jeg balanceret med hele mennesket, og jeg har erfaring med unge, voksne og par. </p>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-
-    <!-- Kontakt -->
-    <div class="footer-col">
-      <h4>Kontakt</h4>
-      <p>Telefon: +45 60 65 13 90</p>
-      <p>
-        <a href="mailto:kontakt@hverdagogdybde.dk">
-          kontakt@hverdagogdybde.dk
-        </a>
-      </p>
-
-      <div class="footer-social">
-        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-          <img src="img/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-          <img src="img/facebook.svg" alt="Facebook">
-        </a>
-      </div>
-    </div>
-
-    <!-- Information -->
-    <div class="footer-col">
-      <h4>Information</h4>
-      <p><a href="kontakt.html">Kontakt</a></p>
-      <p><a href="#">Privatlivspolitik</a></p>
-    </div>
-
-    <!-- Adresse -->
-    <div class="footer-col">
-      <h4>Adresse</h4>
-      <p>Pollenvænget 42, 1.4</p>
-      <p>8381 Tilst</p>
-    </div>
-
-    <!-- MPF logo -->
-    <div class="footer-logo">
-      <a href="https://psykoterapeutforeningen.dk" target="_blank" rel="noopener">
-        <img src="img/dpfo-logo.png" alt="Medlem af Dansk Psykoterapeutforening">
-      </a>
-    </div>
-
-  </div>
-</footer>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-const burger = document.getElementById("burger");
-const mobileMenu = document.getElementById("mobileMenu");
-burger.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
-  burger.classList.toggle("open");
-});
-</script>
-
+    <script>
+        const burger = document.getElementById("burger");
+        const mobileMenu = document.getElementById("mobileMenu");
+        burger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+            burger.classList.toggle("open");
+        });
+    </script>
 </body>
 </html>
