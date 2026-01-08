@@ -57,7 +57,7 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 90vh;
-    padding-top: 80px; /* plads til header */
+    padding-top: 100px; /* plads til header */
 }
 
 .hero img {
