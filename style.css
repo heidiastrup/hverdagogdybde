@@ -57,7 +57,7 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 90vh;
-    padding-top: 100px; /* plads til header */
+    padding-top: 100px;
 }
 
 .hero img {
@@ -108,65 +108,39 @@ nav a {
 
 .name {
     font-weight: 700;
-    margin-top: 30px; /* mellemrum mellem almindelig tekst og fed tekst */
+    margin-top: 30px;
 }
 
-/* ========================= Outro – kortere version ========================= */
+/* ========================= INTRO / OUTRO ========================= */
 .intro-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #f9f1f0;
-    max-height: 500px;  /* maks højde for hele sektionen */
-    overflow: hidden;   /* skjuler alt, der går ud over max-højden */
-    align-items: center; /* centrerer indhold vertikalt */
-    gap: 0;
+    max-height: 500px;
+    overflow: hidden;
+    align-items: center;
 }
 
 .intro-img-wrap img {
     width: 100%;
     height: 100%;
-    max-height: 500px;   /* begrænser billedhøjden */
-    object-fit: cover;   /* beskærer billedet uden at deformere det */
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .intro-text {
-    padding: 20px 30px;  /* mindre padding for kortere sektion */
+    padding: 20px 30px;
 }
 
 .intro-text h2 {
-    font-size: 32px;      /* lidt mindre overskrift */
-    margin-bottom: 10px;  /* mindre mellemrum */
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .intro-text p {
-    font-size: 15px;      /* lidt mindre tekst for kompakt look */
+    font-size: 15px;
     line-height: 1.5;
 }
-
-/* RESPONSIVE: kortere på mobil */
-@media(max-width: 900px) {
-    .intro-section {
-        grid-template-columns: 1fr;
-        max-height: none;  /* sektionen vokser med indhold på mobil */
-    }
-
-    .intro-img-wrap img {
-        max-height: 300px;
-    }
-
-    .intro-text {
-        padding: 15px 20px;
-    }
-
-    .intro-text h2 {
-        font-size: 28px;
-    }
-
-    .intro-text p {
-        font-size: 14px;
-    }
-}
-
 
 /* ========================= SITE FOOTER ========================= */
 .site-footer {
@@ -181,7 +155,6 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr auto;
     gap: 60px;
-    align-items: flex-start;
 }
 
 .footer-col h4 {
@@ -218,15 +191,17 @@ nav a {
     max-width: 140px;
 }
 
-/* ========================= RESPONSIVE ========================= */
-@media(max-width:900px) {
+/* ========================= RESPONSIVE GENEREL ========================= */
+@media (max-width: 900px) {
     nav { display: none; }
     .hero { grid-template-columns: 1fr; }
-    .intro-section { grid-template-columns: 1fr; }
+    .intro-section { grid-template-columns: 1fr; max-height: none; }
     .footer-inner { grid-template-columns: 1fr; gap: 40px; }
-    .footer-logo { margin-top: 20px; }
 }
-/* ========================= PRISOVERSIGT ========================= */
+
+/* ==================================================================== */
+/* ========================= PRISOVERSIGT =============================== */
+/* ==================================================================== */
 
 .prices-page {
     padding: 140px 40px 80px;
@@ -255,12 +230,11 @@ nav a {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 40px;
-    align-items: start;
 }
 
 .price-text h3 {
-    font-size: 16px;
-    letter-spacing: 0.15em;
+    font-size: 15px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 10px;
@@ -281,7 +255,6 @@ nav a {
     color: #2F3E5C;
     text-decoration: none;
     border-bottom: 1px solid #2F3E5C;
-    padding-bottom: 2px;
 }
 
 .book-link:hover {
@@ -293,7 +266,7 @@ hr {
     border-top: 1px solid #cfcfcf;
 }
 
-/* RESPONSIVE */
+/* ========================= PRIS RESPONSIVE ========================= */
 @media (max-width: 700px) {
     .price-item {
         grid-template-columns: 1fr;
