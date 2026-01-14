@@ -17,9 +17,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #ea535d; /* samme farve som knappen */
+    background: #e6d8b8; /* navbar farve */
     z-index: 100;
 }
+
 
 .navbar {
     max-width: 1400px;
