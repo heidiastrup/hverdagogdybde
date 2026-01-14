@@ -17,7 +17,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #724C3B;
+    background: #ea535d; /* samme farve som knappen */
     z-index: 100;
 }
 
