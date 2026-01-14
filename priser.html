@@ -51,7 +51,6 @@
         <div class="price-item">
             <div class="price-text">
                 <h3>Voksne – individuel terapi (60–75 min.)</h3>
-                <a href="kontakt.html" class="book-link">Book nu</a>
             </div>
             <div class="price-amount">750 kr.</div>
         </div>
@@ -61,7 +60,6 @@
         <div class="price-item">
             <div class="price-text">
                 <h3>Voksne – individuel terapi, dobbelt session (105–120 min.)</h3>
-                <a href="kontakt.html" class="book-link">Book nu</a>
             </div>
             <div class="price-amount">1.250 kr.</div>
         </div>
@@ -70,8 +68,7 @@
 
         <div class="price-item">
             <div class="price-text">
-                <h3>Studerende & ledige (60–75 min.)</h3>
-                <a href="kontakt.html" class="book-link">Book nu</a>
+                <h3>Studerende & ledige mfl. (60–75 min.)</h3>
             </div>
             <div class="price-amount">700 kr.</div>
         </div>
@@ -81,7 +78,6 @@
         <div class="price-item">
             <div class="price-text">
                 <h3>Unge og børn (60 min.)</h3>
-                <a href="kontakt.html" class="book-link">Book nu</a>
             </div>
             <div class="price-amount">700 kr.</div>
         </div>
@@ -91,7 +87,6 @@
         <div class="price-item">
             <div class="price-text">
                 <h3>Parterapi (90 min.)</h3>
-                <a href="kontakt.html" class="book-link">Book nu</a>
             </div>
             <div class="price-amount">1.200 kr.</div>
         </div>
@@ -104,20 +99,42 @@
                     Forløb med tidlig traumeforløsning / spædbarnsterapi<br>
                     inkl. anamnese og historie
                 </h3>
-                <a href="kontakt.html" class="book-link">Book nu</a>
             </div>
             <div class="price-amount">9.000 kr.</div>
         </div>
 
     </div>
 
-</main>
+    <!-- BOOK KNAP -->
+    <div class="prices-cta">
+        <a href="kontakt.html" class="main-book-btn">Book tid</a>
+    </div>
 
+    <!-- PRAKTISK INFORMATION -->
+    <section class="practical-info">
+
+        <div class="info-box">
+            <h4>Adresse</h4>
+            <p>Pollenvænget 42, 1.4<br>8381 Tilst</p>
+        </div>
+
+        <div class="info-box">
+            <h4>Afbud</h4>
+            <p>Afbud skal ske senest 24 timer før aftalt tid. Ved senere afbud opkræves fuldt honorar.</p>
+        </div>
+
+        <div class="info-box">
+            <h4>Betaling</h4>
+            <p>Betaling sker via MobilePay eller bankoverførsel efter session.</p>
+        </div>
+
+    </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="footer-inner">
 
-    <!-- Kontakt -->
     <div class="footer-col">
       <h4>Kontakt</h4>
       <p>Telefon: +45 60 65 13 90</p>
@@ -126,46 +143,27 @@
           kontakt@hverdagogdybde.dk
         </a>
       </p>
-
-      <div class="footer-social">
-        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-          <img src="img/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-          <img src="img/facebook.svg" alt="Facebook">
-        </a>
-      </div>
     </div>
 
-    <!-- Information -->
     <div class="footer-col">
       <h4>Information</h4>
       <p><a href="kontakt.html">Kontakt</a></p>
       <p><a href="#">Privatlivspolitik</a></p>
     </div>
 
-    <!-- Adresse -->
     <div class="footer-col">
       <h4>Adresse</h4>
       <p>Pollenvænget 42, 1.4</p>
       <p>8381 Tilst</p>
     </div>
 
-    <!-- MPF logo -->
-    <div class="footer-logo">
-      <a href="https://psykoterapeutforeningen.dk" target="_blank" rel="noopener">
-        <img src="img/dpfo-logo.png" alt="Medlem af Dansk Psykoterapeutforening">
-      </a>
-    </div>
-
   </div>
 </footer>
 
-
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
 const burger = document.getElementById("burger");
 const mobileMenu = document.getElementById("mobileMenu");
+
 burger.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
   burger.classList.toggle("open");
