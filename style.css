@@ -51,17 +51,18 @@ nav a {
     font-weight: 600;
     color: #3F3F3F;
 }
+
 /* ========================= INTRO / OUTRO ========================= */
 .intro-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #f9f1f0;
-    max-height: 700px;
-    overflow: hidden;
     align-items: center;
 
     /* 👇 Gør plads til den faste navigation */
     margin-top: 100px;
+    max-height: none;       /* fjernet begrænsning */
+    overflow: visible;      /* indhold vises */
 }
 
 .intro-img-wrap img {
@@ -264,7 +265,7 @@ hr {
 .main-book-btn {
     display: inline-block;
     padding: 16px 46px;
-    background: #ea535d
+    background: #ea535d;
     color: #ffffff;
     font-size: 15px;
     font-weight: 600;
@@ -342,7 +343,9 @@ hr {
         gap: 10px;
     }
 }
+
 /* FORCE intro under navbar */
 .intro-section {
     margin-top: calc(100px + 20px) !important;
 }
+
