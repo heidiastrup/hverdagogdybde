@@ -346,4 +346,9 @@ hr {
     .price-amount {
         font-size: 16px;
     }
+
+    /* FORCE intro under navbar */
+.intro-section {
+    margin-top: calc(100px + 20px) !important;
+}
 }
