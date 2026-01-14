@@ -1,7 +1,261 @@
+/* ========================= RESET + BASE ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    color: #3F3F3F;
+    line-height: 1.6;
+}
+
+/* ========================= HEADER ========================= */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #F5E8D3;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: #3F3F3F;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #3F3F3F;
+}
+
+/* ========================= HERO ========================= */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 90vh;
+    padding-top: 100px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-center {
+    background: #f9f1f0;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-center h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* ========================= TESTIMONIALS ========================= */
+.testimonials {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.testimonials-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.testimonial-box {
+    margin-bottom: 40px;
+}
+
+.quote {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.name {
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+/* ========================= INTRO / OUTRO ========================= */
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #f9f1f0;
+    max-height: 500px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.intro-img-wrap img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.intro-text {
+    padding: 20px 30px;
+}
+
+.intro-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ========================= SITE FOOTER ========================= */
+.site-footer {
+    background: #ffffff;
+    padding: 60px 40px;
+    border-top: 1px solid #eee;
+}
+
+.footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 60px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.footer-col a {
+    color: #3F3F3F;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social img {
+    width: 26px;
+    height: 26px;
+}
+
+.footer-logo img {
+    max-width: 140px;
+}
+
+/* ========================= RESPONSIVE GENEREL ========================= */
+@media (max-width: 900px) {
+    nav { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .intro-section { grid-template-columns: 1fr; max-height: none; }
+    .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* ==================================================================== */
+/* ========================= PRISOVERSIGT =============================== */
+/* ==================================================================== */
+
+.prices-page {
+    padding: 140px 40px 80px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.prices-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #2F3E5C;
+}
+
+.prices-intro {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.price-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+}
+
+.price-text h3 {
+    font-size: 15px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2F3E5C;
+}
+
+.price-amount {
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #cfcfcf;
+}
+
 /* ========================= BOOK CTA ========================= */
 
 .prices-cta {
-    margin: 80px 0 60px;
+    margin: 90px 0 90px;
     text-align: center;
 }
 
@@ -23,35 +277,59 @@
     opacity: 0.85;
 }
 
-/* ========================= PRAKTISK INFO ========================= */
+/* ========================= PRAKTISK INFORMATION ========================= */
 
 .practical-info {
+    margin-top: 40px;
+    padding-top: 60px;
+    border-top: 1px solid #ddd;
+}
+
+.practical-info h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2F3E5C;
+}
+
+.practical-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    background: #f9f1f0;
-    padding: 60px;
-    border-radius: 4px;
 }
 
-.info-box h4 {
+.practical-item h4 {
     font-size: 14px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-bottom: 12px;
     color: #2F3E5C;
 }
 
-.info-box p {
+.practical-item p {
     font-size: 15px;
     line-height: 1.6;
 }
 
-/* RESPONSIVE */
+/* ========================= RESPONSIVE ========================= */
+
 @media (max-width: 800px) {
-    .practical-info {
+    .practical-grid {
         grid-template-columns: 1fr;
-        padding: 40px 25px;
         gap: 30px;
+    }
+
+    .practical-info h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 700px) {
+    .price-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .price-amount {
+        font-size: 16px;
     }
 }
