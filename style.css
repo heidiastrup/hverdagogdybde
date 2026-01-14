@@ -58,11 +58,9 @@ nav a {
     grid-template-columns: 1fr 1fr;
     background: #f9f1f0;
     align-items: center;
-
-    /* 👇 Gør plads til den faste navigation */
     margin-top: 100px;
-    max-height: none;       /* fjernet begrænsning */
-    overflow: visible;      /* indhold vises */
+    max-height: none;  
+    overflow: visible;
 }
 
 .intro-img-wrap img {
@@ -138,7 +136,7 @@ nav a {
 .quote {
     font-size: 16px;
     line-height: 1.8;
-    font-style: italic; /* Dette gør teksten kursiv */
+    font-style: italic; /* Kursiv */
 }
 
 .name {
@@ -203,10 +201,7 @@ nav a {
     .footer-inner { grid-template-columns: 1fr; gap: 40px; }
 }
 
-/* ==================================================================== */
-/* ========================= PRISOVERSIGT =============================== */
-/* ==================================================================== */
-
+/* ========================= PRISOVERSIGT ========================= */
 .prices-page {
     padding: 140px 40px 80px;
     max-width: 900px;
@@ -216,12 +211,13 @@ nav a {
 .prices-title {
     font-size: 42px;
     margin-bottom: 20px;
-    color:  #ea535d;
+    color: #3F3F3F; /* Prisoversigt titel farve */
 }
 
 .prices-intro {
     font-size: 16px;
     margin-bottom: 50px;
+    color: #3F3F3F; /* Prisoversigt intro tekstfarve */
 }
 
 .price-list {
@@ -242,13 +238,14 @@ nav a {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 10px;
-    color:  #ea535d;
+    color: #3F3F3F; /* Prisoversigt tekst farve */
 }
 
 .price-amount {
     font-size: 18px;
     font-weight: 600;
     white-space: nowrap;
+    color: #3F3F3F; /* Prisoversigt beløb farve */
 }
 
 hr {
@@ -257,17 +254,16 @@ hr {
 }
 
 /* ========================= BOOK CTA ========================= */
-
 .prices-cta {
-    margin: 90px 0 90px;
+    margin: 40px 0 0; /* mindre margin, hvis det står inde i hero */
     text-align: center;
 }
 
 .main-book-btn {
     display: inline-block;
     padding: 16px 46px;
-    background: #ea535d;
-    color: #ffffff;
+    background: #ea535d; /* knap baggrund */
+    color: #ffffff;      /* knap tekst */
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
@@ -293,7 +289,6 @@ hr {
 }
 
 /* ========================= PRAKTISK INFORMATION ========================= */
-
 .practical-info {
     margin-top: 40px;
     padding-top: 60px;
@@ -307,9 +302,18 @@ hr {
 }
 
 .practical-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    display: flex;          /* kolonne layout */
+    flex-direction: column; /* alle items under hinanden */
+    gap: 40px;              /* afstand mellem items */
+}
+
+.practical-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* valgfri separator */
+}
+
+.practical-item:last-child {
+    border-bottom: none; /* fjern linje efter sidste item */
 }
 
 .practical-item h4 {
@@ -326,13 +330,7 @@ hr {
 }
 
 /* ========================= RESPONSIVE ========================= */
-
 @media (max-width: 800px) {
-    .practical-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
     .practical-info h2 {
         font-size: 26px;
     }
@@ -349,4 +347,3 @@ hr {
 .intro-section {
     margin-top: calc(100px + 20px) !important;
 }
-
