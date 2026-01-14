@@ -270,11 +270,22 @@ hr {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     border-radius: 2px;
-    transition: 0.25s ease;
+
+    transition: 
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        opacity 0.25s ease;
 }
 
 .main-book-btn:hover {
-    opacity: 0.85;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+    opacity: 0.95;
+}
+
+.main-book-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 /* ========================= PRAKTISK INFORMATION ========================= */
