@@ -138,6 +138,7 @@ nav a {
 .quote {
     font-size: 16px;
     line-height: 1.8;
+    font-style: italic; /* Dette gør teksten kursiv */
 }
 
 .name {
