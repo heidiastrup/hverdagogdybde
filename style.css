@@ -59,7 +59,7 @@ nav a {
     grid-template-columns: 1fr 1fr;
     background: #f9f1f0;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 90px;
     max-height: none;  
     overflow: visible;
 }
