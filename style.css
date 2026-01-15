@@ -21,7 +21,6 @@ header {
     z-index: 100;
 }
 
-
 .navbar {
     max-width: 1400px;
     margin: 0 auto;
@@ -53,15 +52,13 @@ nav a {
     color: #3F3F3F;
 }
 
-/* ========================= INTRO / OUTRO ========================= */
+/* ========================= INTRO ========================= */
 .intro-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #f9f1f0;
     align-items: center;
     margin-top: 100px; /* matcher navbarens højde */
-    max-height: none;  
-    overflow: visible;
 }
 
 .intro-img-wrap img {
@@ -124,8 +121,9 @@ nav a {
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 90vh;
+    min-height: 85vh;        /* lidt mindre højde */
     padding-top: 100px;
+    margin-bottom: 20px;    /* tættere på testimonials */
 }
 
 .hero img {
@@ -151,7 +149,7 @@ nav a {
 /* ========================= TESTIMONIALS ========================= */
 .testimonials {
     background: #ffffff;
-    padding: 40px 20px;   /* mindre luft under testimonials */
+    padding: 30px 20px;   /* mindre luft */
 }
 
 .testimonials-inner {
@@ -166,24 +164,25 @@ nav a {
 }
 
 .testimonial-box {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .quote {
     font-size: 16px;
     line-height: 1.8;
-    font-style: italic; /* Kursiv */
+    font-style: italic;
 }
+
 /* ========================= TESTIMONIAL META ========================= */
 .testimonial-meta {
-    margin-top: 12px;   /* tættere på citatet */
+    margin-top: 12px;
     text-align: center;
 }
 
 .testimonial-name {
     font-size: 16px;
     font-weight: 700;
-    color: #3F3F3F;     /* samme tekstfarve som resten af sitet */
+    color: #3F3F3F;
     margin-bottom: 4px;
 }
 
@@ -191,8 +190,9 @@ nav a {
     font-size: 14px;
     font-style: italic;
     color: #3F3F3F;
-    opacity: 0.75;      /* lidt lettere tone – elegant */
+    opacity: 0.75;
 }
+
 /* ========================= SITE FOOTER ========================= */
 .site-footer {
     background: #ffffff;
@@ -242,14 +242,6 @@ nav a {
     max-width: 140px;
 }
 
-/* ========================= RESPONSIVE GENEREL ========================= */
-@media (max-width: 900px) {
-    nav { display: none; }
-    .hero { grid-template-columns: 1fr; }
-    .intro-section { grid-template-columns: 1fr; max-height: none; }
-    .footer-inner { grid-template-columns: 1fr; gap: 40px; }
-}
-
 /* ========================= PRISOVERSIGT ========================= */
 .prices-page {
     padding: 140px 40px 80px;
@@ -260,13 +252,13 @@ nav a {
 .prices-title {
     font-size: 42px;
     margin-bottom: 20px;
-    color: #3F3F3F; /* Prisoversigt titel farve */
+    color: #3F3F3F;
 }
 
 .prices-intro {
     font-size: 16px;
     margin-bottom: 50px;
-    color: #3F3F3F; /* Prisoversigt intro tekstfarve */
+    color: #3F3F3F;
 }
 
 .price-list {
@@ -287,66 +279,52 @@ nav a {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #3F3F3F; /* Prisoversigt tekst farve */
+    color: #3F3F3F;
 }
+
 .price-note {
     font-style: italic;
     font-size: 14px;
     color: #666;
     margin-top: 6px;
 }
+
 .price-amount {
     font-size: 18px;
     font-weight: 600;
     white-space: nowrap;
-    color: #3F3F3F; /* Prisoversigt beløb farve */
+    color: #3F3F3F;
 }
 
 hr {
     border: none;
     border-top: 1px solid #cfcfcf;
 }
-/* ========================= PRICE NOTE ========================= */
-.price-note {
-    font-size: 14px;
-    font-style: italic;
-    color: #666;
-    line-height: 1.5;
-    margin-top: 6px;
-}
+
 /* ========================= BOOK CTA ========================= */
 .prices-cta {
-    margin: 40px 0 0; /* mindre margin, hvis det står inde i hero */
+    margin: 30px 0 0;
     text-align: center;
 }
 
 .main-book-btn {
     display: inline-block;
     padding: 16px 46px;
-    background: #E6D8B8; /* knap baggrund */
-    color: #ffffff;      /* knap tekst */
+    background: #ea535d; /* Tag kontakt farve */
+    color: #ffffff;
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     border-radius: 2px;
-
-    transition: 
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        opacity 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
 }
 
 .main-book-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.18);
     opacity: 0.95;
-}
-
-.main-book-btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 /* ========================= PRAKTISK INFORMATION ========================= */
@@ -359,22 +337,21 @@ hr {
 .practical-info h2 {
     font-size: 32px;
     margin-bottom: 40px;
-    color: #3F3F3F;
 }
 
 .practical-grid {
-    display: flex;          /* kolonne layout */
-    flex-direction: column; /* alle items under hinanden */
-    gap: 40px;              /* afstand mellem items */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .practical-item {
     padding: 10px 0;
-    border-bottom: 1px solid #eee; /* valgfri separator */
+    border-bottom: 1px solid #eee;
 }
 
 .practical-item:last-child {
-    border-bottom: none; /* fjern linje efter sidste item */
+    border-bottom: none;
 }
 
 .practical-item h4 {
@@ -382,7 +359,6 @@ hr {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-bottom: 12px;
-    color: #3F3F3F;
 }
 
 .practical-item p {
@@ -391,10 +367,11 @@ hr {
 }
 
 /* ========================= RESPONSIVE ========================= */
-@media (max-width: 800px) {
-    .practical-info h2 {
-        font-size: 26px;
-    }
+@media (max-width: 900px) {
+    nav { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .intro-section { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; gap: 40px; }
 }
 
 @media (max-width: 700px) {
