@@ -378,3 +378,11 @@ hr {
         gap: 10px;
     }
 }
+/* ========================= PRICE NOTE ========================= */
+.price-note {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 6px;
+}
