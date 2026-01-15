@@ -174,7 +174,25 @@ nav a {
     line-height: 1.8;
     font-style: italic; /* Kursiv */
 }
+/* ========================= TESTIMONIAL META ========================= */
+.testimonial-meta {
+    margin-top: 12px;   /* tættere på citatet */
+    text-align: center;
+}
 
+.testimonial-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3F3F3F;     /* samme tekstfarve som resten af sitet */
+    margin-bottom: 4px;
+}
+
+.testimonial-type {
+    font-size: 14px;
+    font-style: italic;
+    color: #3F3F3F;
+    opacity: 0.75;      /* lidt lettere tone – elegant */
+}
 /* ========================= SITE FOOTER ========================= */
 .site-footer {
     background: #ffffff;
@@ -283,7 +301,14 @@ hr {
     border: none;
     border-top: 1px solid #cfcfcf;
 }
-
+/* ========================= PRICE NOTE ========================= */
+.price-note {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 6px;
+}
 /* ========================= BOOK CTA ========================= */
 .prices-cta {
     margin: 40px 0 0; /* mindre margin, hvis det står inde i hero */
@@ -372,31 +397,4 @@ hr {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-}
-/* ========================= PRICE NOTE ========================= */
-.price-note {
-    font-size: 14px;
-    font-style: italic;
-    color: #666;
-    line-height: 1.5;
-    margin-top: 6px;
-}
-/* ========================= TESTIMONIAL META ========================= */
-.testimonial-meta {
-    margin-top: 12px;   /* tættere på citatet */
-    text-align: center;
-}
-
-.testimonial-name {
-    font-size: 16px;
-    font-weight: 700;
-    color: #3F3F3F;     /* samme tekstfarve som resten af sitet */
-    margin-bottom: 4px;
-}
-
-.testimonial-type {
-    font-size: 14px;
-    font-style: italic;
-    color: #3F3F3F;
-    opacity: 0.75;      /* lidt lettere tone – elegant */
 }
