@@ -10,6 +10,7 @@ body {
     background: #ffffff;
     color: #3F3F3F;
     line-height: 1.6;
+    padding-top: 80px; /* Kompenserer for fixed header */
 }
 
 /* ========================= HEADER ========================= */
@@ -58,7 +59,6 @@ nav a {
     grid-template-columns: 1fr 1fr;
     background: #f9f1f0;
     align-items: center;
-    margin-top: 100px;
 }
 
 .intro-img-wrap img {
@@ -107,6 +107,7 @@ nav a {
 .focus-inner ul {
     list-style: none;
     margin-top: 30px;
+    padding-left: 0;
 }
 
 .focus-inner li {
@@ -120,7 +121,6 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 90vh;
-    padding-top: 100px;
 }
 
 .hero img {
@@ -141,6 +141,23 @@ nav a {
 .hero-center h1 {
     font-size: 48px;
     margin-bottom: 20px;
+}
+
+.btn-contact {
+    display: inline-block;
+    background: #3F3F3F;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.btn-contact:hover {
+    background: #e6d8b8;
+    color: #3F3F3F;
 }
 
 /* ========================= TESTIMONIALS ========================= */
@@ -170,19 +187,10 @@ nav a {
     font-style: italic;
 }
 
-.testimonial-meta {
-    margin-top: 14px;
-}
-
 .testimonial-name {
     font-weight: 700;
     font-size: 16px;
-}
-
-.testimonial-type {
-    font-style: italic;
-    font-size: 14px;
-    opacity: 0.7;
+    margin-top: 10px;
 }
 
 /* ========================= FOOTER ========================= */
