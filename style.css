@@ -289,7 +289,12 @@ nav a {
     margin-bottom: 10px;
     color: #3F3F3F; /* Prisoversigt tekst farve */
 }
-
+.price-note {
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+    margin-top: 6px;
+}
 .price-amount {
     font-size: 18px;
     font-weight: 600;
