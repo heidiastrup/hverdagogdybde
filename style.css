@@ -17,7 +17,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #e6d8b8; /* navbar farve */
+    background: #e6d8b8;
     z-index: 100;
 }
 
@@ -58,7 +58,7 @@ nav a {
     grid-template-columns: 1fr 1fr;
     background: #f9f1f0;
     align-items: center;
-    margin-top: 100px; /* matcher navbarens højde */
+    margin-top: 100px;
 }
 
 .intro-img-wrap img {
@@ -79,7 +79,6 @@ nav a {
 
 .intro-text p {
     font-size: 15px;
-    line-height: 1.5;
 }
 
 /* ========================= FOCUS SECTION ========================= */
@@ -107,7 +106,6 @@ nav a {
 
 .focus-inner ul {
     list-style: none;
-    padding: 0;
     margin-top: 30px;
 }
 
@@ -121,9 +119,8 @@ nav a {
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 85vh;        /* lidt mindre højde */
+    min-height: 90vh;
     padding-top: 100px;
-    margin-bottom: 20px;    /* tættere på testimonials */
 }
 
 .hero img {
@@ -149,7 +146,7 @@ nav a {
 /* ========================= TESTIMONIALS ========================= */
 .testimonials {
     background: #ffffff;
-    padding: 30px 20px;   /* mindre luft */
+    padding: 60px 20px;
 }
 
 .testimonials-inner {
@@ -160,11 +157,11 @@ nav a {
 
 .testimonials h2 {
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .testimonial-box {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .quote {
@@ -173,27 +170,22 @@ nav a {
     font-style: italic;
 }
 
-/* ========================= TESTIMONIAL META ========================= */
 .testimonial-meta {
-    margin-top: 12px;
-    text-align: center;
+    margin-top: 14px;
 }
 
 .testimonial-name {
-    font-size: 16px;
     font-weight: 700;
-    color: #3F3F3F;
-    margin-bottom: 4px;
+    font-size: 16px;
 }
 
 .testimonial-type {
-    font-size: 14px;
     font-style: italic;
-    color: #3F3F3F;
-    opacity: 0.75;
+    font-size: 14px;
+    opacity: 0.7;
 }
 
-/* ========================= SITE FOOTER ========================= */
+/* ========================= FOOTER ========================= */
 .site-footer {
     background: #ffffff;
     padding: 60px 40px;
@@ -208,175 +200,21 @@ nav a {
     gap: 60px;
 }
 
-.footer-col h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
+/* ========================= SCROLL ANIMATION ========================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.footer-col p {
-    margin-bottom: 8px;
-    font-size: 15px;
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.footer-col a {
-    color: #3F3F3F;
-    text-decoration: none;
-}
-
-.footer-col a:hover {
-    text-decoration: underline;
-}
-
-.footer-social {
-    margin-top: 15px;
-    display: flex;
-    gap: 12px;
-}
-
-.footer-social img {
-    width: 26px;
-    height: 26px;
-}
-
-.footer-logo img {
-    max-width: 140px;
-}
-
-/* ========================= PRISOVERSIGT ========================= */
-.prices-page {
-    padding: 140px 40px 80px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.prices-title {
-    font-size: 42px;
-    margin-bottom: 20px;
-    color: #3F3F3F;
-}
-
-.prices-intro {
-    font-size: 16px;
-    margin-bottom: 50px;
-    color: #3F3F3F;
-}
-
-.price-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.price-item {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 40px;
-}
-
-.price-text h3 {
-    font-size: 15px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #3F3F3F;
-}
-
-.price-note {
-    font-style: italic;
-    font-size: 14px;
-    color: #666;
-    margin-top: 6px;
-}
-
-.price-amount {
-    font-size: 18px;
-    font-weight: 600;
-    white-space: nowrap;
-    color: #3F3F3F;
-}
-
-hr {
-    border: none;
-    border-top: 1px solid #cfcfcf;
-}
-
-/* ========================= BOOK CTA ========================= */
-.prices-cta {
-    margin: 30px 0 0;
-    text-align: center;
-}
-
-.main-book-btn {
-    display: inline-block;
-    padding: 16px 46px;
-    background: #ea535d; /* Tag kontakt farve */
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    border-radius: 2px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
-}
-
-.main-book-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.18);
-    opacity: 0.95;
-}
-
-/* ========================= PRAKTISK INFORMATION ========================= */
-.practical-info {
-    margin-top: 40px;
-    padding-top: 60px;
-    border-top: 1px solid #ddd;
-}
-
-.practical-info h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.practical-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.practical-item {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.practical-item:last-child {
-    border-bottom: none;
-}
-
-.practical-item h4 {
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.practical-item p {
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-/* ========================= RESPONSIVE ========================= */
 @media (max-width: 900px) {
     nav { display: none; }
     .hero { grid-template-columns: 1fr; }
     .intro-section { grid-template-columns: 1fr; }
-    .footer-inner { grid-template-columns: 1fr; gap: 40px; }
-}
-
-@media (max-width: 700px) {
-    .price-item {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
+    .footer-inner { grid-template-columns: 1fr; }
 }
