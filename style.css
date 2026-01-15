@@ -85,6 +85,41 @@ nav a {
     line-height: 1.5;
 }
 
+/* ========================= FOCUS SECTION ========================= */
+.focus-section {
+    background: #ffffff;
+    padding: 100px 20px;
+}
+
+.focus-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.focus-inner h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.focus-inner p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.focus-inner ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.focus-inner li {
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
 /* ========================= HERO ========================= */
 .hero {
     display: grid;
@@ -142,7 +177,7 @@ nav a {
 
 .name {
     font-weight: 700;
-    margin-top: 30px;
+    margin-top: 10px; /* mindre afstand til citatet */
 }
 
 /* ========================= SITE FOOTER ========================= */
