@@ -10,11 +10,9 @@
 </head>
 
 <body>
-
-<header>
+    <header>
   <div class="navbar">
     <a href="forside.html" class="logo">hverdag og dybde</a>
-
     <nav>
       <ul>
         <li><a href="forside.html">Forside</a></li>
@@ -23,15 +21,8 @@
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
-
-<nav class="nav-mobile" id="mobileMenu">
-  <ul>
-    <li><a href="forside.html">Forside</a></li>
-    <li><a href="om.html">Min praksis</a></li>
-    <li><a href="priser.html">Priser</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-  </ul>
-</nav>
+  </div>
+</header>
 
 <main style="padding:120px 40px; max-width:900px; margin:0 auto;">
   <h1>Min praksis</h1>
@@ -107,17 +98,6 @@
 
   </div>
 </footer>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-const burger = document.getElementById("burger");
-const mobileMenu = document.getElementById("mobileMenu");
-burger.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
-  burger.classList.toggle("open");
-});
-</script>
 
 </body>
 </html>
