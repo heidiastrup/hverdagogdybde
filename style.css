@@ -145,19 +145,19 @@ nav a {
 
 .btn-contact {
     display: inline-block;
-    background: #3F3F3F;
-    color: #fff;
-    padding: 15px 30px;
+    background: #e6d8b8;        /* lys baggrund */
+    color: #3F3F3F;             /* mørk tekst */
+    padding: 10px 22px;         /* kortere / mindre */
     margin-top: 20px;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 8px;
-    transition: background 0.3s ease;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .btn-contact:hover {
-    background: #e6d8b8;
-    color: #3F3F3F;
+    background: #3F3F3F;        /* mørk ved hover */
+    color: #ffffff;             /* lys tekst ved hover */
 }
 
 /* ========================= TESTIMONIALS ========================= */
