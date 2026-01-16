@@ -333,6 +333,27 @@ nav a {
     background: #e6d8b8;
     color: #3F3F3F;
 }
+/* ========================= FOOTER SOCIAL ICONS ========================= */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+.footer-logo img {
+    max-width: 120px;
+    height: auto;
+}
 
 /* ========================= MEDIA QUERIES ========================= */
 @media (max-width: 900px) {
