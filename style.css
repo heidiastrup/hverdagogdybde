@@ -207,7 +207,16 @@ nav a {
     grid-template-columns: 1fr 1fr 1fr auto;
     gap: 60px;
 }
+/* ========================= FOOTER LINKS ========================= */
+.site-footer a {
+    color: #3F3F3F;        /* samme farve som tekst */
+    text-decoration: none; /* fjerner understregning */
+    font-weight: 500;
+}
 
+.site-footer a:hover {
+    text-decoration: underline; /* diskret hover-feedback */
+}
 /* ========================= SCROLL ANIMATION ========================= */
 .reveal {
     opacity: 0;
