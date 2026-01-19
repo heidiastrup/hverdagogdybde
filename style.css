@@ -265,8 +265,8 @@ nav a {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #f9f1f0;
-    border-radius: 10px;
+    background: transparent;  
+    border-radius: 0;          
 }
 
 .price-text h3 {
@@ -298,6 +298,7 @@ nav a {
     border-radius: 6px;
     transition: background 0.3s ease;
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .book-btn:hover {
