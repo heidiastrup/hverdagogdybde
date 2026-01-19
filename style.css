@@ -363,6 +363,27 @@ nav a {
     max-width: 120px;
     height: auto;
 }
+/* ========================= INTRO CTA ========================= */
+.intro-cta {
+    grid-column: 2;
+    padding: 0 30px 30px 30px;
+}
+
+.intro-cta .btn-primary {
+    display: inline-block;
+    background: #e6d8b8;
+    color: #3F3F3F;
+    padding: 10px 22px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.intro-cta .btn-primary:hover {
+    background: #3F3F3F;
+    color: #ffffff;
+}
 
 /* ========================= MEDIA QUERIES ========================= */
 @media (max-width: 900px) {
@@ -386,4 +407,10 @@ nav a {
     .hero { grid-template-columns: 1fr; }
     .intro-section { grid-template-columns: 1fr; }
     .footer-inner { grid-template-columns: 1fr; }
+
+    .intro-cta {
+        grid-column: 1;
+        text-align: center;
+        padding-bottom: 40px;
+    }
 }
