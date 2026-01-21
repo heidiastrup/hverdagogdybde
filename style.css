@@ -150,7 +150,7 @@ nav a {
 .btn-contact {
     display: inline-block;
     background: #e6d8b8;
-    color: #3F3F3F;
+    color: #e1c9b6;
     padding: 10px 22px;
     margin-top: 20px;
     text-decoration: none;
@@ -161,7 +161,7 @@ nav a {
 
 .btn-contact:hover {
     background: #3F3F3F;
-    color: #ffffff;
+    color: #f9f1e6;
 }
 
 /* ========================= TESTIMONIALS ========================= */
