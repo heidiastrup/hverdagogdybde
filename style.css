@@ -305,7 +305,9 @@ nav a {
     background: #3F3F3F;
     color: #e6d8b8;
 }
-
+.price-list .book-btn {
+    align-self: center;
+}
 /* ========================= PRAKTISK INFO ========================= */
 .practical-info {
     padding: 60px 20px;
@@ -327,28 +329,6 @@ nav a {
 .practical-item p {
     font-size: 14px;
     line-height: 1.6;
-}
-
-/* ========================= CTA KNAP ========================= */
-.prices-cta {
-    text-align: center;
-    margin: 50px 0;
-}
-
-.main-book-btn {
-    display: inline-block;
-    background: #3F3F3F;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: background 0.3s ease;
-}
-
-.main-book-btn:hover {
-    background: #e6d8b8;
-    color: #3F3F3F;
 }
 
 /* ========================= FOOTER SOCIAL ICONS ========================= */
