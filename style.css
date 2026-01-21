@@ -57,7 +57,7 @@ nav a {
 .intro-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #f9f1f0;
+    background: #FAC7DD;
     align-items: center;
     margin-top: 80px; /* kompenserer for fixed header */
 }
