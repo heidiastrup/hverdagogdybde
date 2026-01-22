@@ -353,7 +353,9 @@ nav a {
     max-width: 120px;
     height: auto;
 }
-
+.footer-logo {
+    margin-top: 25px;
+}
 /* ========================= MEDIA QUERIES ========================= */
 @media (max-width: 900px) {
     .price-item {
