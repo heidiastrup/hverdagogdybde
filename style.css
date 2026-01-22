@@ -57,7 +57,7 @@ nav a {
 .intro-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #FAC7DD;
+    background: #ffebfe;
     align-items: center;
     margin-top: 80px; /* kompenserer for fixed header */
 }
@@ -134,7 +134,7 @@ nav a {
 }
 
 .hero-center {
-    background: #FAC7DD;
+    background: #ffebfe;
     padding: 80px 40px;
     display: flex;
     flex-direction: column;
@@ -150,7 +150,7 @@ nav a {
 .btn-contact {
     display: inline-block;
     background: #e6d8b8;
-    color: #e1c9b6;
+    color: #ffebfe;
     padding: 10px 22px;
     margin-top: 20px;
     text-decoration: none;
