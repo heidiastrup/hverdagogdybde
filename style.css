@@ -211,7 +211,19 @@ nav a {
     grid-template-columns: 1fr 1fr 1fr auto;
     gap: 60px;
 }
+/* Tynd linje mellem testimonials */
+.testimonial-box {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
 
+/* Fjern streg på sidste testimonial */
+.testimonial-box:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 /* ========================= FOOTER LINKS ========================= */
 .site-footer a {
     color: #3F3F3F;
