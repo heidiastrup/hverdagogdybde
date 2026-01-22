@@ -197,6 +197,53 @@ nav a {
     margin-top: 10px;
 }
 
+/* ========================= METODER + MPF SEKTIONER ========================= */
+.methods-section,
+.mpf-section {
+    background: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.methods-inner,
+.mpf-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.methods-section h2,
+.mpf-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3F3F3F;
+}
+
+.methods-list,
+.mpf-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.methods-list li,
+.mpf-list li {
+    font-size: 17px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.methods-list li:last-child,
+.mpf-list li:last-child {
+    border-bottom: none;
+}
+
+.methods-section p,
+.mpf-section p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 10px 0;
+}
+
 /* ========================= FOOTER ========================= */
 .site-footer {
     background: #ffffff;
