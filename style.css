@@ -289,21 +289,21 @@ nav a {
 /* ========================= Kontakt mig knap ========================= */
 .book-btn {
     display: inline-block;
-    background: #3F3F3F;
-    color: #fff;
-    padding: 12px 28px;      /* Normal knap-størrelse */
-    margin-top: 40px;       /* Luft over knappen */
+    background: #e1c9b6;     /* Samme som navbar */
+    color: #3F3F3F;         /* Samme som tekst */
+    padding: 12px 28px;
+    margin-top: 40px;
     font-weight: 600;
     text-decoration: none;
     border-radius: 6px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
     font-size: 15px;
     white-space: nowrap;
 }
 
 .book-btn:hover {
-    background: #3F3F3F;
-    color: #e6d8b8;
+    background: #ffffff;   /* Hvid ved hover */
+    color: #3F3F3F;         /* Samme tekstfarve */
 }
 .price-list .book-btn {
     align-self: center;
