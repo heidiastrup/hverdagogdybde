@@ -57,7 +57,7 @@ nav a {
 .intro-section {
     display: grid;
     grid-template-columns: 1.3fr 0.7fr;
-    background: #ffebfe;
+    background: #fee8f2;
     align-items: center;
     margin-top: 80px;
 }
@@ -134,7 +134,7 @@ nav a {
 }
 
 .hero-center {
-    background: #ffebfe;
+    background: #fee8f2;
     padding: 80px 40px;
     display: flex;
     flex-direction: column;
@@ -149,8 +149,8 @@ nav a {
 
 .btn-contact {
     display: inline-block;
-    background: #e6d8b8;
-    color: #ffebfe;
+    background: #D6B36A;   /* Honning / varm gylden */
+    color: #ffffff;        /* Hvid tekst */
     padding: 10px 22px;
     margin-top: 20px;
     text-decoration: none;
@@ -160,8 +160,8 @@ nav a {
 }
 
 .btn-contact:hover {
-    background: #3F3F3F;
-    color: #f9f1e6;
+    background: #e1c9b6;   /* Hover-farve */
+    transform: translateY(-1px);
 }
 
 /* ========================= TESTIMONIALS ========================= */
