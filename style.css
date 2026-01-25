@@ -56,10 +56,10 @@ nav a {
 /* ========================= INTRO ========================= */
 .intro-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.3fr 0.7fr;
     background: #ffebfe;
     align-items: center;
-    margin-top: 80px; /* kompenserer for fixed header */
+    margin-top: 80px;
 }
 
 .intro-img-wrap {
