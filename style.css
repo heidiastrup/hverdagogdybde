@@ -409,12 +409,14 @@ nav a {
     transform: scale(1.1);
 }
 
+.footer-logo {
+    margin-top: 0;          /* Holder den på linje med teksten */
+}
+
 .footer-logo img {
     max-width: 120px;
     height: auto;
-}
-.footer-logo {
-    margin-top: 25px;
+    margin-top: 15px;       /* Luft mellem tekst og logo */
 }
 /* ========================= MEDIA QUERIES ========================= */
 @media (max-width: 900px) {
