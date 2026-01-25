@@ -197,39 +197,49 @@ nav a {
     margin-top: 10px;
 }
 
-/* ========================= METODER + MPF SEKTIONER ========================= */
-.methods-section,
-.mpf-section {
+/* ========================= INFO HERO SECTIONS ========================= */
+.info-hero {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    min-height: 70vh;
+}
+
+.info-side {
     background: #ffffff;
-    padding: 50px 20px;
+}
+
+.info-center {
+    background: #ffebfe;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
-.methods-inner,
-.mpf-inner {
-    max-width: 900px;
-    margin: 0 auto;
+.info-center h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
 }
 
-.methods-section h2,
-.mpf-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #3F3F3F;
+.info-center p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
 }
 
 .methods-list,
 .mpf-list {
     list-style: none;
-    padding-left: 0;
-    margin-top: 20px;
+    padding: 0;
+    margin-top: 25px;
 }
 
 .methods-list li,
 .mpf-list li {
-    font-size: 17px;
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .methods-list li:last-child,
@@ -237,11 +247,20 @@ nav a {
     border-bottom: none;
 }
 
-.methods-section p,
-.mpf-section p {
-    font-size: 16px;
-    line-height: 1.7;
-    margin: 10px 0;
+/* Mobil */
+@media (max-width: 900px) {
+    .info-hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .info-side {
+        display: none;
+    }
+
+    .info-center {
+        padding: 60px 25px;
+    }
 }
 
 /* ========================= FOOTER ========================= */
