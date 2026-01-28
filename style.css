@@ -411,7 +411,8 @@ nav a {
 }
 
 .footer-logo {
-    margin-top: 0;          /* Holder den på linje med teksten */
+    margin-top: 0;
+    margin-left: -20px;   /* rykker logoet mod venstre */
 }
 
 .footer-logo img {
