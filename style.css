@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #F2EEE8;
+    background: #ffffff;
     color: #3F3F3F;
     line-height: 1.6;
     padding-top: 0; /* fjernet – styres nu på intro-section */
@@ -18,7 +18,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #ffffff;
+    background: #E6D8C6;
     z-index: 100;
 }
 
@@ -57,7 +57,7 @@ nav a {
 .intro-section {
     display: grid;
     grid-template-columns: 1.3fr 0.7fr;
-    background: #fee8f2;
+    background: #F2EEE8;
     align-items: center;
     margin-top: 80px;
 }
@@ -134,7 +134,7 @@ nav a {
 }
 
 .hero-center {
-    background: #fee8f2;
+    background: #F2EEE8;
     padding: 80px 40px;
     display: flex;
     flex-direction: column;
@@ -149,7 +149,7 @@ nav a {
 
 .btn-contact {
     display: inline-block;
-    background: #D6B36A;   /* Honning / varm gylden */
+    background: #E6D8C6;   Farve på knap
     color: #ffffff;        /* Hvid tekst */
     padding: 10px 22px;
     margin-top: 20px;
