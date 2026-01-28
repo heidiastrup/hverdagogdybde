@@ -149,7 +149,7 @@ nav a {
 
 .btn-contact {
     display: inline-block;
-    background: #E6D8C6;   Farve på knap
+    background: #E6D8C6;   /* Farve på knap */
     color: #ffffff;        /* Hvid tekst */
     padding: 10px 22px;
     margin-top: 20px;
@@ -209,7 +209,7 @@ nav a {
 }
 
 .info-center {
-    background: #ffebfe;
+    background: #F2EEE8;
     padding: 80px 60px;
     display: flex;
     flex-direction: column;
