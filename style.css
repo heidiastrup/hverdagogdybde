@@ -245,6 +245,29 @@ nav a {
         height: 350px;
     }
 }
+/* ========================= SPLIT SECTION – REVERSE (om-side) ========================= */
+.split-reverse {
+    grid-template-columns: 1.2fr 0.9fr 0.9fr;
+}
+
+.split-reverse .split-text:first-of-type {
+    order: 1;
+}
+
+.split-reverse .split-image {
+    order: 2;
+}
+
+.split-reverse .split-text:last-of-type {
+    order: 3;
+}
+
+/* Mobil – behold naturlig rækkefølge */
+@media (max-width: 900px) {
+    .split-reverse > * {
+        order: initial;
+    }
+}
 /* ========================= FOOTER ========================= */
 .site-footer {
     background: #ffffff;
