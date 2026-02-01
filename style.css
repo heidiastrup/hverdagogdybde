@@ -140,7 +140,8 @@ nav a {
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 90vh;
+    height: 68vh;          /* Kortere hero */
+    margin-bottom: 70px;  /* Hvid luft under – tydelig afslutning */
 }
 
 .hero img {
@@ -151,7 +152,7 @@ nav a {
 
 .hero-center {
     background: #F2EEE8;
-    padding: 80px 40px;
+    padding: 60px 40px;   /* Mindre lodret luft så tekst og billeder matcher */
     display: flex;
     flex-direction: column;
     justify-content: center;
