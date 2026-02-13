@@ -10,7 +10,9 @@ body {
     background: #ffffff;
     color: #3F3F3F;
     line-height: 1.6;
-    padding-top: 0; /* fjernet – styres nu på intro-section */
+
+    /* FIX: plads til fixed header */
+    padding-top: 90px;
 }
 
 /* ========================= HEADER ========================= */
@@ -59,7 +61,6 @@ nav a {
     grid-template-columns: 1.3fr 0.7fr;
     background: #F2EEE8;
     align-items: center;
-    margin-top: 60px;
 }
 
 .intro-img-wrap {
@@ -87,8 +88,8 @@ nav a {
 
 .btn-contact {
     display: inline-block;
-    background: #E6D8C6;   /* Farve på knap */
-    color: #ffffff;        /* Hvid tekst */
+    background: #E6D8C6;
+    color: #ffffff;
     padding: 10px 22px;
     margin-top: 20px;
     text-decoration: none;
@@ -98,9 +99,10 @@ nav a {
 }
 
 .btn-contact:hover {
-    background: #e1c9b6;   /* Hover-farve */
+    background: #e1c9b6;
     transform: translateY(-1px);
 }
+
 /* ========================= FOCUS SECTION ========================= */
 .focus-section {
     background: #ffffff;
@@ -140,8 +142,8 @@ nav a {
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 68vh;          /* Kortere hero */
-    margin-bottom: 70px;  /* Hvid luft under – tydelig afslutning */
+    height: 68vh;
+    margin-bottom: 70px;
 }
 
 .hero img {
@@ -152,7 +154,7 @@ nav a {
 
 .hero-center {
     background: #F2EEE8;
-    padding: 60px 40px;   /* Mindre lodret luft så tekst og billeder matcher */
+    padding: 60px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,7 +184,15 @@ nav a {
 }
 
 .testimonial-box {
-    margin-bottom: 60px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.testimonial-box:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .quote {
@@ -197,77 +207,6 @@ nav a {
     margin-top: 10px;
 }
 
-/* ========================= SPLIT SECTION ========================= */
-
-.split-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 60px;
-    padding: 100px 60px;
-    background: #F2EEE8;
-    align-items: center;
-}
-
-.split-text {
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.split-text h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.split-text ul {
-    margin-top: 20px;
-    padding-left: 18px;
-}
-
-.split-text li {
-    margin-bottom: 10px;
-}
-
-.split-image img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-/* Mobil */
-@media (max-width: 900px) {
-    .split-section {
-        grid-template-columns: 1fr;
-        padding: 60px 25px;
-    }
-
-    .split-image img {
-        height: 350px;
-    }
-}
-/* ========================= SPLIT SECTION – REVERSE (om-side) ========================= */
-.split-reverse {
-    grid-template-columns: 1.2fr 0.9fr 0.9fr;
-}
-
-.split-reverse .split-text:first-of-type {
-    order: 1;
-}
-
-.split-reverse .split-image {
-    order: 2;
-}
-
-.split-reverse .split-text:last-of-type {
-    order: 3;
-}
-
-/* Mobil – behold naturlig rækkefølge */
-@media (max-width: 900px) {
-    .split-reverse > * {
-        order: initial;
-    }
-}
 /* ========================= FOOTER ========================= */
 .site-footer {
     background: #ffffff;
@@ -282,20 +221,7 @@ nav a {
     grid-template-columns: 1fr 1fr 1fr auto;
     gap: 60px;
 }
-/* Tynd linje mellem testimonials */
-.testimonial-box {
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #e6e6e6;
-}
 
-/* Fjern streg på sidste testimonial */
-.testimonial-box:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-/* ========================= FOOTER LINKS ========================= */
 .site-footer a {
     color: #3F3F3F;
     text-decoration: none;
@@ -304,115 +230,6 @@ nav a {
 
 .site-footer a:hover {
     text-decoration: underline;
-}
-
-/* ========================= SCROLL ANIMATION ========================= */
-.reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ========================= PRISLISTE ========================= */
-.prices-page {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 80px 40px;
-}
-
-.prices-title {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 40px; /* ekstra luft over overskriften */
-}
-
-.prices-intro {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 50px;
-}
-
-.price-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.price-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: transparent;  
-    border-radius: 0;          
-}
-
-.price-text h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.price-note {
-    font-size: 14px;
-    color: #555;
-}
-
-.price-amount {
-    font-size: 18px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-}
-
-/* ========================= Kontakt mig knap ========================= */
-.book-btn {
-    display: inline-block;
-    background: #e1c9b6;     /* Samme som navbar */
-    color: #3F3F3F;         /* Samme som tekst */
-    padding: 12px 28px;
-    margin-top: 40px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background 0.3s ease, color 0.3s ease;
-    font-size: 15px;
-    white-space: nowrap;
-}
-
-.book-btn:hover {
-    background: #ffffff;   /* Hvid ved hover */
-    color: #3F3F3F;         /* Samme tekstfarve */
-}
-.price-list .book-btn {
-    align-self: center;
-}
-/* ========================= PRAKTISK INFO ========================= */
-.practical-info {
-    padding: 60px 20px;
-    background: #ffffff;
-}
-
-.practical-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-top: 30px;
-}
-
-.practical-item h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.practical-item p {
-    font-size: 14px;
-    line-height: 1.6;
 }
 
 /* ========================= FOOTER SOCIAL ICONS ========================= */
@@ -434,32 +251,16 @@ nav a {
 }
 
 .footer-logo {
-    margin-top: 0;
-    margin-left: -20px;   /* rykker logoet mod venstre */
+    margin-left: -20px;
 }
 
 .footer-logo img {
     max-width: 120px;
     height: auto;
-    margin-top: 15px;       /* Luft mellem tekst og logo */
+    margin-top: 15px;
 }
+
 /* ========================= MEDIA QUERIES ========================= */
-@media (max-width: 900px) {
-    .price-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .price-amount {
-        justify-content: flex-start;
-    }
-
-    .practical-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 @media (max-width: 900px) {
     nav { display: none; }
     .hero { grid-template-columns: 1fr; }
