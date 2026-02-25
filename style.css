@@ -155,8 +155,9 @@ nav a {
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 68vh;
+    min-height: 60vh;     /* kortere hero */
     margin-bottom: 70px;
+    padding-top: 0;       /* fjern ekstra whitespace */
 }
 
 .hero img {
@@ -167,7 +168,7 @@ nav a {
 
 .hero-center {
     background: #F2EEE8;
-    padding: 60px 40px;
+    padding: 40px 20px;   /* lidt mindre padding */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,7 +179,6 @@ nav a {
     font-size: 48px;
     margin-bottom: 20px;
 }
-
 /* ========================= TESTIMONIALS ========================= */
 .testimonials {
     background: #ffffff;
