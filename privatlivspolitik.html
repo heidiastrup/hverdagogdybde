@@ -1,20 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt - hverdag og dybde</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1.1">
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="forside.html" class="logo">hverdag og dybde</a>
+    <nav>
+      <ul>
+        <li><a href="forside.html">Forside</a></li>
+        <li><a href="om.html">Min praksis</a></li>
+        <li><a href="priser.html">Priser</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 <main class="privacy-page">
-  <h1>Privatlivspolitik</h1>
 
-  <p>
-    Når du kontakter hverdag og dybde, behandles dine personoplysninger
-    fortroligt og i overensstemmelse med gældende databeskyttelseslovgivning. 
-  </p>
+    <h1 class="privacy-title">Privatlivspolitik</h1>
 
-  <h3>Hvilke oplysninger indsamles?</h3>
-  <p>Navn, e-mail, telefonnummer og besked via kontaktformular.</p>
+    <p class="privacy-intro">
+        Når du kontakter hverdag og dybde, behandles dine personoplysninger
+        fortroligt og i overensstemmelse med gældende databeskyttelseslovgivning.
+    </p>
 
-  <h3>Formål</h3>
-  <p>Oplysninger bruges udelukkende til at besvare din henvendelse.</p>
+    <h3>Dataansvarlig</h3>
+    <p>
+        Hverdag og Dybde v/ Heidi Astrup Petersen <br>
+        Pollenvænget 42, 1.4 <br>
+        8381 Tilst <br>
+        E-mail: kontakt@hverdagogdybde.dk <br>
+        Telefon: +45 60 65 13 90
+    </p>
 
-  <h3>Opbevaring</h3>
-  <p>Dine oplysninger opbevares sikkert og deles ikke med tredjepart.</p>
+    <h3>Hvilke oplysninger indsamles?</h3>
+    <p>
+        Når du udfylder kontaktformularen, indsamles navn, e-mail,
+        telefonnummer (valgfrit) samt din besked.
+    </p>
 
-  <h3>Kontakt</h3>
-  <p>Du kan altid kontakte mig på kontakt@hverdagogdybde.dk.</p>
+    <h3>Formål med behandling</h3>
+    <p>
+        Oplysningerne anvendes udelukkende til at besvare din henvendelse
+        og indgå i et eventuelt terapiforløb.
+    </p>
+
+    <h3>Opbevaring</h3>
+    <p>
+        Oplysninger opbevares sikkert og deles ikke med tredjepart.
+        De slettes, når de ikke længere er relevante.
+    </p>
+
+    <h3>Dine rettigheder</h3>
+    <p>
+        Du har ret til indsigt i de oplysninger, der behandles om dig,
+        samt ret til at få dem rettet eller slettet.
+    </p>
+
 </main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <!-- Kontakt -->
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <p>Telefon: +45 60 65 13 90</p>
+      <p>
+        <a href="mailto:kontakt@hverdagogdybde.dk">
+          kontakt@hverdagogdybde.dk
+        </a>
+      </p>
+
+      <div class="footer-social">
+         <a href="https://www.instagram.com/hverdagogdybde/" target="_blank" aria-label="Instagram">
+                        <img src="img/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/hverdagogdybde" target="_blank" aria-label="Facebook">
+                        <img src="img/facebook.svg" alt="Facebook">
+        </a>
+      </div>
+    </div>
+
+    <!-- Information -->
+    <div class="footer-col">
+      <h4>Information</h4>
+      <p><a href="kontakt.html">Kontakt</a></p>
+      <p><a href="privatlivspolitik.html">Privatlivspolitik</a></p>
+    </div>
+
+    <!-- Adresse -->
+    <div class="footer-col">
+      <h4>Adresse</h4>
+      <p>Pollenvænget 42, 1.4</p>
+      <p>8381 Tilst</p>
+    </div>
+
+     <!-- MPF logo -->
+    <div class="footer-logo">
+      <h4>Medlem af</h4>
+        <a href="https://psykoterapeutforeningen.dk" target="_blank" rel="noopener">
+        <img src="img/dpfo-logo.png" alt="Medlem af Dansk Psykoterapeutforening">
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const burger = document.getElementById("burger");
+const mobileMenu = document.getElementById("mobileMenu");
+burger.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+  burger.classList.toggle("open");
+});
+</script>
+
+</body>
+</html>
