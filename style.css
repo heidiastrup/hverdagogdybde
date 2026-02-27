@@ -281,7 +281,7 @@ nav a {
 /* ========================= ABOUT SECTION ========================= */
 
 .about-section {
-    background: var(--light-cream);
+    background: #F2EEE8;
     padding: 100px 20px;
 }
 
@@ -304,8 +304,10 @@ nav a {
     margin-bottom: 20px;
 }
 
+/* ========================= METHODS SECTION ========================= */
+
 .methods-section {
-    background: var(--light-blue);
+    background: #F2EEE8;
     padding: 100px 20px;
 }
 
@@ -327,7 +329,7 @@ nav a {
 }
 
 .method-box {
-    background: #ffffff;
+    background: #ffffff; /* behold hvid her så boksene står frem */
     padding: 30px;
     border-radius: 16px;
 }
@@ -335,19 +337,6 @@ nav a {
 .method-box h4 {
     margin-bottom: 10px;
 }
-
-/* Mobile */
-
-@media (max-width: 900px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .methods-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* ========================= FOOTER ========================= */
 .site-footer {
     background: #ffffff;
