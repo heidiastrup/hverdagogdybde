@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 
     /* FIX: plads til fixed header */
-    padding-top: 70px;
+    padding-top: 30px;
 }
 :root {
     --beige: #E6D8C6;
@@ -213,8 +213,8 @@ nav a {
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 70vh;     /* kortere hero */
-    margin-bottom: 40px;
+    min-height: 50vh;     /* kortere hero */
+    margin-bottom: 30px;
     padding-top: 0;       /* fjern ekstra whitespace */
 }
 
