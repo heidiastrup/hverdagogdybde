@@ -174,10 +174,10 @@ nav a {
     color: var(--text-dark);
     transform: translateY(-2px);
 }
-/* ========================= FOCUS SECTION ========================= */
+/* ========================= HOS MIG KAN DU FÅ STØTTE ... TREDJE SEKTION FORSIDE ========================= */
 .focus-section {
     background: #ffffff;
-    padding: 100px 20px;
+    padding: 60px 20px 100px 20px; 
 }
 
 .focus-inner {
@@ -452,34 +452,39 @@ nav a {
     border-top: 1px solid #eee;
 }
 
-/* Practical info */
-
-.practical-info {
-    margin-top: 100px;
+.practical-section {
+    padding: 100px 40px;
+    background: #f7f3ef; /* lys baggrund */
 }
 
-.practical-info h1 {
+.practical-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.practical-inner h2 {
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 42px;
+    margin-bottom: 60px;
+    color: var(--text-dark);
 }
 
-.practical-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+.practical-box {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
-.practical-item h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
+.practical-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
-.practical-item p {
-    font-size: 15px;
+.practical-box p {
+    font-size: 16px;
     line-height: 1.7;
 }
-
 /* Mobile */
 
 @media (max-width: 900px) {
