@@ -65,12 +65,13 @@ nav a {
     display: flex;
     width: 100%;
     min-height: 100vh; /* fylder hele skærmens højde */
+    flex-wrap: wrap;    /* gør sektionen responsiv på mobil */
 }
 
 .split-text {
     flex: 1;
     background: #e0edfd;
-    color: white;
+    color: #333;        /* ændret til mørk tekst, så den er synlig på lyse baggrund */
     display: flex;
     align-items: center;
 }
@@ -112,12 +113,17 @@ nav a {
 
 .split-image {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .split-image img {
     width: 100%;
-    height: 100%;
+    height: auto;       /* ændret fra 100% til auto */
     object-fit: cover;
+    border-radius: 16px; /* valgfrit: blødere hjørner */
 }
 /* ========================= VIDEO SECTION ========================= */
 .video-section {
