@@ -563,101 +563,62 @@ nav a {
 .privacy-note a {
     text-decoration: underline;
 }
-.contact-section {
+.location-section {
   background-color: #e9e6e1;
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
-.contact-container {
+.location-container {
   width: 85%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
   align-items: center;
 }
 
-.contact-image img {
+/* Billede */
+.location-image img {
   width: 100%;
-  border-radius: 16px;
+  height: 450px;
   object-fit: cover;
+  border-radius: 28px;
+  display: block;
 }
 
-.contact-content h2 {
-  font-size: 40px;
+/* Tekst */
+.location-text h2 {
+  font-size: 42px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #333;
 }
 
-.contact-content p {
+.location-text p {
   font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  line-height: 1.7;
+  margin-bottom: 20px;
   color: #555;
 }
 
-.contact-info p {
-  margin-bottom: 15px;
-}
-
-.contact-info a {
-  color: #333;
-  text-decoration: none;
-}
-
-.contact-form {
-  margin-top: 30px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1px solid #d6d2cc;
-  border-radius: 8px;
-  font-size: 16px;
-  background-color: #f8f6f3;
-  font-family: inherit;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #b7b1a9;
-}
-
-.contact-form button {
-  background-color: #333;
-  color: white;
-  padding: 14px 28px;
-  border: none;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #555;
-}
-
-.map-container {
-  margin-top: 40px;
-  border-radius: 16px;
+/* Kort */
+.location-map {
+  height: 450px;
+  border-radius: 28px;
   overflow: hidden;
 }
 
 /* Mobil */
-@media (max-width: 900px) {
-  .contact-container {
+@media (max-width: 1000px) {
+  .location-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
+  }
+
+  .location-image img,
+  .location-map {
+    height: 350px;
   }
 }
 /* ========================= PRIVACY PAGE ========================= */
