@@ -337,6 +337,53 @@ nav a {
 .method-box h4 {
     margin-bottom: 10px;
 }
+/* ========================= PRACTICE SECTION ========================= */
+
+.practice-section {
+    background: #ffffff;
+    padding: 100px 20px;
+}
+
+.practice-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.practice-inner h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.practice-inner p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ========================= APPROACH SECTION ========================= */
+
+.approach-section {
+    background: #F2EEE8;
+    padding: 100px 20px;
+}
+
+.approach-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.approach-inner h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.approach-inner p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
 /* ========================= FOOTER ========================= */
 .site-footer {
     background: #ffffff;
