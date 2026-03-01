@@ -361,28 +361,79 @@ nav a {
     margin-bottom: 15px;
 }
 
-/* ========================= APPROACH SECTION ========================= */
+/* ========================= ALTERNERENDE SPLIT SEKTIONER ========================= */
 
-.approach-section {
-    background: #F2EEE8;
-    padding: 100px 20px;
+.split-section-alt {
+    padding: 120px 40px;
 }
 
-.approach-inner {
-    max-width: 800px;
+.split-container {
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 80px;
 }
 
-.approach-inner h2 {
-    font-size: 32px;
+.split-section-alt.reverse .split-container {
+    flex-direction: row-reverse;
+}
+
+/* Farver */
+.split-section-alt.beige {
+    background: #F2EEE8;
+}
+
+.split-section-alt.white {
+    background: #ffffff;
+}
+
+.split-section-alt.blue {
+    background: #e0edfd;
+}
+
+/* Billede */
+.split-section-alt .split-image {
+    flex: 1;
+}
+
+.split-section-alt .split-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 28px;
+}
+
+/* Tekst */
+.split-section-alt .split-text {
+    flex: 1;
+}
+
+.split-section-alt .split-text h2 {
+    font-size: 36px;
     margin-bottom: 25px;
 }
 
-.approach-inner p {
-    font-size: 16px;
+.split-section-alt .split-text p {
+    font-size: 17px;
     line-height: 1.8;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Mobil */
+@media (max-width: 900px) {
+    .split-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .split-section-alt.reverse .split-container {
+        flex-direction: column;
+    }
+
+    .split-section-alt .split-image img {
+        height: 350px;
+    }
 }
 /* ========================= FOOTER ========================= */
 .site-footer {
