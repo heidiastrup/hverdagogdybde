@@ -70,7 +70,7 @@ nav a {
 .split-text {
     flex: 1;
     background: #e0edfd;
-    color: white;
+    color: #3F3F3F;
     display: flex;
     align-items: center;
 }
