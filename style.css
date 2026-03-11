@@ -445,13 +445,15 @@ nav a {
 }
 
 .footer-logo {
-    margin-left: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer-logo img {
     max-width: 120px;
     height: auto;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 /* ========================= MEDIA QUERIES ========================= */
