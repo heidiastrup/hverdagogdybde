@@ -162,8 +162,8 @@
 
   </div>
 </footer>
-
-<script>
+<!-- ========================= MOBIL VERSION ========================= -->
+    <script>
 const burger = document.getElementById("burger");
 const mobileMenu = document.getElementById("mobileMenu");
 if (burger && mobileMenu) {
@@ -173,6 +173,20 @@ if (burger && mobileMenu) {
   });
 }
 </script>
+<!-- ========================= JAVA SCRIPT ========================= -->
 
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+});
+
+document.querySelectorAll(".focus-inner").forEach(el => {
+  observer.observe(el);
+});
+</script>
 </body>
 </html>
