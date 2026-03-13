@@ -330,7 +330,9 @@ nav a {
 }
 
 /* ========================= METHODS SECTION ========================= */
-
+.practice-page {
+    padding-top: 120px;
+}
 .methods-section {
     background: #e0edfd;
     padding: 100px 20px;
