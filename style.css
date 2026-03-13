@@ -586,7 +586,7 @@ nav a {
 .contact-page {
     max-width: 700px;
     margin: 0 auto;
-    padding: 60px 20px 100px;
+    padding: 120px 20px 100px; /* mere luft i toppen */
 }
 
 .contact-title {
@@ -714,7 +714,7 @@ nav a {
 .privacy-page {
     max-width: 800px;
     margin: 0 auto;
-    padding: 60px 20px 120px;
+    padding: 120px 20px 120px; /* mere luft i toppen */
 }
 
 .privacy-title {
