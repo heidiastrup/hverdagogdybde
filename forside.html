@@ -175,13 +175,14 @@ if (burger && mobileMenu) {
 <!-- ========================= JAVA SCRIPT ========================= -->
 
 <script>
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
     }
   });
-});
+}, { threshold: 0.3 });
 
 document.querySelectorAll(".focus-inner").forEach(el => {
   observer.observe(el);
