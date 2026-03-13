@@ -481,12 +481,13 @@ nav a {
     .intro-section { grid-template-columns: 1fr; }
     .footer-inner { grid-template-columns: 1fr; }
 }
-/* ========================= PRICES PAGE ========================= */
+/* ========================= PRISER ========================= */
 
 .prices-page {
     max-width: 900px;
     margin: 0 auto;
-    padding: 60px 20px 100px;
+    padding: 120px 20px 100px; /* giver luft under navbar */
+    background: #F2EEE8;
 }
 
 .prices-title {
