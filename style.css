@@ -229,10 +229,12 @@ nav a {
     margin-bottom: 20px;
 }
 .book-btn {
-    display: inline-block;
-    background: var(--beige);        /* Beige som standard */
-    color: #ffffff;                  /* Altid hvid tekst */
-    padding: 12px 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--beige);
+    color: #ffffff;
+    padding: 14px 32px;
     margin-top: 20px;
     text-decoration: none;
     font-weight: 600;
@@ -240,6 +242,7 @@ nav a {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    min-width: 180px; /* sikrer ens størrelse */
 }
 
 .book-btn:hover {
@@ -651,8 +654,9 @@ nav a {
 }
 
 .contact-form .book-btn {
-    align-self: flex-start;
+    width: 220px;
 }
+
 .privacy-note {
     font-size: 13px;
     color: #6b6b6b;
