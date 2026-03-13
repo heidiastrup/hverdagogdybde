@@ -501,14 +501,14 @@ nav a {
     .footer-inner { grid-template-columns: 1fr; }
 }
 /* ========================= PRISER ========================= */
-
 .prices-page {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 120px 20px 100px; /* giver luft under navbar */
+    padding: 120px 20px 100px;
     background: #F2EEE8;
 }
-
+.prices-container{
+    max-width:900px;
+    margin:0 auto;
+}
 .prices-title {
     font-size: 42px;
     text-align: center;
@@ -603,8 +603,6 @@ nav a {
 /* ========================= KONTAKT ========================= */
 
 .contact-page {
-    max-width: 700px;
-    margin: 0 auto;
     padding: 120px 20px 100px;
     background: #F2EEE8;
 }
