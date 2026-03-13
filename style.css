@@ -16,7 +16,7 @@ body {
 }
 :root {
     --beige: #E6D8C6;
-    --light-cream: #f7f3d9;
+    --sektionsfarve: #FAF8F4;
     --light-blue: #e0edfd;
     --light-rose: #f5e9f3;
     --text-dark: #3F3F3F;
@@ -243,8 +243,8 @@ nav a {
 }
 
 .book-btn:hover {
-    background: var(--light-rose);   /* Lyserød ved hover */
-    color: #ffffff;                  /* Stadig hvid tekst */
+    background: #FAF8F4;
+    color: #ffffff;
     transform: translateY(-2px);
 }
 /* ========================= TESTIMONIALS ========================= */
