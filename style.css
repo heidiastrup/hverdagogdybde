@@ -109,7 +109,7 @@ nav a {
     height: 100%;
     object-fit: cover;
 }
-/* ========================= VIDEO SECTION ========================= */
+/* ========================= VIDEO SEKTION ========================= */
 .video-section {
     background: #F2EEE8;
     padding: 100px 20px;
@@ -144,7 +144,9 @@ nav a {
     font-size: 16px;
     line-height: 1.7;
 }
-
+.video-content .book-btn {
+    margin-top: 35px;
+}
 /* ========================= HOS MIG KAN DU FÅ STØTTE ... TREDJE SEKTION FORSIDE ========================= */
 .focus-section {
     background: #ffffff;
