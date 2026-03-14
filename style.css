@@ -667,6 +667,45 @@ nav a {
 .privacy-note a {
     text-decoration: underline;
 }
+
+.contact-container{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:80px;
+    align-items:start;
+}
+
+/* venstre tekst */
+.contact-text{
+    font-size:17px;
+    line-height:1.8;
+    color:#3F3F3F;
+}
+
+.contact-text p{
+    margin-bottom:25px;
+}
+
+/* formular bredde */
+.contact-form{
+    width:100%;
+}
+
+/* mobil */
+@media (max-width:900px){
+
+.contact-container{
+    grid-template-columns:1fr;
+    gap:50px;
+}
+
+.contact-text{
+    text-align:left;
+}
+
+}
 .location-section {
   background-color: #FAF8F4;
   padding: 120px 0;
