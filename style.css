@@ -250,6 +250,9 @@ nav a {
     color: #3F3F3F;
     transform: translateY(-2px);
 }
+.hero-center .book-btn {
+    align-self: center;
+}
 /* ========================= TESTIMONIALS ========================= */
 .testimonials {
     background: #ffffff;
