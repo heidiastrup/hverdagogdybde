@@ -305,7 +305,40 @@ nav a {
     opacity: 1;
     transform: translateY(0);
 }
+/* ========================= OM INTRO ========================= */
 
+.about-intro {
+    padding: 120px 40px;
+    background: #ffffff;
+}
+
+.about-intro-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.about-col h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.about-col p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* mobil */
+@media (max-width: 900px) {
+
+.about-intro-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+}
 /* ========================= ABOUT SECTION ========================= */
 
 .about-section {
