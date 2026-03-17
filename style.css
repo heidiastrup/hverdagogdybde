@@ -696,7 +696,8 @@ nav a {
 }
 
 .contact-form .book-btn {
-    width: 220px;
+    min-width: 180px;
+    width: auto;
 }
 
 .privacy-note {
