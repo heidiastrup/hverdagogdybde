@@ -402,10 +402,10 @@ nav a {
 .method-box h4 {
     margin-bottom: 10px;
 }
-/* ========================= ALTERNERENDE SPLIT SEKTIONER ========================= */
+/* ========================= 3 SPLIT SEKTIONER MED TEKST ========================= */
 
 .split-section-alt {
-    padding: 120px 40px;
+    padding: 80px 40px;
 }
 
 .split-container {
