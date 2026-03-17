@@ -655,10 +655,13 @@ nav a {
 
 .contact-intro {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     color: #6b6b6b;
 }
 
+.contact-container {
+    margin-top: 20px;
+}
 .contact-form {
     display: flex;
     flex-direction: column;
