@@ -540,10 +540,9 @@ nav a {
 }
 /* ========================= PRISER ========================= */
 .prices-page {
-    max-width: 900px;
-    margin: 0 auto;
+    width: 100%;
     padding: 120px 20px 100px;
-    background: #F2EEE8;
+    background: #FAF8F4;
 }
 .prices-container{
     max-width:900px;
@@ -598,7 +597,7 @@ nav a {
 
 .practical-section {
     padding: 100px 40px;
-    background: #FAF8F4;
+    background: #F2EEE8;
 }
 
 .practical-inner {
