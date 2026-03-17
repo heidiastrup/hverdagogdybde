@@ -541,7 +541,7 @@ nav a {
 /* ========================= PRISER ========================= */
 .prices-page {
     width: 100%;
-    padding: 120px 20px 100px;
+    padding: 100px 20px; /* matcher sektionen nedenunder */
     background: #FAF8F4;
 }
 .prices-container{
