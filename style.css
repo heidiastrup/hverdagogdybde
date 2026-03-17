@@ -594,7 +594,11 @@ nav a {
     border: none;
     border-top: 1px solid #eee;
 }
-
+.price-list .book-btn {
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+}
 .practical-section {
     padding: 100px 40px;
     background: #F2EEE8;
