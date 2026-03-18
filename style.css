@@ -595,9 +595,10 @@ nav a {
     border-top: 1px solid #eee;
 }
 .price-list .book-btn {
-    display: block;
+    display: inline-flex;
     margin-left: auto;
     margin-top: 30px;
+    font-size: 16px;
 }
 .practical-section {
     padding: 100px 40px;
@@ -702,6 +703,7 @@ nav a {
 .contact-form .book-btn {
     min-width: 180px;
     width: auto;
+    font-size: 16px;
 }
 
 .privacy-note {
