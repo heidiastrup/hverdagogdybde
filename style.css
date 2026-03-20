@@ -21,7 +21,7 @@ body {
     --light-rose: #f5e9f3;
     --text-dark: #3F3F3F;
 }
-/* ========================= HEADER ========================= */
+/* ========================= HEADER/NAVIGATION ========================= */
 header {
     position: fixed;
     top: 0;
@@ -61,7 +61,7 @@ nav a {
     font-weight: 600;
     color: #3F3F3F;
 }
-/* ========================= FØRSTE SEKTION FORSIDE ========================= */
+/* ========================= FORSIDE, PSYKOTERAPEUTISK PRAKSIS I TILST ========================= */
 .split-section {
     display: flex;
     width: 100%;
@@ -112,45 +112,8 @@ nav a {
     height: 100%;
     object-fit: cover;
 }
-/* ========================= VIDEO SEKTION ========================= */
-.video-section {
-    background: #F2EEE8;
-    padding: 100px 20px;
-    text-align: center;
-}
 
-.video-wrapper {
-    max-width: 1000px;
-    margin: 0 auto 60px auto;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-}
-
-.video-wrapper video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.video-content {
-    max-width: 700px;
-    margin: 0 auto 
-}
-
-.video-content h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.video-content p {
-    font-size: 16px;
-    line-height: 1.7;
-}
-.video-content .book-btn {
-    margin-top: 35px;
-}
-/* ========================= HOS MIG KAN DU FÅ STØTTE ... TREDJE SEKTION FORSIDE ========================= */
+/* ========================= FORSIDE, HOS MIG KAN DU FÅ STØTTE INDENFOR BLANDT ANDET ========================= */
 .focus-section {
     background: #ffffff;
     padding: 60px 30px 100px 30px; 
@@ -203,7 +166,99 @@ nav a {
     transform: translateY(0);
 }
 
-/* ========================= HERO ========================= */
+/* ========================= FORSIDE, VIDEO / FÅ EN FORNEMMELSE AF HVEM JEG ER OGSÅ HVORDAN JEG ARBEJDER I TERAPIEN ========================= */
+.video-section {
+    background: #F2EEE8;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.video-wrapper {
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-content {
+    max-width: 700px;
+    margin: 0 auto 
+}
+
+.video-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.video-content p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+.video-content .book-btn {
+    margin-top: 35px;
+}
+
+/* ========================= FORSIDE, KLIENTUDTALELSER ========================= */
+.testimonials {
+    background: #ffffff;
+    padding: 60px 20px;
+}
+
+.testimonials-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.testimonial-box {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.testimonial-box:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.quote {
+    font-size: 16px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Scroll animation testimonials */
+.testimonials-inner {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.testimonials-inner.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================= FORSIDE, ET TRYGT STED TIL AT DELE ALT DET, LIVET ER ========================= */
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -256,65 +311,48 @@ nav a {
 .hero-center .book-btn {
     align-self: center;
 }
-/* ========================= TESTIMONIALS ========================= */
-.testimonials {
-    background: #ffffff;
-    padding: 60px 20px;
-}
 
-.testimonials-inner {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 40px;
-    margin-bottom: 50px;
-}
-
-.testimonial-box {
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #e6e6e6;
-}
-
-.testimonial-box:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.quote {
-    font-size: 16px;
-    line-height: 1.8;
-    font-style: italic;
-}
-
-.testimonial-name {
-    font-weight: 700;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-/* Scroll animation testimonials */
-.testimonials-inner {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.testimonials-inner.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-/* ========================= OM INTRO ========================= */
+/* ========================= MIN PRAKSIS, OM MIN PRAKSIS/UDDANNELSESBAGGRUND/FAGLIGE OG PRIVATE BAGGRUND ========================= */
 
 .about-intro {
     padding: 120px 40px;
-    background: #ffffff;
+
+    /* 👇 farvespil */
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        120deg,
+        var(--sektionsfarve),
+        var(--light-blue),
+        var(--light-rose)
+    );
+}
+.about-intro::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: var(--light-blue);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    filter: blur(120px);
+    opacity: 0.4;
 }
 
+.about-intro::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: var(--light-rose);
+    border-radius: 50%;
+    bottom: -100px;
+    right: -100px;
+    filter: blur(120px);
+    opacity: 0.4;
+}
 .about-intro-inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -342,7 +380,7 @@ nav a {
 }
 
 }
-/* ========================= ABOUT SECTION ========================= */
+/* ========================= MIN PRAKSIS, METODER OG TILGANGE ========================= */
 
 .about-section {
     background: #F2EEE8;
@@ -368,7 +406,7 @@ nav a {
     margin-bottom: 20px;
 }
 
-/* ========================= METHODS SECTION ========================= */
+/* ========================= PRISER, PRAKTISK INFORMATION ========================= */
 .practice-page {
     padding-top: 120px;
 }
