@@ -406,115 +406,6 @@ nav a {
     margin-bottom: 20px;
 }
 
-/* ========================= PRISER, PRAKTISK INFORMATION ========================= */
-.practice-page {
-    padding-top: 120px;
-}
-.methods-section {
-    background: #FAF8F4;
-    padding: 100px 20px;
-}
-
-.methods-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.methods-inner h2 {
-    font-size: 32px;
-    margin-bottom: 50px;
-}
-
-.methods-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.method-box {
-    background: #ffffff; /* behold hvid her så boksene står frem */
-    padding: 30px;
-    border-radius: 16px;
-}
-
-.method-box h4 {
-    margin-bottom: 10px;
-}
-/* ========================= 3 SPLIT SEKTIONER MED TEKST ========================= */
-
-.split-section-alt {
-    padding: 80px 40px;
-}
-
-.split-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 80px;
-}
-
-.split-section-alt.reverse .split-container {
-    flex-direction: row-reverse;
-}
-
-/* Farver */
-.split-section-alt.beige {
-    background: #FAF8F4;
-}
-
-.split-section-alt.white {
-    background: #ffffff;
-}
-
-.split-section-alt.blue {
-    background: #e0edfd;
-}
-
-/* Billede */
-.split-section-alt .split-image {
-    flex: 1;
-}
-
-.split-section-alt .split-image img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 28px;
-}
-
-/* Tekst */
-.split-section-alt .split-text {
-    flex: 1;
-}
-
-.split-section-alt .split-text h2 {
-    font-size: 36px;
-    margin-bottom: 25px;
-}
-
-.split-section-alt .split-text p {
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-/* Mobil */
-@media (max-width: 900px) {
-    .split-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .split-section-alt.reverse .split-container {
-        flex-direction: column;
-    }
-
-    .split-section-alt .split-image img {
-        height: 350px;
-    }
-}
 /* ========================= FOOTER ========================= */
 .site-footer {
     background: #ffffff;
@@ -684,7 +575,44 @@ nav a {
         grid-template-columns: 1fr;
     }
 }
-/* ========================= KONTAKT ========================= */
+
+/* ========================= PRISER, PRAKTISK INFORMATION ========================= */
+.practice-page {
+    padding-top: 120px;
+}
+.methods-section {
+    background: #FAF8F4;
+    padding: 100px 20px;
+}
+
+.methods-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.methods-inner h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.method-box {
+    background: #ffffff; /* behold hvid her så boksene står frem */
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.method-box h4 {
+    margin-bottom: 10px;
+}
+
+/* ========================= KONTAKT, KONTAKTFORMULAR OG TEKST ========================= */
 
 .contact-page {
     padding: 120px 20px 100px;
@@ -794,6 +722,7 @@ nav a {
     text-align:left;
 }
 
+/* ========================= KONTAKT, FIND VEJ ========================= */
 }
 .location-section {
   background-color: #FAF8F4;
@@ -856,7 +785,7 @@ nav a {
     height: 350px;
   }
 }
-/* ========================= PRIVACY PAGE ========================= */
+/* ========================= PRIVATLIVSPOLITIK ========================= */
 
 .privacy-page {
     max-width: 800px;
@@ -880,6 +809,61 @@ nav a {
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 20px;
+}
+
+/* ========================= FOOTER ========================= */
+.site-footer {
+    background: #ffffff;
+    padding: 60px 40px;
+    border-top: 1px solid #eee;
+}
+
+.footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 60px;
+}
+
+.site-footer a {
+    color: #3F3F3F;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ========================= FOOTER SOCIALE ICONER ========================= */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    max-width: 120px;
+    height: auto;
+    margin-top: 10px;
 }
 
 /* ========================= MOBIL TILPASNING ========================= */
