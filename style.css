@@ -62,23 +62,101 @@ nav a {
     color: #3F3F3F;
 }
 /* ========================= FORSIDE, PSYKOTERAPEUTISK PRAKSIS I TILST ========================= */
+
 .split-section {
     display: flex;
     width: 100%;
-    min-height: 100vh; /* fylder hele skærmens højde */
+    min-height: 100vh;
 }
 
 .split-text {
     flex: 1;
-    background: #FAF8F4;
+
+    /* 👇 farvespil + animation */
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        120deg,
+        #FAF8F4,
+        #F2EEE8,
+        #E6D8C6
+    );
+
     color: #3F3F3F;
     display: flex;
     align-items: center;
 }
 
+/* blob 1 */
+.split-text::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #F2EEE8;
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    filter: blur(120px);
+    opacity: 0.5;
+
+    animation: floatBlob1 18s ease-in-out infinite alternate;
+
+    /* 👇 vigtigt */
+    pointer-events: none;
+}
+
+/* blob 2 */
+.split-text::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #E6D8C6;
+    border-radius: 50%;
+    bottom: -100px;
+    right: -100px;
+    filter: blur(120px);
+    opacity: 0.5;
+
+    animation: floatBlob2 22s ease-in-out infinite alternate;
+
+    /* 👇 vigtigt */
+    pointer-events: none;
+}
+
+/* animationer */
+@keyframes floatBlob1 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(80px, 40px) scale(1.1);
+    }
+    100% {
+        transform: translate(-40px, 80px) scale(0.95);
+    }
+}
+
+@keyframes floatBlob2 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(-60px, -40px) scale(1.05);
+    }
+    100% {
+        transform: translate(60px, -80px) scale(1.1);
+    }
+}
+
+/* content ovenpå blobs */
 .split-content {
     padding: 80px;
     max-width: 600px;
+    position: relative;
+    z-index: 1;
 }
 
 .split-text h2 {
@@ -89,10 +167,9 @@ nav a {
 .subtext {
     font-size: 20px;
     margin-bottom: 40px;
-}
-.subtext {
     white-space: nowrap;
 }
+
 .contact-row {
     display: flex;
     gap: 80px;
@@ -112,7 +189,6 @@ nav a {
     height: 100%;
     object-fit: cover;
 }
-
 /* ========================= FORSIDE, HOS MIG KAN DU FÅ STØTTE INDENFOR BLANDT ANDET ========================= */
 .focus-section {
     background: #ffffff;
