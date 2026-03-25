@@ -590,13 +590,64 @@ body {
     .intro-section { grid-template-columns: 1fr; }
     .footer-inner { grid-template-columns: 1fr; }
 }
-/* ========================= PRISER ========================= */
+
+/* ========================= PRISER (MED FARVESPIL) ========================= */
 .prices-page {
     width: 100%;
-    padding: 100px 20px; /* matcher sektionen nedenunder */
-    background: #FAF8F4;
+    padding: 100px 20px;
+
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        120deg,
+        #FAF8F4,
+        #F2EEE8,
+        #E6D8C6
+    );
 }
-.prices-container{
+
+/* blob 1 */
+.prices-page::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: #F2EEE8;
+    border-radius: 50%;
+    top: -120px;
+    left: -120px;
+    filter: blur(120px);
+    opacity: 0.5;
+
+    animation: floatBlob1 20s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+/* blob 2 */
+.prices-page::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: #E6D8C6;
+    border-radius: 50%;
+    bottom: -120px;
+    right: -120px;
+    filter: blur(120px);
+    opacity: 0.5;
+
+    animation: floatBlob2 24s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+/* sørger for content ligger over blobs */
+.prices-container {
+    position: relative;
+    z-index: 1;
+}
+
+.prices-container {
     max-width:900px;
     margin:0 auto;
 }
