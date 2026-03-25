@@ -390,14 +390,11 @@ nav a {
 
 /* ========================= MIN PRAKSIS, OM MIN PRAKSIS/UDDANNELSESBAGGRUND/FAGLIGE OG PRIVATE BAGGRUND ========================= */
 
-/* fjern evt. globalt mellemrum */
-body {
-    margin: 0;
-}
-
 .about-intro {
+    width: 100%;
+    min-height: 100vh;
     padding: 120px 40px;
-    margin-top: 0;
+}
 
     /* farvespil */
     position: relative;
